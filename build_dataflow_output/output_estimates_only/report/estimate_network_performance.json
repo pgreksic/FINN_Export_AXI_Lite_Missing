@@ -1,0 +1,7 @@
+{
+  "critical_path_cycles": 3860884,
+  "max_cycles": 3612672,
+  "max_cycles_node_name": "StreamingFCLayer_Batch_5",
+  "estimated_throughput_fps": 27.680342970521544,
+  "estimated_latency_ns": 38608840.0
+}

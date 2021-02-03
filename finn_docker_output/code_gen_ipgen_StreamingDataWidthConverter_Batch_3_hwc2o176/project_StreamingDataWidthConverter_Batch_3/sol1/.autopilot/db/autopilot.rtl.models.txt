@@ -1,0 +1,3 @@
+regslice_core
+StreamingDataWidthCo_1
+StreamingDataWidthConverter_Batch_3

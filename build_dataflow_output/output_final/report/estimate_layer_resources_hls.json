@@ -1,0 +1,107 @@
+{
+  "Thresholding_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "3467",
+    "LUT": "6750",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_0": {
+    "BRAM_18K": "0",
+    "FF": "414",
+    "LUT": "1768",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_1": {
+    "BRAM_18K": "0",
+    "FF": "473",
+    "LUT": "1561",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_2": {
+    "BRAM_18K": "0",
+    "FF": "540",
+    "LUT": "1364",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "4841",
+    "LUT": "3568",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_1": {
+    "BRAM_18K": "56",
+    "FF": "9651",
+    "LUT": "5149",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_2": {
+    "BRAM_18K": "0",
+    "FF": "1564",
+    "LUT": "3556",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_1": {
+    "BRAM_18K": "0",
+    "FF": "629",
+    "LUT": "1179",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_3": {
+    "BRAM_18K": "56",
+    "FF": "1641",
+    "LUT": "3159",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_3": {
+    "BRAM_18K": "0",
+    "FF": "606",
+    "LUT": "1870",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_4": {
+    "BRAM_18K": "56",
+    "FF": "2662",
+    "LUT": "3233",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_5": {
+    "BRAM_18K": "0",
+    "FF": "2520",
+    "LUT": "1083",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_6": {
+    "BRAM_18K": "0",
+    "FF": "2167",
+    "LUT": "1847",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_2": {
+    "BRAM_18K": "0",
+    "FF": "578",
+    "LUT": "895",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "LabelSelect_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "35",
+    "LUT": "155",
+    "DSP48E": "0",
+    "URAM": "0"
+  }
+}

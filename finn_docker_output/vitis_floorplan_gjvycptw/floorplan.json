@@ -1,0 +1,190 @@
+{
+    "Defaults": {
+        "slr": [
+            -1,
+            [
+                "all"
+            ]
+        ],
+        "partition_id": [
+            0,
+            [
+                "all"
+            ]
+        ],
+        "device_id": [
+            0,
+            [
+                "all"
+            ]
+        ],
+        "mem_port": [
+            "",
+            [
+                "all"
+            ]
+        ]
+    },
+    "IODMA_0": {
+        "slr": -1,
+        "partition_id": 0,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "ConvolutionInputGenerator_0": {
+        "slr": -1,
+        "partition_id": 2,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "ConvolutionInputGenerator_1": {
+        "slr": -1,
+        "partition_id": 3,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "Thresholding_Batch_0": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFIFO_0": {
+        "slr": -1,
+        "partition_id": 2,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFCLayer_Batch_0": {
+        "slr": -1,
+        "partition_id": 3,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingDataWidthConverter_Batch_0": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFCLayer_Batch_1": {
+        "slr": -1,
+        "partition_id": 2,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingDataWidthConverter_Batch_1": {
+        "slr": -1,
+        "partition_id": 3,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "ConvolutionInputGenerator_2": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingDataWidthConverter_Batch_2": {
+        "slr": -1,
+        "partition_id": 2,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFCLayer_Batch_2": {
+        "slr": -1,
+        "partition_id": 3,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFIFO_1": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "Thresholding_Batch_1": {
+        "slr": -1,
+        "partition_id": 2,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingDataWidthConverter_Batch_3": {
+        "slr": -1,
+        "partition_id": 3,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFCLayer_Batch_3": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFCLayer_Batch_4": {
+        "slr": -1,
+        "partition_id": 3,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingDataWidthConverter_Batch_4": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingDataWidthConverter_Batch_5": {
+        "slr": -1,
+        "partition_id": 3,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFIFO_2": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFCLayer_Batch_5": {
+        "slr": -1,
+        "partition_id": 3,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "ConvolutionInputGenerator_3": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "LabelSelect_Batch_0": {
+        "slr": -1,
+        "partition_id": 3,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFIFO_3": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "IODMA_1": {
+        "slr": -1,
+        "partition_id": 1,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "StreamingFCLayer_Batch_6": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    },
+    "Thresholding_Batch_2": {
+        "slr": -1,
+        "partition_id": 4,
+        "device_id": 0,
+        "mem_port": ""
+    }
+}

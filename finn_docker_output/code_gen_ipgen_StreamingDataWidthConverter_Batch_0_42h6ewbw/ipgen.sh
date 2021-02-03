@@ -1,0 +1,4 @@
+#!/bin/bash 
+cd /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_0_42h6ewbw
+vivado_hls /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_0_42h6ewbw/hls_syn_StreamingDataWidthConverter_Batch_0.tcl
+cd /workspace/finn

@@ -1,0 +1,329 @@
+
+
+================================================================
+== Vivado HLS Report for 'ConvolutionInputGenerator_2'
+================================================================
+* Date:           Sat Jan 30 15:29:04 2021
+
+* Version:        2020.1.1 (Build 2951007 on Wed Aug 05 23:24:06 MDT 2020)
+* Project:        project_ConvolutionInputGenerator_2
+* Solution:       sol1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.028 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     8201|     8201| 82.010 us | 82.010 us |  8201|  8201|   none  |
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------+------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                                  |                        |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |             Instance             |         Module         |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +----------------------------------+------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |grp_ConvolutionInputGene_1_fu_26  |ConvolutionInputGene_1  |     8198|     8198| 81.980 us | 81.980 us |  8198|  8198|   none  |
+        +----------------------------------+------------------------+---------+---------+-----------+-----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.32>
+ST_2 : Operation 5 [2/2] (2.32ns)   --->   "call fastcc void @ConvolutionInputGene.1(i24* %in0_V_V, i24* %out_V_V)" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_co33bz1u/top_ConvolutionInputGenerator_2.cpp:28]   --->   Operation 5 'call' <Predicate = true> <Delay = 2.32> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 4.28>
+ST_3 : Operation 6 [1/2] (4.28ns)   --->   "call fastcc void @ConvolutionInputGene.1(i24* %in0_V_V, i24* %out_V_V)" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_co33bz1u/top_ConvolutionInputGenerator_2.cpp:28]   --->   Operation 6 'call' <Predicate = true> <Delay = 4.28> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i24* %in0_V_V), !map !39"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i24* %out_V_V), !map !43"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([28 x i8]* @ConvolutionInputGene) nounwind"   --->   Operation 9 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %in0_V_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_co33bz1u/top_ConvolutionInputGenerator_2.cpp:25]   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i24* %out_V_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_co33bz1u/top_ConvolutionInputGenerator_2.cpp:26]   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_co33bz1u/top_ConvolutionInputGenerator_2.cpp:27]   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "ret void" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_co33bz1u/top_ConvolutionInputGenerator_2.cpp:30]   --->   Operation 13 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_none:ce=0
+Port [ in0_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ out_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+call_ln28          (call         ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+spectopmodule_ln0  (spectopmodule) [ 00000]
+specinterface_ln25 (specinterface) [ 00000]
+specinterface_ln26 (specinterface) [ 00000]
+specinterface_ln27 (specinterface) [ 00000]
+ret_ln30           (ret          ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="in0_V_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="in0_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="out_V_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="out_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ConvolutionInputGene.1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ConvolutionInputGene"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1004" name="grp_ConvolutionInputGene_1_fu_26">
+<pin_list>
+<pin id="27" dir="0" index="0" bw="0" slack="0"/>
+<pin id="28" dir="0" index="1" bw="24" slack="0"/>
+<pin id="29" dir="0" index="2" bw="24" slack="0"/>
+<pin id="30" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln28/2 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="31"><net_src comp="4" pin="0"/><net_sink comp="26" pin=0"/></net>
+
+<net id="32"><net_src comp="0" pin="0"/><net_sink comp="26" pin=1"/></net>
+
+<net id="33"><net_src comp="2" pin="0"/><net_sink comp="26" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: out_V_V | {2 3 }
+ - Input state : 
+	Port: ConvolutionInputGenerator_2 : in0_V_V | {2 3 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------|---------|---------|---------|
+| Operation|          Functional Unit         |  Delay  |    FF   |   LUT   |
+|----------|----------------------------------|---------|---------|---------|
+|   call   | grp_ConvolutionInputGene_1_fu_26 |  14.152 |   565   |   1109  |
+|----------|----------------------------------|---------|---------|---------|
+|   Total  |                                  |  14.152 |   565   |   1109  |
+|----------|----------------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |   14   |   565  |  1109  |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |
++-----------+--------+--------+--------+
+|   Total   |   14   |   565  |  1109  |
++-----------+--------+--------+--------+

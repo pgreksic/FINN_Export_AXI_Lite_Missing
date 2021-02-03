@@ -1,0 +1,90 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+WARNING: [XFORM 203-506] Disable code size check when do loop unroll.
+WARNING: [ANALYSIS 214-1] Skip long-run-time warning caused by lots of load/store instructions.
+WARNING: [HLS 200-483] The 'config_rtl -auto_prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_auto_prefix' as its replacement.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_bh67u2ww/top_StreamingDataflowPartition_0_IODMA_0.cpp' ... 
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_bh67u2ww/top_StreamingDataflowPartition_0_IODMA_0.cpp:25:32
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_bh67u2ww/top_StreamingDataflowPartition_0_IODMA_0.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3490 ; free virtual = 43328
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3490 ; free virtual = 43328
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'WidthAdjustedOutputStream<8u, 8u, 3072u>::operator hls::stream<ap_uint<8>, 0>&' into 'StreamingDataflowPartition_0_IODMA_0' (/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_bh67u2ww/top_StreamingDataflowPartition_0_IODMA_0.cpp:25).
+INFO: [XFORM 203-603] Inlining function 'WidthAdjustedOutputStream<8u, 8u, 3072u>::operator hls::stream<ap_uint<8>, 0>&' into 'StreamingDataflowPartition_0_IODMA_0' (/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_bh67u2ww/top_StreamingDataflowPartition_0_IODMA_0.cpp:24).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3421 ; free virtual = 43298
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3418 ; free virtual = 43296
+INFO: [XFORM 203-712] Applying dataflow to function 'StreamingDataflowPartition_0_IODMA_0', detected/extracted 1 process function(s): 
+	 'Mem2Stream_Batch<8u, 3072u>'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3395 ; free virtual = 43274
+WARNING: [XFORM 203-631] Renaming function 'Mem2Stream_Batch<8u, 3072u>' to 'Mem2Stream_Batch' (/workspace/finn-hlslib/dma.h:166:7)
+WARNING: [XFORM 203-631] Renaming function 'Mem2Stream<8u, 49152u>' to 'Mem2Stream' (/workspace/finn-hlslib/dma.h:140:42)
+WARNING: [XFORM 203-631] Renaming function 'Mem2Stream<8u, 3072u>' to 'Mem2Stream.1' (/workspace/finn-hlslib/dma.h:140:42)
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 3072 on port 'in.V' (/workspace/finn-hlslib/dma.h:142:30). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 49152 on port 'in.V' (/workspace/finn-hlslib/dma.h:142:30). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3373 ; free virtual = 43247
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'StreamingDataflowPartition_0_IODMA_0' ...
+WARNING: [SYN 201-103] Legalizing function name 'Mem2Stream.1' to 'Mem2Stream_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mem2Stream_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 21.16 seconds; current allocated memory: 180.205 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 180.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mem2Stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 180.484 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 180.612 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mem2Stream_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 180.725 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 180.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingDataflowPartition_0_IODMA_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 180.949 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 181.046 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mem2Stream_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mem2Stream_1'.
+INFO: [HLS 200-111]

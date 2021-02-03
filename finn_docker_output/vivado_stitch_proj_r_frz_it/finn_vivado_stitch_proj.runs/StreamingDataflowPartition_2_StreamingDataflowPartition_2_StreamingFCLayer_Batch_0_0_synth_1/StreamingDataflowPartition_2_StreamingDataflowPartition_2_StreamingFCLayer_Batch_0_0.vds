@@ -1,0 +1,975 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Sat Jan 30 17:44:16 2021
+# Process ID: 11985
+# Current directory: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_synth_1
+# Command line: vivado -log StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0.tcl
+# Log file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_synth_1/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0.vds
+# Journal file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_2_StreamingFIFO_0_g7ein900/project_StreamingDataflowPartition_2_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_r03oilew/project_Thresholding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_0_agkg4rks/project_StreamingDataWidthConverter_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_co33bz1u/project_ConvolutionInputGenerator_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_9_osm175fr/project_StreamingFIFO_9/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_4_2ftprr51/project_StreamingDataWidthConverter_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_13_fwg_u0tt/project_StreamingFIFO_13/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_3_fk4j0e65/project_ConvolutionInputGenerator_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_15_90homyys/project_StreamingFIFO_15/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_5_rxclvy1e/project_StreamingFCLayer_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_2_74ymc1_c/project_Thresholding_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_2_StreamingFIFO_4_6nfms3t7/project_StreamingDataflowPartition_2_StreamingFIFO_4/sol1/impl/verilog'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12061
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2150.492 ; gain = 13.883 ; free physical = 2264 ; free virtual = 37358
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ip/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0/synth/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Activa' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state6 bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb_rom' (1#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb' (2#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actcud' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actcud.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actcud_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actcud.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actcud_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actcud.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actcud_rom' (3#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actcud.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actcud' (4#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actcud.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe_rom' (5#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe' (6#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg_rom' (7#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg' (8#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi_rom' (9#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi' (10#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j_rom' (11#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j' (12#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi_rom' (13#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi' (14#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actibs' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actibs.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actibs_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actibs.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actibs_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actibs.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actibs_rom' (15#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actibs.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actibs' (16#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actibs.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC_rom' (17#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC' (18#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM_rom' (19#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM' (20#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW_rom' (21#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW' (22#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6_rom' (23#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6' (24#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actncg' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actncg.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actncg_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actncg.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actncg_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actncg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actncg_rom' (25#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actncg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actncg' (26#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actncg.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actocq' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actocq.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actocq_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actocq.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actocq_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actocq.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actocq_rom' (27#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actocq.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actocq' (28#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actocq.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA_rom' (29#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA' (30#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK_rom' (31#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK' (32#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU_rom' (33#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU' (34#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4_rom' (35#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4' (36#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Acttde' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acttde.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Acttde_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acttde.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acttde_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acttde.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Acttde_rom' (37#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acttde.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Acttde' (38#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Acttde.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actudo' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actudo.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actudo_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actudo.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actudo_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actudo.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actudo_rom' (39#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actudo.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actudo' (40#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actudo.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy_rom' (41#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy' (42#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI_rom' (43#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI' (44#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS_rom' (45#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS' (46#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2_rom' (47#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2' (48#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actzec' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actzec.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actzec_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actzec.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actzec_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actzec.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actzec_rom' (49#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actzec.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Actzec' (50#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Actzec.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActAem' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActAem.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActAem_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActAem.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActAem_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActAem.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActAem_rom' (51#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActAem.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActAem' (52#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActAem.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActBew' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActBew.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActBew_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActBew.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActBew_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActBew.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActBew_rom' (53#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActBew.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActBew' (54#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActBew.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG_rom' (55#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG' (56#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ_rom' (57#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ' (58#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0_rom' (59#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0' (60#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa_rom' (61#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa' (62#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk_rom' (63#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk' (64#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu_rom' (65#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu' (66#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8_rom' (67#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8' (68#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi_rom' (69#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi' (70#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs_rom' (71#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs' (72#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC_rom' (73#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC' (74#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM_rom' (75#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM' (76#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW_rom' (77#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW' (78#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6_rom' (79#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6' (80#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActShg' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActShg.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActShg_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActShg.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActShg_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActShg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActShg_rom' (81#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActShg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActShg' (82#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActShg.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActThq' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActThq.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActThq_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActThq.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActThq_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActThq.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActThq_rom' (83#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActThq.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActThq' (84#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActThq.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA_rom' (85#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA' (86#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK_rom' (87#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK' (88#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU_rom' (89#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU' (90#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4_rom' (91#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4' (92#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActYie' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActYie.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActYie_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActYie.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActYie_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActYie.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActYie_rom' (93#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActYie.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActYie' (94#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActYie.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActZio' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActZio.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActZio_rom' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActZio.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActZio_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActZio.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActZio_rom' (95#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActZio.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_ActZio' (96#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_ActZio.v:39]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Act0iy' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act0iy.v:39]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act0iy_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act0iy.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Act0iy_rom' (97#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act0iy.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Act0iy' (98#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act0iy.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act1iI_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act1iI.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Act1iI_rom' (99#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act1iI.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFCLayer_Batch_2_Matrix_Vector_Act1iI' (100#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act1iI.v:39]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act2iS_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act2iS.v:21]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act3i2_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act3i2.v:21]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_zoujzpy3/project_StreamingFCLayer_Batch_2/sol1/impl/ip/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act4jc_rom.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Act4jc.v:21]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 24 - type: integer 
+	Parameter din1_WIDTH bound to: 24 - type: integer 
+	Parameter din2_WIDTH bound to: 24 - type: integer 
+	Parameter din3_WIDTH bound to: 24 - type: integer 
+	Parameter din4_WIDTH bound to: 24 - type: integer 
+	Parameter din5_WIDTH bound to: 24 - type: integer 
+	Parameter din6_WIDTH bound to: 24 - type: integer 
+	Parameter din7_WIDTH bound to: 24 - type: integer 
+	Parameter din8_WIDTH bound to: 24 - type: integer 
+	Parameter din9_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 24 - type: integer 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 12 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2674]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2676]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2678]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2680]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2682]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2684]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2686]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2688]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2690]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2692]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2736]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2738]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2740]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2742]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2744]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2746]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2748]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2750]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2752]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2754]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2756]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2758]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2760]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2762]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2764]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2766]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2768]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2770]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2772]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ipshared/c463/hdl/verilog/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v:2774]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter W bound to: 25 - type: integer 
+	Parameter W bound to: 25 - type: integer 
+	Parameter W bound to: 25 - type: integer 
+	Parameter DataWidth bound to: 48 - type: integer 
+	Parameter W bound to: 49 - type: integer 
+	Parameter W bound to: 49 - type: integer 
+	Parameter W bound to: 49 - type: integer 
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter W bound to: 17 - type: integer 
+	Parameter W bound to: 17 - type: integer 
+	Parameter W bound to: 17 - type: integer 
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2207.367 ; gain = 70.758 ; free physical = 2247 ; free virtual = 37350
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2222.211 ; gain = 85.602 ; free physical = 2266 ; free virtual = 37403
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2222.211 ; gain = 85.602 ; free physical = 2267 ; free virtual = 37404
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2222.211 ; gain = 0.000 ; free physical = 2326 ; free virtual = 37459
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ip/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0/constraints/StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_2/ip/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0/constraints/StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2_ooc.xdc] for cell 'inst'
+Parsing XDC File [/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2388.992 ; gain = 0.000 ; free physical = 2227 ; free virtual = 37353
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2388.992 ; gain = 0.000 ; free physical = 2212 ; free virtual = 37338
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 2364 ; free virtual = 37455
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 2365 ; free virtual = 37456
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 2365 ; free virtual = 37456
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 2227 ; free virtual = 37317
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_Matrix_Vector_Activa_fu_140/threshs_m_thresholds_19_U' (StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu) to 'inst/grp_Matrix_Vector_Activa_fu_140/threshs_m_thresholds_18_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Matrix_Vector_Activa_fu_140/threshs_m_thresholds_19_U' (StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu) to 'inst/grp_Matrix_Vector_Activa_fu_140/threshs_m_thresholds_17_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Matrix_Vector_Activa_fu_140/threshs_m_thresholds_19_U' (StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu) to 'inst/grp_Matrix_Vector_Activa_fu_140/threshs_m_thresholds_16_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   16 Bit       Adders := 4     
+	   2 Input   13 Bit       Adders := 4     
+	   8 Input    4 Bit       Adders := 4     
+	   5 Input    3 Bit       Adders := 4     
+	   3 Input    2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 56    
++---Registers : 
+	               49 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               25 Bit    Registers := 2     
+	               24 Bit    Registers := 10    
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 57    
+	               13 Bit    Registers := 4     
+	               12 Bit    Registers := 4     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 66    
++---Multipliers : 
+	                4x8  Multipliers := 12    
++---Muxes : 
+	   2 Input   49 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 9     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 5     
+	   6 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 61    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 1980 ; free virtual = 37139
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++--------------------------------------------------+------------+---------------+----------------+
+|Module Name                                       | RTL Object | Depth x Width | Implemented As | 
++--------------------------------------------------+------------+---------------+----------------+
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actbkb_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actcud_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActdEe_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActeOg_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActfYi_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actg8j_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Acthbi_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actibs_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActjbC_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActkbM_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActlbW_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actmb6_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actncg_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actocq_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActpcA_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActqcK_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActrcU_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actsc4_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Acttde_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actudo_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actvdy_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActwdI_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActxdS_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actyd2_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Actzec_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActAem_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActBew_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActCeG_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActDeQ_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActEe0_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActFfa_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActGfk_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActHfu_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActLf8_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActMgi_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActNgs_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActOgC_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActPgM_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActQgW_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActRg6_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActShg_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActThq_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActUhA_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActVhK_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActWhU_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActXh4_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActYie_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_ActZio_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Act0iy_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Act1iI_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Act2iS_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Act3i2_rom | p_0_out    | 16x16         | LUT            | 
+|StreamingFCLayer_Batch_2_Matrix_Vector_Act4jc_rom | p_0_out    | 16x16         | LUT            | 
++--------------------------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 3062 ; free virtual = 38196
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4704 ; free virtual = 39830
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4642 ; free virtual = 39759
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4606 ; free virtual = 39712
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4619 ; free virtual = 39724
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4614 ; free virtual = 39720
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4614 ; free virtual = 39720
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4615 ; free virtual = 39717
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4614 ; free virtual = 39715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   251|
+|2     |LUT1   |    13|
+|3     |LUT2   |   180|
+|4     |LUT3   |   338|
+|5     |LUT4   |  1172|
+|6     |LUT5   |   187|
+|7     |LUT6   |   296|
+|8     |MUXF7  |    24|
+|9     |FDRE   |  1077|
+|10    |FDSE   |    45|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4613 ; free virtual = 39714
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:02 . Memory (MB): peak = 2388.992 ; gain = 85.602 ; free physical = 4642 ; free virtual = 39738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2388.992 ; gain = 252.383 ; free physical = 4642 ; free virtual = 39738
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2388.992 ; gain = 0.000 ; free physical = 4710 ; free virtual = 39806
+INFO: [Netlist 29-17] Analyzing 275 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2410.945 ; gain = 0.000 ; free physical = 3222 ; free virtual = 38318
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+290 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 2410.945 ; gain = 274.359 ; free physical = 3250 ; free virtual = 38346
+INFO: [Common 17-1381] The checkpoint '/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_synth_1/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0, cache-ID = 466b89051c65fdda
+INFO: [Coretcl 2-1174] Renamed 130 cell refs.
+INFO: [Common 17-1381] The checkpoint '/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_r_frz_it/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_synth_1/StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_utilization_synth.rpt -pb StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 30 17:45:57 2021...

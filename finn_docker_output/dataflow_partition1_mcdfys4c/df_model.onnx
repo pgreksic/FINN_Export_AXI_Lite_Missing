@@ -1,0 +1,49 @@
+
+fuse_model:Ô
+Û
+LabelSelect_Batch_0_out0
+global_out$StreamingDataflowPartition_3_IODMA_0"IODMA*
+NumChannels†*
+backend"fpgadataflow†*
+dataType"UINT8†*
+	direction"out†*
+	intfWidth†*
+numInputVectors@@†*
+streamWidth†*
+partition_id†*è
+code_gen_dir_ipgen"v/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_3_IODMA_0_bmbfu00o†*µ
+
+ipgen_path"£/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_3_IODMA_0_bmbfu00o/project_StreamingDataflowPartition_3_IODMA_0†*ø
+ip_path"∞/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_3_IODMA_0_bmbfu00o/project_StreamingDataflowPartition_3_IODMA_0/sol1/impl/ip†*E
+ip_vlnv"7xilinx.com:hls:StreamingDataflowPartition_3_IODMA_0:1.0†:finn.custom_op.fpgadataflow
+fuse-graphZ*
+LabelSelect_Batch_0_out0
+
+
+b
+
+global_out
+
+
+j*
+LabelSelect_Batch_0_out0
+
+
+rA
+
+global_out
+finn_datatypeUINT8
+tensor_layout
+['N', 'C']r2
+LabelSelect_Batch_0_out0
+finn_datatypeUINT8Brk
+vivado_stitch_projU/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj__xg6ldier
+clk_ns10.0r‹
+wrapper_filename«/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj__xg6ldie/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_3/hdl/StreamingDataflowPartition_3_wrapper.vrG
+vivado_stitch_vlnv1xilinx_finn:finn:StreamingDataflowPartition_3:1.0r¢
+vivado_stitch_ifnamesà{'clk': ['ap_clk'], 'rst': ['ap_rst_n'], 's_axis': ['s_axis_0'], 'm_axis': [], 'aximm': ['m_axi_gmem0'], 'axilite': ['s_axi_control_0']}r
+	exec_modertlsimra
+pynq_driver_dirN/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/pynq_driver_boqvt9zlrs
+floorplan_jsona/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vitis_floorplan_gjvycptw/floorplan.jsonr
+platform
+zynq-iodma

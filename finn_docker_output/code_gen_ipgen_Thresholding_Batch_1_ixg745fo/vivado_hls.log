@@ -1,0 +1,136 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1.1 (64-bit)
+  **** SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+  **** IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vivado/2020.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'grgov' on host 'finn_dev_grgov' (Linux_x86_64 version 5.8.0-41-generic) on Sat Jan 30 15:27:46 +0000 2021
+INFO: [HLS 200-10] In directory '/workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_1_ixg745fo'
+Sourcing Tcl script '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_1_ixg745fo/hls_syn_Thresholding_Batch_1.tcl'
+HLS project: project_Thresholding_Batch_1
+HW source dir: /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_1_ixg745fo
+INFO: [HLS 200-10] Creating and opening project '/workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_1_ixg745fo/project_Thresholding_Batch_1'.
+INFO: [HLS 200-10] Adding design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_1_ixg745fo/top_Thresholding_Batch_1.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_1_ixg745fo/project_Thresholding_Batch_1/sol1'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+WARNING: [XFORM 203-506] Disable code size check when do loop unroll.
+WARNING: [ANALYSIS 214-1] Skip long-run-time warning caused by lots of load/store instructions.
+WARNING: [HLS 200-483] The 'config_rtl -auto_prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_auto_prefix' as its replacement.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_1_ixg745fo/top_Thresholding_Batch_1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 2973 ; free virtual = 42059
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 2973 ; free virtual = 42059
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/workspace/finn-hlslib/activations.hpp:228) in function 'void Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >(hls::stream<FORWARD_REFERENCE, 0>&, hls::stream<FORWARD_REFERENCE, 0>&, FORWARD_REFERENCE const&, int)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::operator()<ap_uint<4> >' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/activations.hpp:227).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<24>, 24u>::operator()<ap_uint<24> >' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/activations.hpp:231).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::Container<ap_uint<4> >::operator()' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/activations.hpp:232).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<24>, 24u>::Container<ap_uint<24> >::operator()' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/activations.hpp:232).
+INFO: [XFORM 203-603] Inlining function 'ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > >::activate' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/activations.hpp:232).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::Container<ap_uint<4> >::operator ap_uint<4> const&' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/activations.hpp:234).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 2809 ; free virtual = 41917
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_int<24> >::cast<24>' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/activations.hpp:232) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::less_equal<ap_int<24> >::operator()' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/activations.hpp:142->/workspace/finn-hlslib/activations.hpp:232) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 2793 ; free virtual = 41903
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/workspace/finn-hlslib/activations.hpp:221) in function 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/workspace/finn-hlslib/activations.hpp:140) in function 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' completely with a factor of 14.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 3 completely.
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_int<24> >::cast<24>' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/activations.hpp:232) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::less_equal<ap_int<24> >::operator()' into 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/activations.hpp:142->/workspace/finn-hlslib/activations.hpp:232) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' (/workspace/finn-hlslib/activations.hpp:142:57)...13 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 2732 ; free virtual = 41839
+WARNING: [XFORM 203-631] Renaming function 'Thresholding_Batch<10u, 128u, 1u, Slice<ap_int<24>, 24u>, Slice<ap_int<4>, 4u>, ap_uint<24>, ap_uint<4>, ThresholdsActivation<128u, 1u, 14u, ap_int<24>, ap_int<4>, -7, std::less_equal<ap_int<24> > > >' to 'Thresholding_Batch' (/workspace/finn-hlslib/activations.hpp:142:57)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 2593 ; free virtual = 41701
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Thresholding_Batch_1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Thresholding_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 39.33 seconds; current allocated memory: 180.674 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 181.238 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Thresholding_Batch_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 181.348 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 181.454 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Thresholding_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_13' to 'Thresholding_Batcbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_12' to 'Thresholding_Batccud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_7' to 'Thresholding_BatcdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_6' to 'Thresholding_BatceOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_5' to 'Thresholding_BatcfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_4' to 'Thresholding_Batcg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_3' to 'Thresholding_Batchbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_2' to 'Thresholding_Batcibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_1' to 'Thresholding_BatcjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds' to 'Thresholding_BatckbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_11' to 'Thresholding_BatclbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_10' to 'Thresholding_Batcmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_9' to 'Thresholding_Batcncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_8' to 'Thresholding_Batcocq' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Thresholding_Batch'.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 182.506 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Thresholding_Batch_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Thresholding_Batch_1/in0_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Thresholding_Batch_1/out_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'Thresholding_Batch_1' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Thresholding_Batch_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.51 seconds; current allocated memory: 185.027 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 123.78 MHz
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_Batcbkb_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_Batccud_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_BatcdEe_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_BatceOg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_BatcfYi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_Batcg8j_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_Batchbi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_Batcibs_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_BatcjbC_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_BatckbM_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_BatclbW_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_Batcmb6_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_Batcncg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_1_Thresholding_Batcocq_rom' using distributed ROMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3406 ; free virtual = 42525
+INFO: [VHDL 208-304] Generating VHDL RTL for Thresholding_Batch_1 with prefix Thresholding_Batch_1_.
+INFO: [VLOG 209-307] Generating Verilog RTL for Thresholding_Batch_1 with prefix Thresholding_Batch_1_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.1.1 (64-bit)
+  **** SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+  **** IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 30 15:28:55 2021...
+INFO: [HLS 200-112] Total elapsed time: 72.54 seconds; peak allocated memory: 185.027 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sat Jan 30 15:28:58 2021...

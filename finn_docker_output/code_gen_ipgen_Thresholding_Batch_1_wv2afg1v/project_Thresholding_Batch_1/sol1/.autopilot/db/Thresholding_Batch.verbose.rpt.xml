@@ -1,0 +1,210 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Thresholding_Batch'" level="0">
+<item name = "Date">Sat Jan 30 13:17:36 2021
+</item>
+<item name = "Version">2020.1.1 (Build 2951007 on Wed Aug 05 23:24:06 MDT 2020)</item>
+<item name = "Project">project_Thresholding_Batch_1</item>
+<item name = "Solution">sol1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.079 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">12803, 12803, 0.128 ms, 0.128 ms, 12803, 12803, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">12801, 12801, 3, 1, 1, 12800, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 534, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, 532, 532, -</column>
+<column name="Multiplexer">-, -, -, 75, -</column>
+<column name="Register">-, -, 92, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="threshs_m_thresholds_13_U">Thresholding_Batcbkb, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_12_U">Thresholding_Batccud, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_7_U">Thresholding_BatcdEe, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_6_U">Thresholding_BatceOg, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_5_U">Thresholding_BatcfYi, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_4_U">Thresholding_Batcg8j, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_3_U">Thresholding_Batchbi, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_2_U">Thresholding_Batcibs, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_1_U">Thresholding_BatcjbC, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_U">Thresholding_BatckbM, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_11_U">Thresholding_BatclbW, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_10_U">Thresholding_Batcmb6, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_9_U">Thresholding_Batcncg, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+<column name="threshs_m_thresholds_8_U">Thresholding_Batcocq, 0, 38, 38, 0, 128, 19, 1, 2432</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln700_10_fu_693_p2">+, 0, 0, 7, 3, 3</column>
+<column name="add_ln700_11_fu_699_p2">+, 0, 0, 7, 3, 3</column>
+<column name="add_ln700_1_fu_615_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln700_2_fu_621_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln700_3_fu_631_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln700_4_fu_641_p2">+, 0, 0, 12, 3, 3</column>
+<column name="add_ln700_5_fu_651_p2">+, 0, 0, 7, 4, 4</column>
+<column name="add_ln700_6_fu_657_p2">+, 0, 0, 7, 2, 2</column>
+<column name="add_ln700_7_fu_663_p2">+, 0, 0, 7, 2, 2</column>
+<column name="add_ln700_8_fu_673_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln700_9_fu_683_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln700_fu_605_p2">+, 0, 0, 10, 2, 2</column>
+<column name="i_fu_305_p2">+, 0, 0, 19, 14, 1</column>
+<column name="nf_fu_329_p2">+, 0, 0, 39, 32, 1</column>
+<column name="tmp_V_fu_709_p2">+, 0, 0, 7, 4, 4</column>
+<column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2_pp0_stage0_iter0">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state4_io">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln221_fu_299_p2">icmp, 0, 0, 13, 14, 13</column>
+<column name="icmp_ln235_fu_335_p2">icmp, 0, 0, 18, 32, 8</column>
+<column name="icmp_ln899_10_fu_461_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_11_fu_470_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_12_fu_479_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_13_fu_488_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_1_fu_362_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_2_fu_371_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_3_fu_380_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_4_fu_389_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_5_fu_398_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_6_fu_407_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_7_fu_416_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_8_fu_431_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_9_fu_446_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="icmp_ln899_fu_353_p2">icmp, 0, 0, 18, 24, 24</column>
+<column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
+<column name="nf_1_fu_341_p3">select, 0, 0, 32, 1, 1</column>
+<column name="select_ln700_fu_498_p3">select, 0, 0, 4, 1, 4</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="xor_ln899_10_fu_569_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_11_fu_578_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_12_fu_587_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_13_fu_596_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_1_fu_506_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_2_fu_515_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_3_fu_524_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_4_fu_533_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_5_fu_542_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_6_fu_551_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_7_fu_421_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_8_fu_436_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_9_fu_451_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln899_fu_493_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">21, 4, 1, 4</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="i_0_reg_288">9, 2, 14, 28</column>
+<column name="in_V_V_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="nf_assign_reg_277">9, 2, 32, 64</column>
+<column name="out_V_V_TDATA_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="i_0_reg_288">14, 0, 14, 0</column>
+<column name="icmp_ln221_reg_720">1, 0, 1, 0</column>
+<column name="icmp_ln221_reg_720_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln899_10_reg_872">1, 0, 1, 0</column>
+<column name="icmp_ln899_11_reg_877">1, 0, 1, 0</column>
+<column name="icmp_ln899_12_reg_882">1, 0, 1, 0</column>
+<column name="icmp_ln899_13_reg_887">1, 0, 1, 0</column>
+<column name="icmp_ln899_1_reg_827">1, 0, 1, 0</column>
+<column name="icmp_ln899_2_reg_832">1, 0, 1, 0</column>
+<column name="icmp_ln899_3_reg_837">1, 0, 1, 0</column>
+<column name="icmp_ln899_4_reg_842">1, 0, 1, 0</column>
+<column name="icmp_ln899_5_reg_847">1, 0, 1, 0</column>
+<column name="icmp_ln899_6_reg_852">1, 0, 1, 0</column>
+<column name="icmp_ln899_reg_822">1, 0, 1, 0</column>
+<column name="nf_assign_reg_277">32, 0, 32, 0</column>
+<column name="tmp_V_1_reg_729">24, 0, 24, 0</column>
+<column name="xor_ln899_7_reg_857">1, 0, 1, 0</column>
+<column name="xor_ln899_8_reg_862">1, 0, 1, 0</column>
+<column name="xor_ln899_9_reg_867">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Thresholding_Batch, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Thresholding_Batch, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Thresholding_Batch, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Thresholding_Batch, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Thresholding_Batch, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Thresholding_Batch, return value</column>
+<column name="in_V_V_TDATA">in, 24, axis, in_V_V, pointer</column>
+<column name="in_V_V_TVALID">in, 1, axis, in_V_V, pointer</column>
+<column name="in_V_V_TREADY">out, 1, axis, in_V_V, pointer</column>
+<column name="out_V_V_TDATA">out, 8, axis, out_V_V, pointer</column>
+<column name="out_V_V_TVALID">out, 1, axis, out_V_V, pointer</column>
+<column name="out_V_V_TREADY">in, 1, axis, out_V_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

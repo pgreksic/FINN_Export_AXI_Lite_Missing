@@ -1,0 +1,4 @@
+#!/bin/bash 
+cd /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_wkar_7k5
+vivado_hls /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_wkar_7k5/hls_syn_StreamingFCLayer_Batch_0.tcl
+cd /workspace/finn

@@ -1,0 +1,4 @@
+#!/bin/bash 
+cd /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_2_0eb7bn2y
+vivado_hls /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_2_0eb7bn2y/hls_syn_Thresholding_Batch_2.tcl
+cd /workspace/finn

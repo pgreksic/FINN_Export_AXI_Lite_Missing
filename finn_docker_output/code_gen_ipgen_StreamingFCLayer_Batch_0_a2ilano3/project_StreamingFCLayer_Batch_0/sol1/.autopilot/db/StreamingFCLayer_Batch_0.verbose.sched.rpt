@@ -1,0 +1,137 @@
+
+
+================================================================
+== Vivado HLS Report for 'StreamingFCLayer_Batch_0'
+================================================================
+* Date:           Sat Jan 30 13:19:51 2021
+
+* Version:        2020.1.1 (Build 2951007 on Wed Aug 05 23:24:06 MDT 2020)
+* Project:        project_StreamingFCLayer_Batch_0
+* Solution:       sol1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.573 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
+    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  1843205|  1843205| 18.432 ms | 18.432 ms |  1843205|  1843205|   none  |
+    +---------+---------+-----------+-----------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.76>
+ST_2 : Operation 5 [2/2] (1.76ns)   --->   "call fastcc void @Matrix_Vector_Activa(i8* %in0_V_V, i96* %out_V_V, i32* %weights_V_V)" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_a2ilano3/top_StreamingFCLayer_Batch_0.cpp:37]   --->   Operation 5 'call' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 8.57>
+ST_3 : Operation 6 [1/2] (8.57ns)   --->   "call fastcc void @Matrix_Vector_Activa(i8* %in0_V_V, i96* %out_V_V, i32* %weights_V_V)" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_a2ilano3/top_StreamingFCLayer_Batch_0.cpp:37]   --->   Operation 6 'call' <Predicate = true> <Delay = 8.57> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %in0_V_V), !map !113"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %weights_V_V), !map !117"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i96* %out_V_V), !map !121"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([25 x i8]* @StreamingFCLayer_Bat) nounwind"   --->   Operation 10 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %in0_V_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_a2ilano3/top_StreamingFCLayer_Batch_0.cpp:30]   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i96* %out_V_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_a2ilano3/top_StreamingFCLayer_Batch_0.cpp:31]   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_a2ilano3/top_StreamingFCLayer_Batch_0.cpp:34]   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %weights_V_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_a2ilano3/top_StreamingFCLayer_Batch_0.cpp:35]   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "ret void" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_a2ilano3/top_StreamingFCLayer_Batch_0.cpp:39]   --->   Operation 15 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 1.77ns
+The critical path consists of the following:
+	'call' operation ('call_ln37', /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_a2ilano3/top_StreamingFCLayer_Batch_0.cpp:37) to 'Matrix_Vector_Activa' [12]  (1.77 ns)
+
+ <State 3>: 8.57ns
+The critical path consists of the following:
+	'call' operation ('call_ln37', /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_a2ilano3/top_StreamingFCLayer_Batch_0.cpp:37) to 'Matrix_Vector_Activa' [12]  (8.57 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

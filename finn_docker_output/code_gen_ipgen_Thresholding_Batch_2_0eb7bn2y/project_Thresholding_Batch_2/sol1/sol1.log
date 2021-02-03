@@ -1,0 +1,45 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+WARNING: [XFORM 203-506] Disable code size check when do loop unroll.
+WARNING: [ANALYSIS 214-1] Skip long-run-time warning caused by lots of load/store instructions.
+WARNING: [HLS 200-483] The 'config_rtl -auto_prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_auto_prefix' as its replacement.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_2_0eb7bn2y/top_Thresholding_Batch_2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3488 ; free virtual = 42769
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3488 ; free virtual = 42769
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/workspace/finn-hlslib/activations.hpp:228) in function 'void Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >(hls::stream<FORWARD_REFERENCE, 0>&, hls::stream<FORWARD_REFERENCE, 0>&, FORWARD_REFERENCE const&, int)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::operator()<ap_uint<4> >' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/activations.hpp:227).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<16>, 16u>::operator()<ap_uint<16> >' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/activations.hpp:231).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::Container<ap_uint<4> >::operator()' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/activations.hpp:232).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<16>, 16u>::Container<ap_uint<16> >::operator()' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/activations.hpp:232).
+INFO: [XFORM 203-603] Inlining function 'ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > >::activate' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/activations.hpp:232).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::Container<ap_uint<4> >::operator ap_uint<4> const&' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/activations.hpp:234).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:35 ; elapsed = 00:01:03 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3346 ; free virtual = 42626
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_int<16> >::cast<16>' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/activations.hpp:232) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::less_equal<ap_int<18> >::operator()' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/activations.hpp:142->/workspace/finn-hlslib/activations.hpp:232) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:35 ; elapsed = 00:01:03 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3316 ; free virtual = 42599
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/workspace/finn-hlslib/activations.hpp:221) in function 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/workspace/finn-hlslib/activations.hpp:140) in function 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' completely with a factor of 14.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 3 completely.
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_int<16> >::cast<16>' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/activations.hpp:232) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::less_equal<ap_int<18> >::operator()' into 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/activations.hpp:142->/workspace/finn-hlslib/activations.hpp:232) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' (/workspace/finn-hlslib/activations.hpp:142:57)...13 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:36 ; elapsed = 00:01:04 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3279 ; free virtual = 42568
+WARNING: [XFORM 203-631] Renaming function 'Thresholding_Batch<28u, 64u, 1u, Slice<ap_int<16>, 16u>, Slice<ap_int<4>, 4u>, ap_uint<16>, ap_uint<4>, ThresholdsActivation<64u, 1u, 14u, ap_int<18>, ap_int<4>, -7, std::less_equal<ap_int<18> > > >' to 'Thresholding_Batch' (/workspace/finn-hlslib/activations.hpp:137:57)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:36 ; elapsed = 00:01:04 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3253 ; free virtual = 42546
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Thresholding_Batch_2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Thresholding_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11]

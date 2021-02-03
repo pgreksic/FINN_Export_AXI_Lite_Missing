@@ -1,0 +1,5 @@
+StreamingFCLayer_Batch_0_StreamingFCLayer_bkb
+StreamingFCLayer_Batch_0_StreamingFCLayer_cud
+regslice_core
+Matrix_Vector_Activa
+StreamingFCLayer_Batch_0

@@ -1,0 +1,46 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'StreamingDataWidthConverter_Batch_0'" level="0">
+<item name = "Date">Sat Jan 30 13:23:04 2021
+</item>
+<item name = "Version">2020.1.1 (Build 2951007 on Wed Aug 05 23:24:06 MDT 2020)</item>
+<item name = "Project">project_StreamingDataWidthConverter_Batch_0</item>
+<item name = "Solution">sol1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.025 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3077, 3077, 30.770 us, 30.770 us, 3077, 3077, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_StreamingDataWidthCo_1_fu_26">StreamingDataWidthCo_1, 3074, 3074, 30.740 us, 30.740 us, 3074, 3074, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

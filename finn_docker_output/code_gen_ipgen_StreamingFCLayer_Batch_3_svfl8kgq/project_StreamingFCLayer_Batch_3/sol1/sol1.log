@@ -1,0 +1,157 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+WARNING: [XFORM 203-506] Disable code size check when do loop unroll.
+WARNING: [ANALYSIS 214-1] Skip long-run-time warning caused by lots of load/store instructions.
+WARNING: [HLS 200-483] The 'config_rtl -auto_prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_auto_prefix' as its replacement.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_svfl8kgq/top_StreamingFCLayer_Batch_3.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 2769 ; free virtual = 41880
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 2769 ; free virtual = 41880
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >::init' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:274).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<4>, 4u>::operator()<ap_uint<32> >' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:281).
+INFO: [XFORM 203-603] Inlining function 'std::array<ap_int<4>, 8ul>::operator[].1' into 'Weights_Tile<8u, ap_int<4>, 4u>::operator[]' (/workspace/finn-hlslib/weights.hpp:166).
+INFO: [XFORM 203-603] Inlining function 'Weights_Tile<8u, ap_int<4>, 4u>::operator[]' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:282).
+INFO: [XFORM 203-603] Inlining function 'Identity::operator()<std::array<ap_int<4>, 8ul> >' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:282).
+INFO: [XFORM 203-603] Inlining function 'std::array<ap_int<4>, 8ul>::operator[]' into 'mac<8u, ap_int<16>, std::array<ap_int<4>, 8ul>, Slice<ap_uint<4>, 4u>::Container<ap_uint<32> >, ap_resource_lut>' (/workspace/finn-hlslib/mac.hpp:169).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<4>, 4u>::Container<ap_uint<32> >::operator()' into 'mac<8u, ap_int<16>, std::array<ap_int<4>, 8ul>, Slice<ap_uint<4>, 4u>::Container<ap_uint<32> >, ap_resource_lut>' (/workspace/finn-hlslib/mac.hpp:169).
+INFO: [XFORM 203-603] Inlining function 'mul<ap_int<4>, ap_uint<4> >' into 'mac<8u, ap_int<16>, std::array<ap_int<4>, 8ul>, Slice<ap_uint<4>, 4u>::Container<ap_uint<32> >, ap_resource_lut>' (/workspace/finn-hlslib/mac.hpp:169).
+INFO: [XFORM 203-603] Inlining function 'mac<8u, ap_int<16>, std::array<ap_int<4>, 8ul>, Slice<ap_uint<4>, 4u>::Container<ap_uint<32> >, ap_resource_lut>' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:284).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::operator()<ap_uint<16> >' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:291).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::Container<ap_uint<16> >::operator()' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:294).
+INFO: [XFORM 203-603] Inlining function 'ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >::activate' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:294).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::Container<ap_uint<16> >::operator ap_uint<16> const&' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:297).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3124 ; free virtual = 42252
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_uint<4> >::cast<4>' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/mac.hpp:169->/workspace/finn-hlslib/mvau.hpp:284) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::less_equal<ap_int<16> >::operator()' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/activations.hpp:142->/workspace/finn-hlslib/mvau.hpp:294) automatically.
+WARNING: [SYNCHK 200-23] /workspace/finn-hlslib/mvau.hpp:267: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3111 ; free virtual = 42240
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/workspace/finn-hlslib/mvau.hpp:248) in function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/workspace/finn-hlslib/mvau.hpp:265) in function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (/workspace/finn-hlslib/mvau.hpp:272) in function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (/workspace/finn-hlslib/mvau.hpp:279) in function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3.1' (/workspace/finn-hlslib/weights.hpp:161) in function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3.2' (/workspace/finn-hlslib/mac.hpp:167) in function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.4' (/workspace/finn-hlslib/mvau.hpp:292) in function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.4.1' (/workspace/finn-hlslib/activations.hpp:140) in function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' completely with a factor of 14.
+INFO: [XFORM 203-102] Partitioning array 'wgt._M_instance.V' (/workspace/finn-hlslib/mvau.hpp:282) automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp._M_instance.V' (/workspace/finn-hlslib/weights.hpp:160) automatically.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/workspace/finn-hlslib/mvau.hpp:230) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'accu.V' (/workspace/finn-hlslib/mvau.hpp:233) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'w.m_weights.V' (/workspace/finn-hlslib/mvau.hpp:236) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'accu.V' (/workspace/finn-hlslib/mvau.hpp:233) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_uint<4> >::cast<4>' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/mac.hpp:169->/workspace/finn-hlslib/mvau.hpp:284) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::less_equal<ap_int<16> >::operator()' into 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/activations.hpp:142->/workspace/finn-hlslib/mvau.hpp:294) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:115:46)...112 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3082 ; free virtual = 42220
+WARNING: [XFORM 203-631] Renaming function 'Matrix_Vector_Activate_Stream_Batch<256u, 512u, 8u, 4u, Slice<ap_uint<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<32>, ap_uint<16>, ThresholdsActivation<128u, 4u, 14u, ap_int<16>, ap_int<4>, -7, std::less_equal<ap_int<16> > >, ap_resource_lut>' to 'Matrix_Vector_Activa' (/workspace/finn-hlslib/mvau.hpp:115:46)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 3033 ; free virtual = 42171
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'StreamingFCLayer_Batch_3' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 57.08 seconds; current allocated memory: 225.439 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.3 seconds; current allocated memory: 228.786 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingFCLayer_Batch_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.4 seconds; current allocated memory: 229.137 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 229.389 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_55' to 'Matrix_Vector_Actbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_54' to 'Matrix_Vector_Actcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_49' to 'Matrix_Vector_ActdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_48' to 'Matrix_Vector_ActeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_47' to 'Matrix_Vector_ActfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_46' to 'Matrix_Vector_Actg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_45' to 'Matrix_Vector_Acthbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_44' to 'Matrix_Vector_Actibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_43' to 'Matrix_Vector_ActjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_42' to 'Matrix_Vector_ActkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_53' to 'Matrix_Vector_ActlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_52' to 'Matrix_Vector_Actmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_51' to 'Matrix_Vector_Actncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_50' to 'Matrix_Vector_Actocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_41' to 'Matrix_Vector_ActpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_40' to 'Matrix_Vector_ActqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_35' to 'Matrix_Vector_ActrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_34' to 'Matrix_Vector_Actsc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_33' to 'Matrix_Vector_Acttde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_32' to 'Matrix_Vector_Actudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_31' to 'Matrix_Vector_Actvdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_30' to 'Matrix_Vector_ActwdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_29' to 'Matrix_Vector_ActxdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_28' to 'Matrix_Vector_Actyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_39' to 'Matrix_Vector_Actzec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_38' to 'Matrix_Vector_ActAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_37' to 'Matrix_Vector_ActBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_36' to 'Matrix_Vector_ActCeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_27' to 'Matrix_Vector_ActDeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_26' to 'Matrix_Vector_ActEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_21' to 'Matrix_Vector_ActFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_20' to 'Matrix_Vector_ActGfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_19' to 'Matrix_Vector_ActHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_18' to 'Matrix_Vector_ActIfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_17' to 'Matrix_Vector_ActJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_16' to 'Matrix_Vector_ActKfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_15' to 'Matrix_Vector_ActLf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_14' to 'Matrix_Vector_ActMgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_25' to 'Matrix_Vector_ActNgs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_24' to 'Matrix_Vector_ActOgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_23' to 'Matrix_Vector_ActPgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_22' to 'Matrix_Vector_ActQgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_13' to 'Matrix_Vector_ActRg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_12' to 'Matrix_Vector_ActShg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_7' to 'Matrix_Vector_ActThq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_6' to 'Matrix_Vector_ActUhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_5' to 'Matrix_Vector_ActVhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_4' to 'Matrix_Vector_ActWhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_3' to 'Matrix_Vector_ActXh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_2' to 'Matrix_Vector_ActYie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_1' to 'Matrix_Vector_ActZio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds' to 'Matrix_Vector_Act0iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_11' to 'Matrix_Vector_Act1iI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_10' to 'Matrix_Vector_Act2iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_9' to 'Matrix_Vector_Act3i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_8' to 'Matrix_Vector_Act4jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingFCLayer_Batch_3_mux_325_32_1_1' to 'StreamingFCLayer_5jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingFCLayer_Batch_3_mul_4ns_4s_8_1_1' to 'StreamingFCLayer_6jw' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'StreamingFCLayer_5jm': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'StreamingFCLayer_6jw': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activa'.
+INFO: [HLS 200-111]  Elapsed time: 3.46 seconds; current allocated memory: 234.737 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'StreamingFCLayer_Batch_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'StreamingFCLayer_Batch_3/in0_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'StreamingFCLayer_Batch_3/weights_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'StreamingFCLayer_Batch_3/out_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'StreamingFCLayer_Batch_3' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'StreamingFCLayer_Batch_3'.

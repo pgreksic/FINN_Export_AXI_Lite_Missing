@@ -1,0 +1,203 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1.1 (lin64) Build 2960000 Wed Aug  5 22:57:21 MDT 2020
+| Date         : Sat Jan 30 17:49:40 2021
+| Host         : finn_dev_grgov running 64-bit unknown
+| Command      : report_utilization -file StreamingDataflowPartition_2_partition_util.rpt
+| Design       : StreamingDataflowPartition_2_wrapper
+| Device       : 7z020clg400-1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Memory
+3. DSP
+4. IO and GT Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Fixed | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| Slice LUTs*                | 6188 |     0 |     53200 | 11.63 |
+|   LUT as Logic             | 5372 |     0 |     53200 | 10.10 |
+|   LUT as Memory            |  816 |     0 |     17400 |  4.69 |
+|     LUT as Distributed RAM |  768 |     0 |           |       |
+|     LUT as Shift Register  |   48 |     0 |           |       |
+| Slice Registers            | 6460 |     0 |    106400 |  6.07 |
+|   Register as Flip Flop    | 6460 |     0 |    106400 |  6.07 |
+|   Register as Latch        |    0 |     0 |    106400 |  0.00 |
+| F7 Muxes                   |  275 |     0 |     26600 |  1.03 |
+| F8 Muxes                   |  108 |     0 |     13300 |  0.81 |
++----------------------------+------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 72    |          Yes |           - |        Reset |
+| 85    |          Yes |         Set |            - |
+| 6303  |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Memory
+---------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |   12 |     0 |       140 |  8.57 |
+|   RAMB36/FIFO*    |   12 |     0 |       140 |  8.57 |
+|     RAMB36E1 only |   12 |       |           |       |
+|   RAMB18          |    0 |     0 |       280 |  0.00 |
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |       220 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+4. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |    0 |     0 |       125 |  0.00 |
+| Bonded IPADs                |    0 |     0 |         2 |  0.00 |
+| Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
+| PHASER_REF                  |    0 |     0 |         4 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        16 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        16 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |         4 |  0.00 |
+| IBUFDS                      |    0 |     0 |       121 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        16 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       200 |  0.00 |
+| ILOGIC                      |    0 |     0 |       125 |  0.00 |
+| OLOGIC                      |    0 |     0 |       125 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+5. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    0 |     0 |        32 |  0.00 |
+| BUFIO      |    0 |     0 |        16 |  0.00 |
+| MMCME2_ADV |    0 |     0 |         4 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |         4 |  0.00 |
+| BUFMRCE    |    0 |     0 |         8 |  0.00 |
+| BUFHCE     |    0 |     0 |        72 |  0.00 |
+| BUFR       |    0 |     0 |        16 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+6. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+7. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     | 6303 |        Flop & Latch |
+| LUT3     | 2224 |                 LUT |
+| LUT4     | 2018 |                 LUT |
+| LUT6     | 1781 |                 LUT |
+| CARRY4   |  973 |          CarryLogic |
+| LUT2     |  817 |                 LUT |
+| RAMD64E  |  704 |  Distributed Memory |
+| LUT5     |  626 |                 LUT |
+| MUXF7    |  275 |               MuxFx |
+| MUXF8    |  108 |               MuxFx |
+| RAMD32   |   96 |  Distributed Memory |
+| LUT1     |   85 |                 LUT |
+| FDSE     |   85 |        Flop & Latch |
+| FDCE     |   72 |        Flop & Latch |
+| SRLC32E  |   48 |  Distributed Memory |
+| RAMS32   |   32 |  Distributed Memory |
+| RAMB36E1 |   12 |        Block Memory |
++----------+------+---------------------+
+
+
+8. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+9. Instantiated Netlists
+------------------------
+
++-------------------------------------------------------------------------------------------------+------+
+|                                             Ref Name                                            | Used |
++-------------------------------------------------------------------------------------------------+------+
+| StreamingDataflowPartition_2_fifo_1                                                             |    1 |
+| StreamingDataflowPartition_2_fifo_0                                                             |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_Thresholding_Batch_1_0                |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_Thresholding_Batch_0_0                |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFIFO_4_0                     |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFIFO_2_0                     |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFIFO_0_0                     |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_1_wstrm_0      |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_1_0            |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_wstrm_0      |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingFCLayer_Batch_0_0            |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingDataWidthConverter_Batch_1_0 |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_StreamingDataWidthConverter_Batch_0_0 |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_ConvolutionInputGenerator_1_0         |    1 |
+| StreamingDataflowPartition_2_StreamingDataflowPartition_2_ConvolutionInputGenerator_0_0         |    1 |
++-------------------------------------------------------------------------------------------------+------+
+
+
