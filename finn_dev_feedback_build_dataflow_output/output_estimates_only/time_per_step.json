@@ -1,0 +1,9 @@
+{
+  "step_tidy_up": 0.5885636806488037,
+  "step_streamline": 98.85322546958923,
+  "step_convert_to_hls": 12.79854941368103,
+  "step_create_dataflow_partition": 0.03509163856506348,
+  "step_target_fps_parallelization": 5.7220458984375e-06,
+  "step_apply_folding_config": 0.018273115158081055,
+  "step_generate_estimate_reports": 0.0697789192199707
+}

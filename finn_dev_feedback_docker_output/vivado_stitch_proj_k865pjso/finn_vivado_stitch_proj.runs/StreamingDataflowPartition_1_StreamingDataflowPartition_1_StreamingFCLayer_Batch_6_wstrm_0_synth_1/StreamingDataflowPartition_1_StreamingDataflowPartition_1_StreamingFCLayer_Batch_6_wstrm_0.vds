@@ -1,0 +1,373 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Mon Mar  1 14:12:02 2021
+# Process ID: 134793
+# Current directory: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0_synth_1
+# Command line: vivado -log StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0.tcl
+# Log file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0_synth_1/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0.vds
+# Journal file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_1_StreamingFIFO_0_l4ym_9_8/project_StreamingDataflowPartition_1_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l/project_Thresholding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_0_6_q6vi1l/project_ConvolutionInputGenerator_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_2_ntydo62u/project_StreamingFIFO_2/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_xhr36c17/project_StreamingFCLayer_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_3_ell2234z/project_StreamingFIFO_3/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_1_adgu7igh/project_ConvolutionInputGenerator_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_4_d1hhjmyu/project_StreamingFIFO_4/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_1_zime8ynw/project_StreamingFCLayer_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_0_m8evnhbv/project_StreamingDataWidthConverter_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_0_2mua8oeo/project_StreamingMaxPool_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_7_dwzm2obq/project_StreamingFIFO_7/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_1_fqls_jx6/project_StreamingDataWidthConverter_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_8_4n56s9pc/project_StreamingFIFO_8/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_2ypl2foj/project_ConvolutionInputGenerator_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_9_9lytyivo/project_StreamingFIFO_9/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_sa05cpbz/project_StreamingFCLayer_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_2_0sfp1vf5/project_StreamingDataWidthConverter_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_3_cf2t2sy9/project_ConvolutionInputGenerator_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_12_pnrsmp15/project_StreamingFIFO_12/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s/project_StreamingFCLayer_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_3_lq8nxzkz/project_StreamingDataWidthConverter_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_1_hssgkqph/project_StreamingMaxPool_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_4_nrbged9g/project_StreamingDataWidthConverter_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_4_e9ds8j3w/project_ConvolutionInputGenerator_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_17_6l6kfvzz/project_StreamingFIFO_17/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_4_x1xz72eu/project_StreamingFCLayer_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_5_yezbpo0i/project_StreamingDataWidthConverter_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_5_q2ola4w4/project_ConvolutionInputGenerator_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_5_ou4xx96e/project_StreamingFCLayer_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_6_ys1q5ebr/project_StreamingDataWidthConverter_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_6_rbv8qzhw/project_StreamingFCLayer_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_7_am9l07ix/project_StreamingDataWidthConverter_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_7_mpax47i8/project_StreamingFCLayer_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_8_6h19e7wo/project_StreamingDataWidthConverter_Batch_8/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_8_y6xa8r5s/project_StreamingFCLayer_Batch_8/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_9_dobn1jm2/project_StreamingDataWidthConverter_Batch_9/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_LabelSelect_Batch_0_oj00bw3k/project_LabelSelect_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_1_StreamingFIFO_9_5e6pvg0e/project_StreamingDataflowPartition_1_StreamingFIFO_9/sol1/impl/verilog'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 134875
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2151.434 ; gain = 5.914 ; free physical = 1768 ; free virtual = 37462
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0/synth/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'memstream' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/memstream.v:31]
+	Parameter CONFIG_EN bound to: 1'b1 
+	Parameter NSTREAMS bound to: 1 - type: integer 
+	Parameter MEM_DEPTH bound to: 65536 - type: integer 
+	Parameter MEM_WIDTH bound to: 8 - type: integer 
+	Parameter MEM_INIT bound to: /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_6_rbv8qzhw/ - type: string 
+	Parameter RAM_STYLE bound to: distributed - type: string 
+	Parameter STRM0_WIDTH bound to: 8 - type: integer 
+	Parameter STRM1_WIDTH bound to: 32 - type: integer 
+	Parameter STRM2_WIDTH bound to: 32 - type: integer 
+	Parameter STRM3_WIDTH bound to: 32 - type: integer 
+	Parameter STRM4_WIDTH bound to: 32 - type: integer 
+	Parameter STRM5_WIDTH bound to: 32 - type: integer 
+	Parameter STRM0_DEPTH bound to: 65536 - type: integer 
+	Parameter STRM1_DEPTH bound to: 2304 - type: integer 
+	Parameter STRM2_DEPTH bound to: 2304 - type: integer 
+	Parameter STRM3_DEPTH bound to: 2304 - type: integer 
+	Parameter STRM4_DEPTH bound to: 2304 - type: integer 
+	Parameter STRM5_DEPTH bound to: 2304 - type: integer 
+	Parameter STRM0_OFFSET bound to: 0 - type: integer 
+	Parameter STRM1_OFFSET bound to: 2304 - type: integer 
+	Parameter STRM2_OFFSET bound to: 4608 - type: integer 
+	Parameter STRM3_OFFSET bound to: 6912 - type: integer 
+	Parameter STRM4_OFFSET bound to: 9216 - type: integer 
+	Parameter STRM5_OFFSET bound to: 11520 - type: integer 
+	Parameter AXILITE_ADDR_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'memstream_singleblock' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/memstream_singleblock.v:35]
+	Parameter CONFIG_EN bound to: 1'b1 
+	Parameter NSTREAMS bound to: 1 - type: integer 
+	Parameter MEM_DEPTH bound to: 65536 - type: integer 
+	Parameter MEM_WIDTH bound to: 8 - type: integer 
+	Parameter MEM_INIT bound to: /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_6_rbv8qzhw/ - type: string 
+	Parameter RAM_STYLE bound to: distributed - type: string 
+	Parameter STRM0_WIDTH bound to: 8 - type: integer 
+	Parameter STRM1_WIDTH bound to: 32 - type: integer 
+	Parameter STRM0_DEPTH bound to: 65536 - type: integer 
+	Parameter STRM1_DEPTH bound to: 2304 - type: integer 
+	Parameter STRM0_OFFSET bound to: 0 - type: integer 
+	Parameter STRM1_OFFSET bound to: 2304 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ramb18_sdp' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/ramb18_sdp.v:31]
+	Parameter ID bound to: 0 - type: integer 
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 16 - type: integer 
+	Parameter DEPTH bound to: 65536 - type: integer 
+	Parameter MEM_INIT bound to: /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_6_rbv8qzhw/ - type: string 
+	Parameter RAM_STYLE bound to: distributed - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_6_rbv8qzhw/memblock_0.dat' is read successfully [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/ramb18_sdp.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'ramb18_sdp' (1#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/ramb18_sdp.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'memstream_singleblock' (2#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/memstream_singleblock.v:35]
+INFO: [Synth 8-6157] synthesizing module 'axi4lite_if' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/axilite_if.v:31]
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter IP_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RESP_OKAY bound to: 2'b00 
+	Parameter RESP_SLVERR bound to: 2'b10 
+	Parameter NFOLDS_LOG bound to: 0 - type: integer 
+	Parameter STATE_IDLE bound to: 0 - type: integer 
+	Parameter STATE_READ bound to: 1 - type: integer 
+	Parameter STATE_WRITE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4lite_if' (3#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/axilite_if.v:31]
+WARNING: [Synth 8-689] width (32) of port connection 'ip_addr' does not match port width (18) of module 'axi4lite_if' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/memstream.v:321]
+INFO: [Synth 8-6155] done synthesizing module 'memstream' (4#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/209a/hdl/memstream.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0' (5#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0/synth/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2219.340 ; gain = 73.820 ; free physical = 2083 ; free virtual = 37778
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2231.215 ; gain = 85.695 ; free physical = 2090 ; free virtual = 37785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2231.215 ; gain = 85.695 ; free physical = 2089 ; free virtual = 37784
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2231.215 ; gain = 0.000 ; free physical = 2077 ; free virtual = 37772
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2376.059 ; gain = 0.000 ; free physical = 1876 ; free virtual = 37584
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2376.059 ; gain = 0.000 ; free physical = 1858 ; free virtual = 37566
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2376.059 ; gain = 230.539 ; free physical = 1839 ; free virtual = 37537
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2376.059 ; gain = 230.539 ; free physical = 1838 ; free virtual = 37536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2376.059 ; gain = 230.539 ; free physical = 1838 ; free virtual = 37536
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi4lite_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+             STATE_WRITE |                               01 |                               10
+              STATE_READ |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi4lite_if'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2376.059 ; gain = 230.539 ; free physical = 1768 ; free virtual = 37467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 2429.012 ; gain = 283.492 ; free physical = 1389 ; free virtual = 37106
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-------------------------------------------------------------------------------------------+----------------------------------------------+----------------+----------------------+--------------------------------+
+|Module Name                                                                                | RTL Object                                   | Inference      | Size (Depth x Width) | Primitives                     | 
++-------------------------------------------------------------------------------------------+----------------------------------------------+----------------+----------------------+--------------------------------+
+|StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0 | inst/singleblock.mem/use_ram.sdp.ram/mem_reg | User Attribute | 64 K x 8             | RAM64X1D x 2048	RAM64M x 2048	 | 
++-------------------------------------------------------------------------------------------+----------------------------------------------+----------------+----------------------+--------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 2429.012 ; gain = 283.492 ; free physical = 3257 ; free virtual = 38973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 2429.012 ; gain = 283.492 ; free physical = 3158 ; free virtual = 38892
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-------------------------------------------------------------------------------------------+----------------------------------------------+----------------+----------------------+--------------------------------+
+|Module Name                                                                                | RTL Object                                   | Inference      | Size (Depth x Width) | Primitives                     | 
++-------------------------------------------------------------------------------------------+----------------------------------------------+----------------+----------------------+--------------------------------+
+|StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0 | inst/singleblock.mem/use_ram.sdp.ram/mem_reg | User Attribute | 64 K x 8             | RAM64X1D x 2048	RAM64M x 2048	 | 
++-------------------------------------------------------------------------------------------+----------------------------------------------+----------------+----------------------+--------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:11 . Memory (MB): peak = 2454.012 ; gain = 308.492 ; free physical = 2023 ; free virtual = 37761
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:45 ; elapsed = 00:01:55 . Memory (MB): peak = 2454.012 ; gain = 308.492 ; free physical = 1138 ; free virtual = 36733
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:45 ; elapsed = 00:01:55 . Memory (MB): peak = 2454.012 ; gain = 308.492 ; free physical = 1137 ; free virtual = 36732
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:47 ; elapsed = 00:01:56 . Memory (MB): peak = 2454.012 ; gain = 308.492 ; free physical = 1399 ; free virtual = 36999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:47 ; elapsed = 00:01:57 . Memory (MB): peak = 2454.012 ; gain = 308.492 ; free physical = 2772 ; free virtual = 38373
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 2454.012 ; gain = 308.492 ; free physical = 2757 ; free virtual = 38357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 2454.012 ; gain = 308.492 ; free physical = 2752 ; free virtual = 38353
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     4|
+|2     |LUT1     |     2|
+|3     |LUT2     |    83|
+|4     |LUT3     |   853|
+|5     |LUT4     |  4163|
+|6     |LUT5     |   868|
+|7     |LUT6     |  5421|
+|8     |MUXF7    |  1088|
+|9     |MUXF8    |   544|
+|10    |RAM64M   |  2048|
+|11    |RAM64X1D |  2048|
+|12    |FDCE     |    12|
+|13    |FDRE     |  9036|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 2454.012 ; gain = 308.492 ; free physical = 2752 ; free virtual = 38352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:45 ; elapsed = 00:01:54 . Memory (MB): peak = 2454.012 ; gain = 163.648 ; free physical = 2798 ; free virtual = 38399
+Synthesis Optimization Complete : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 2454.020 ; gain = 308.492 ; free physical = 2798 ; free virtual = 38399
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.80 . Memory (MB): peak = 2454.020 ; gain = 0.000 ; free physical = 2827 ; free virtual = 38426
+INFO: [Netlist 29-17] Analyzing 5732 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2486.027 ; gain = 0.000 ; free physical = 2217 ; free virtual = 37821
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4096 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 2048 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 2048 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:16 ; elapsed = 00:02:22 . Memory (MB): peak = 2486.027 ; gain = 340.531 ; free physical = 2324 ; free virtual = 37928
+INFO: [Common 17-1381] The checkpoint '/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0_synth_1/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2518.043 ; gain = 32.016 ; free physical = 2072 ; free virtual = 37676
+write_vhdl: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2518.043 ; gain = 0.000 ; free physical = 1856 ; free virtual = 37514
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0, cache-ID = 70da4061edc8cb37
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0_synth_1/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2518.043 ; gain = 0.000 ; free physical = 2479 ; free virtual = 38122
+INFO: [runtcl-4] Executing : report_utilization -file StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0_utilization_synth.rpt -pb StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingFCLayer_Batch_6_wstrm_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2518.043 ; gain = 0.000 ; free physical = 1926 ; free virtual = 37605
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 14:15:28 2021...

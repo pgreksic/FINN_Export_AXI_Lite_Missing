@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Mon Mar  1 14:22:29 2021
+# Process ID: 137496
+# Current directory: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_zynq_proj_cr8hg2w8
+# Command line: vivado -mode batch -source /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_zynq_proj_cr8hg2w8/ip_config.tcl
+# Log file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_zynq_proj_cr8hg2w8/vivado.log
+# Journal file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_zynq_proj_cr8hg2w8/vivado.jou
+#-----------------------------------------------------------
+source /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_zynq_proj_cr8hg2w8/ip_config.tcl

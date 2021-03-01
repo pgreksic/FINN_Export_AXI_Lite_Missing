@@ -1,0 +1,80 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+WARNING: [XFORM 203-506] Disable code size check when do loop unroll.
+WARNING: [ANALYSIS 214-1] Skip long-run-time warning caused by lots of load/store instructions.
+WARNING: [HLS 200-483] The 'config_rtl -auto_prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_auto_prefix' as its replacement.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_2ypl2foj/top_ConvolutionInputGenerator_2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6015 ; free virtual = 42219
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6015 ; free virtual = 42219
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'memory_resource<ap_uint<8> (*) [448]>' into 'ConvolutionInputGenerator<3u, 64u, 4u, 14u, 12u, 2u, 1u, ap_resource_lutram>' (/workspace/finn-hlslib/slidingwindow.h:182).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5994 ; free virtual = 42201
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5987 ; free virtual = 42194
+WARNING: [XFORM 203-311] Ignored reset directive (/workspace/finn-hlslib/slidingwindow.h:194:1): variable 'inp' is not static or global variable.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (/workspace/finn-hlslib/slidingwindow.h:195) in function 'ConvolutionInputGenerator<3u, 64u, 4u, 14u, 12u, 2u, 1u, ap_resource_lutram>' automatically.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/workspace/finn-hlslib/slidingwindow.h:195) in function 'ConvolutionInputGenerator<3u, 64u, 4u, 14u, 12u, 2u, 1u, ap_resource_lutram>' completely with a factor of 1.
+INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/workspace/finn-hlslib/slidingwindow.h:180) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/workspace/finn-hlslib/slidingwindow.h:248:1) to (/workspace/finn-hlslib/slidingwindow.h:261:9) in function 'ConvolutionInputGenerator<3u, 64u, 4u, 14u, 12u, 2u, 1u, ap_resource_lutram>'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5949 ; free virtual = 42157
+WARNING: [XFORM 203-631] Renaming function 'ConvolutionInputGenerator<3u, 64u, 4u, 14u, 12u, 2u, 1u, ap_resource_lutram>' to 'ConvolutionInputGene.1' (/workspace/finn-hlslib/slidingwindow.h:141:19)
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[0].V' (/workspace/finn-hlslib/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[1].V' (/workspace/finn-hlslib/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[2].V' (/workspace/finn-hlslib/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'inputBuf[3].V' (/workspace/finn-hlslib/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[0].V' (/workspace/finn-hlslib/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[1].V' (/workspace/finn-hlslib/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[2].V' (/workspace/finn-hlslib/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'inputBuf[3].V' (/workspace/finn-hlslib/slidingwindow.h:180).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'select.ln256' (/workspace/finn-hlslib/slidingwindow.h:256:13).
+INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/workspace/finn-hlslib/slidingwindow.h:247:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputBuf[0].V' (/workspace/finn-hlslib/slidingwindow.h:201:9)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5925 ; free virtual = 42133
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'ConvolutionInputGenerator_2' ...
+WARNING: [SYN 201-103] Legalizing function name 'ConvolutionInputGene.1' to 'ConvolutionInputGene_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ConvolutionInputGene_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.94 seconds; current allocated memory: 161.801 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_0_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_1_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_2_V' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'inputBuf_3_V' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 162.502 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ConvolutionInputGenerator_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 162.593 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 162.655 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ConvolutionInputGene_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_1_inputBuf_0_V' to 'ConvolutionInputGbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_1_inputBuf_1_V' to 'ConvolutionInputGcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_1_inputBuf_2_V' to 'ConvolutionInputGdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGene_1_inputBuf_3_V' to 'ConvolutionInputGeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'ConvolutionInputGenerator_2_mux_42_8_1_1' to 'ConvolutionInputGfYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'ConvolutionInputGfYi': 1 instance(s).
+INFO

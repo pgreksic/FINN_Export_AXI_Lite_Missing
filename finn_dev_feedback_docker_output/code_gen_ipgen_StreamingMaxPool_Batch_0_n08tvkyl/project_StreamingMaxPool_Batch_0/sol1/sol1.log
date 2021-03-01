@@ -1,0 +1,146 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+WARNING: [XFORM 203-506] Disable code size check when do loop unroll.
+WARNING: [ANALYSIS 214-1] Skip long-run-time warning caused by lots of load/store instructions.
+WARNING: [HLS 200-483] The 'config_rtl -auto_prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_auto_prefix' as its replacement.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_0_n08tvkyl/top_StreamingMaxPool_Batch_0.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6593 ; free virtual = 41856
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6593 ; free virtual = 41856
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'WidthAdjustedInputStream<256u, 256u, 784u>::operator hls::stream<ap_uint<256>, 0>&' into 'StreamingMaxPool_Precision_Batch<28u, 2u, 64u, ap_int<4>, -8, 256, 256>' (/workspace/finn-hlslib/maxpool.h:214).
+INFO: [XFORM 203-603] Inlining function 'WidthAdjustedOutputStream<256u, 256u, 196u>::operator hls::stream<ap_uint<256>, 0>&' into 'StreamingMaxPool_Precision_Batch<28u, 2u, 64u, ap_int<4>, -8, 256, 256>' (/workspace/finn-hlslib/maxpool.h:215).
+INFO: [XFORM 203-603] Inlining function 'StreamingMaxPool_Precision_Batch<28u, 2u, 64u, ap_int<4>, -8, 256, 256>' into 'StreamingMaxPool_Batch_0' (/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_0_n08tvkyl/top_StreamingMaxPool_Batch_0.cpp:21).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6539 ; free virtual = 41804
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /workspace/finn-hlslib/maxpool.h:163: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6515 ; free virtual = 41781
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1.1.1' (/workspace/finn-hlslib/maxpool.h:156) in function 'StreamingMaxPool_Precision<28u, 2u, 64u, ap_int<4>, -8, 256>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/workspace/finn-hlslib/maxpool.h:146) in function 'StreamingMaxPool_Precision<28u, 2u, 64u, ap_int<4>, -8, 256>' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1.1.1' (/workspace/finn-hlslib/maxpool.h:159) in function 'StreamingMaxPool_Precision<28u, 2u, 64u, ap_int<4>, -8, 256>' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.1' (/workspace/finn-hlslib/maxpool.h:173) in function 'StreamingMaxPool_Precision<28u, 2u, 64u, ap_int<4>, -8, 256>' completely with a factor of 64.
+INFO: [XFORM 203-101] Partitioning array 'buf.V' (/workspace/finn-hlslib/maxpool.h:143) in dimension 2 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5699 ; free virtual = 40964
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1.1' (/workspace/finn-hlslib/maxpool.h:154:31) in function 'StreamingMaxPool_Precision<28u, 2u, 64u, ap_int<4>, -8, 256>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (/workspace/finn-hlslib/maxpool.h:153:29) in function 'StreamingMaxPool_Precision<28u, 2u, 64u, ap_int<4>, -8, 256>'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (/workspace/finn-hlslib/maxpool.h:152:27) in function 'StreamingMaxPool_Precision<28u, 2u, 64u, ap_int<4>, -8, 256>' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'StreamingMaxPool_Precision<28u, 2u, 64u, ap_int<4>, -8, 256>' to 'StreamingMaxPool_Pre' (/workspace/finn-hlslib/maxpool.h:143:49)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf[0].V' (/workspace/finn-hlslib/maxpool.h:148:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf[0].V' (/workspace/finn-hlslib/maxpool.h:166:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf[0].V' (/workspace/finn-hlslib/maxpool.h:179:9)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6227 ; free virtual = 41493
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'StreamingMaxPool_Batch_0' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingMaxPool_Pre' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+WARNING: [SCHED 204-68] The II Violation in module 'StreamingMaxPool_Pre' (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('buf_0_V_addr_2_write_ln166', /workspace/finn-hlslib/maxpool.h:166) of variable 'trunc_ln647', /workspace/finn-hlslib/maxpool.h:163 on array 'buf[0].V', /workspace/finn-hlslib/maxpool.h:143 and 'load' operation ('buf_0_V_load_1', /workspace/finn-hlslib/maxpool.h:164) on array 'buf[0].V', /workspace/finn-hlslib/maxpool.h:143.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 34.67 seconds; current allocated memory: 174.871 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.4 seconds; current allocated memory: 177.952 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingMaxPool_Batch_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.01 seconds; current allocated memory: 178.092 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 178.216 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'StreamingMaxPool_Pre' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_0_V' to 'StreamingMaxPool_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_1_V' to 'StreamingMaxPool_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_2_V' to 'StreamingMaxPool_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_3_V' to 'StreamingMaxPool_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_4_V' to 'StreamingMaxPool_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_5_V' to 'StreamingMaxPool_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_6_V' to 'StreamingMaxPool_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_7_V' to 'StreamingMaxPool_ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_8_V' to 'StreamingMaxPool_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_9_V' to 'StreamingMaxPool_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_10_V' to 'StreamingMaxPool_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_11_V' to 'StreamingMaxPool_mb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_12_V' to 'StreamingMaxPool_ncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_13_V' to 'StreamingMaxPool_ocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_14_V' to 'StreamingMaxPool_pcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_15_V' to 'StreamingMaxPool_qcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_16_V' to 'StreamingMaxPool_rcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_17_V' to 'StreamingMaxPool_sc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_18_V' to 'StreamingMaxPool_tde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_19_V' to 'StreamingMaxPool_udo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_20_V' to 'StreamingMaxPool_vdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_21_V' to 'StreamingMaxPool_wdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_22_V' to 'StreamingMaxPool_xdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_23_V' to 'StreamingMaxPool_yd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_24_V' to 'StreamingMaxPool_zec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_25_V' to 'StreamingMaxPool_Aem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_26_V' to 'StreamingMaxPool_Bew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_27_V' to 'StreamingMaxPool_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_28_V' to 'StreamingMaxPool_DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_29_V' to 'StreamingMaxPool_Ee0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_30_V' to 'StreamingMaxPool_Ffa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_31_V' to 'StreamingMaxPool_Gfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_32_V' to 'StreamingMaxPool_Hfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_33_V' to 'StreamingMaxPool_IfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_34_V' to 'StreamingMaxPool_JfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_35_V' to 'StreamingMaxPool_KfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_36_V' to 'StreamingMaxPool_Lf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_37_V' to 'StreamingMaxPool_Mgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_38_V' to 'StreamingMaxPool_Ngs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_39_V' to 'StreamingMaxPool_OgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_40_V' to 'StreamingMaxPool_PgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_41_V' to 'StreamingMaxPool_QgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_42_V' to 'StreamingMaxPool_Rg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_43_V' to 'StreamingMaxPool_Shg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_44_V' to 'StreamingMaxPool_Thq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_45_V' to 'StreamingMaxPool_UhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_46_V' to 'StreamingMaxPool_VhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_47_V' to 'StreamingMaxPool_WhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_48_V' to 'StreamingMaxPool_Xh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_49_V' to 'StreamingMaxPool_Yie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_50_V' to 'StreamingMaxPool_Zio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_51_V' to 'StreamingMaxPool_0iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_52_V' to 'StreamingMaxPool_1iI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_53_V' to 'StreamingMaxPool_2iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_54_V' to 'StreamingMaxPool_3i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_55_V' to 'StreamingMaxPool_4jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_56_V' to 'StreamingMaxPool_5jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_57_V' to 'StreamingMaxPool_6jw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_58_V' to 'StreamingMaxPool_7jG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_59_V' to 'StreamingMaxPool_8jQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_60_V' to 'StreamingMaxPool_9j0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_61_V' to 'StreamingMaxPool_bak' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_62_V' to 'StreamingMaxPool_bbk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingMaxPool_Pre_buf_63_V' to 'StreamingMaxPool_bck' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'StreamingMaxPool_Pre'.
+INFO: [HLS 200-111]  Elapsed time: 1.06 seconds; current allocated memory: 182.514 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'StreamingMaxPool_Batch_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'StreamingMaxPool_Batch_0/in0_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'StreamingMaxPool_Batch_0/out_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'StreamingMaxPool_Batch_0' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'StreamingMaxPool_Batch_0'.
+INFO: [HLS 200-111]  Elapsed time: 2.42 seconds; current allocated memory: 195.758 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.

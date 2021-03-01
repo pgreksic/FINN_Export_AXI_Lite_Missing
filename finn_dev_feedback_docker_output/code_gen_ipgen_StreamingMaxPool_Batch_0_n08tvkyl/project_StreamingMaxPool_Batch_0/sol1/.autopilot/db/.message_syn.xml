@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_0_n08tvkyl/top_StreamingMaxPool_Batch_0.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6593 ; free virtual = 41856"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6593 ; free virtual = 41856"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;WidthAdjustedInputStream&lt;256u, 256u, 784u&gt;::operator hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;&apos; into &apos;StreamingMaxPool_Precision_Batch&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256, 256&gt;&apos; (/workspace/finn-hlslib/maxpool.h:214)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;WidthAdjustedOutputStream&lt;256u, 256u, 196u&gt;::operator hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;&apos; into &apos;StreamingMaxPool_Precision_Batch&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256, 256&gt;&apos; (/workspace/finn-hlslib/maxpool.h:215)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;StreamingMaxPool_Precision_Batch&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256, 256&gt;&apos; into &apos;StreamingMaxPool_Batch_0&apos; (/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_0_n08tvkyl/top_StreamingMaxPool_Batch_0.cpp:21)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6539 ; free virtual = 41804"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="WARNING" prefix="[SYNCHK 200-23]" key="SYNCHK_VAR_INDEX_RANGE_359" tag="" content="/workspace/finn-hlslib/maxpool.h:163: variable-indexed range selection may cause suboptimal QoR."/>
+	<Message severity="INFO" prefix="[SYNCHK 200-10]" key="SYNCHK_SYNCHK_SUMMARY_377" tag="" content="0 error(s), 1 warning(s)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6515 ; free virtual = 41781"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-2.1.1.1&apos; (/workspace/finn-hlslib/maxpool.h:156) in function &apos;StreamingMaxPool_Precision&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (/workspace/finn-hlslib/maxpool.h:146) in function &apos;StreamingMaxPool_Precision&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256&gt;&apos; completely with a factor of 64."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-2.1.1.1.1&apos; (/workspace/finn-hlslib/maxpool.h:159) in function &apos;StreamingMaxPool_Precision&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256&gt;&apos; completely with a factor of 64."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-2.2.1&apos; (/workspace/finn-hlslib/maxpool.h:173) in function &apos;StreamingMaxPool_Precision&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256&gt;&apos; completely with a factor of 64."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;buf.V&apos; (/workspace/finn-hlslib/maxpool.h:143) in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5699 ; free virtual = 40964"/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.1&apos; (/workspace/finn-hlslib/maxpool.h:154:31) in function &apos;StreamingMaxPool_Precision&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1&apos; (/workspace/finn-hlslib/maxpool.h:153:29) in function &apos;StreamingMaxPool_Precision&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2&apos; (/workspace/finn-hlslib/maxpool.h:152:27) in function &apos;StreamingMaxPool_Precision&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;StreamingMaxPool_Precision&lt;28u, 2u, 64u, ap_int&lt;4&gt;, -8, 256&gt;&apos; to &apos;StreamingMaxPool_Pre&apos; (/workspace/finn-hlslib/maxpool.h:143:49)"/>
+	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;buf[0].V&apos; (/workspace/finn-hlslib/maxpool.h:148:2)"/>
+	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;buf[0].V&apos; (/workspace/finn-hlslib/maxpool.h:166:15)"/>
+	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;buf[0].V&apos; (/workspace/finn-hlslib/maxpool.h:179:9)"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6227 ; free virtual = 41493"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;StreamingMaxPool_Batch_0&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;StreamingMaxPool_Pre&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.1&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;StreamingMaxPool_Pre&apos; (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;store&apos; operation (&apos;buf_0_V_addr_2_write_ln166&apos;, /workspace/finn-hlslib/maxpool.h:166) of variable &apos;trunc_ln647&apos;, /workspace/finn-hlslib/maxpool.h:163 on array &apos;buf[0].V&apos;, /workspace/finn-hlslib/maxpool.h:143 and &apos;load&apos; operation (&apos;buf_0_V_load_1&apos;, /workspace/finn-hlslib/maxpool.h:164) on array &apos;buf[0].V&apos;, /workspace/finn-hlslib/maxpool.h:143."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 2, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 34.67 seconds; current allocated memory: 174.871 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.4 seconds; current allocated memory: 177.952 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;StreamingMaxPool_Batch_0&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.01 seconds; current allocated memory: 178.092 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.22 seconds; current allocated memory: 178.216 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;StreamingMaxPool_Pre&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_0_V&apos; to &apos;StreamingMaxPool_bkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_1_V&apos; to &apos;StreamingMaxPool_cud&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_2_V&apos; to &apos;StreamingMaxPool_dEe&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_3_V&apos; to &apos;StreamingMaxPool_eOg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_4_V&apos; to &apos;StreamingMaxPool_fYi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_5_V&apos; to &apos;StreamingMaxPool_g8j&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_6_V&apos; to &apos;StreamingMaxPool_hbi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_7_V&apos; to &apos;StreamingMaxPool_ibs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_8_V&apos; to &apos;StreamingMaxPool_jbC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_9_V&apos; to &apos;StreamingMaxPool_kbM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_10_V&apos; to &apos;StreamingMaxPool_lbW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_11_V&apos; to &apos;StreamingMaxPool_mb6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_12_V&apos; to &apos;StreamingMaxPool_ncg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_13_V&apos; to &apos;StreamingMaxPool_ocq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_14_V&apos; to &apos;StreamingMaxPool_pcA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_15_V&apos; to &apos;StreamingMaxPool_qcK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_16_V&apos; to &apos;StreamingMaxPool_rcU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_17_V&apos; to &apos;StreamingMaxPool_sc4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_18_V&apos; to &apos;StreamingMaxPool_tde&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_19_V&apos; to &apos;StreamingMaxPool_udo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_20_V&apos; to &apos;StreamingMaxPool_vdy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_21_V&apos; to &apos;StreamingMaxPool_wdI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_22_V&apos; to &apos;StreamingMaxPool_xdS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_23_V&apos; to &apos;StreamingMaxPool_yd2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_24_V&apos; to &apos;StreamingMaxPool_zec&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_25_V&apos; to &apos;StreamingMaxPool_Aem&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_26_V&apos; to &apos;StreamingMaxPool_Bew&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_27_V&apos; to &apos;StreamingMaxPool_CeG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_28_V&apos; to &apos;StreamingMaxPool_DeQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_29_V&apos; to &apos;StreamingMaxPool_Ee0&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_30_V&apos; to &apos;StreamingMaxPool_Ffa&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_31_V&apos; to &apos;StreamingMaxPool_Gfk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_32_V&apos; to &apos;StreamingMaxPool_Hfu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_33_V&apos; to &apos;StreamingMaxPool_IfE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_34_V&apos; to &apos;StreamingMaxPool_JfO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_35_V&apos; to &apos;StreamingMaxPool_KfY&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_36_V&apos; to &apos;StreamingMaxPool_Lf8&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_37_V&apos; to &apos;StreamingMaxPool_Mgi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_38_V&apos; to &apos;StreamingMaxPool_Ngs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_39_V&apos; to &apos;StreamingMaxPool_OgC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_40_V&apos; to &apos;StreamingMaxPool_PgM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_41_V&apos; to &apos;StreamingMaxPool_QgW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_42_V&apos; to &apos;StreamingMaxPool_Rg6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_43_V&apos; to &apos;StreamingMaxPool_Shg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_44_V&apos; to &apos;StreamingMaxPool_Thq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_45_V&apos; to &apos;StreamingMaxPool_UhA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_46_V&apos; to &apos;StreamingMaxPool_VhK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_47_V&apos; to &apos;StreamingMaxPool_WhU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_48_V&apos; to &apos;StreamingMaxPool_Xh4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_49_V&apos; to &apos;StreamingMaxPool_Yie&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_50_V&apos; to &apos;StreamingMaxPool_Zio&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_51_V&apos; to &apos;StreamingMaxPool_0iy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_52_V&apos; to &apos;StreamingMaxPool_1iI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_53_V&apos; to &apos;StreamingMaxPool_2iS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_54_V&apos; to &apos;StreamingMaxPool_3i2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_55_V&apos; to &apos;StreamingMaxPool_4jc&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_56_V&apos; to &apos;StreamingMaxPool_5jm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_57_V&apos; to &apos;StreamingMaxPool_6jw&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_58_V&apos; to &apos;StreamingMaxPool_7jG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_59_V&apos; to &apos;StreamingMaxPool_8jQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_60_V&apos; to &apos;StreamingMaxPool_9j0&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_61_V&apos; to &apos;StreamingMaxPool_bak&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_62_V&apos; to &apos;StreamingMaxPool_bbk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_63_V&apos; to &apos;StreamingMaxPool_bck&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;StreamingMaxPool_Pre&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.06 seconds; current allocated memory: 182.514 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;StreamingMaxPool_Batch_0&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;StreamingMaxPool_Batch_0/in0_V_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;StreamingMaxPool_Batch_0/out_V_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;StreamingMaxPool_Batch_0&apos; to &apos;ap_ctrl_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;StreamingMaxPool_Batch_0&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.42 seconds; current allocated memory: 195.758 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-790]" key="HLS 200-790" tag="LOOP,SDX_LOOP" content="**** Loop Constraint Status: All loop constraints were NOT satisfied."/>
+	<Message severity="INFO" prefix="[HLS 200-789]" key="HLS 200-789" tag="THROUGHPUT,SDX_KERNEL" content="**** Estimated Fmax: 132.78 MHz"/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;StreamingMaxPool_Batch_0_StreamingMaxPool_bkb_ram (RAM)&apos; using distributed RAMs."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6495 ; free virtual = 41778"/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1063" tag="" content="Generating VHDL RTL for StreamingMaxPool_Batch_0 with prefix StreamingMaxPool_Batch_0_."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1064" tag="" content="Generating Verilog RTL for StreamingMaxPool_Batch_0 with prefix StreamingMaxPool_Batch_0_."/>
+</Messages>

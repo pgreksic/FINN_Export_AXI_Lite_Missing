@@ -1,0 +1,55 @@
+
+*** Running vivado
+    with args -log StreamingDataflowPartition_1_fifo_3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source StreamingDataflowPartition_1_fifo_3.tcl
+
+
+****** Vivado v2020.1.1 (64-bit)
+  **** SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+  **** IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source StreamingDataflowPartition_1_fifo_3.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_1_StreamingFIFO_0_l4ym_9_8/project_StreamingDataflowPartition_1_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l/project_Thresholding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_0_6_q6vi1l/project_ConvolutionInputGenerator_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_2_ntydo62u/project_StreamingFIFO_2/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_xhr36c17/project_StreamingFCLayer_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_3_ell2234z/project_StreamingFIFO_3/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_1_adgu7igh/project_ConvolutionInputGenerator_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_4_d1hhjmyu/project_StreamingFIFO_4/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_1_zime8ynw/project_StreamingFCLayer_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_0_m8evnhbv/project_StreamingDataWidthConverter_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_0_2mua8oeo/project_StreamingMaxPool_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_7_dwzm2obq/project_StreamingFIFO_7/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_1_fqls_jx6/project_StreamingDataWidthConverter_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_8_4n56s9pc/project_StreamingFIFO_8/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_2ypl2foj/project_ConvolutionInputGenerator_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_9_9lytyivo/project_StreamingFIFO_9/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_sa05cpbz/project_StreamingFCLayer_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_2_0sfp1vf5/project_StreamingDataWidthConverter_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_3_cf2t2sy9/project_ConvolutionInputGenerator_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_12_pnrsmp15/project_StreamingFIFO_12/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s/project_StreamingFCLayer_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_3_lq8nxzkz/project_StreamingDataWidthConverter_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_1_hssgkqph/project_StreamingMaxPool_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_4_nrbged9g/project_StreamingDataWidthConverter_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_4_e9ds8j3w/project_ConvolutionInputGenerator_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_17_6l6kfvzz/project_StreamingFIFO_17/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_4_x1xz72eu/project_StreamingFCLayer_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_5_yezbpo0i/project_StreamingDataWidthConverter_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_5_q2ola4w4/project_ConvolutionInputGenerator_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_5_ou4xx96e/project_StreamingFCLayer_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_6_ys1q5ebr/project_StreamingDataWidthConverter_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_6_rbv8qzhw/project_StreamingFCLayer_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_7_am9l07ix/project_StreamingDataWidthConverter_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_7_mpax47i8/project_StreamingFCLayer_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_8_6h19e7wo/project_StreamingDataWidthConverter_Batch_8/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_8_y6xa8r5s/project_StreamingFCLayer_Batch_8/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_9_dobn1jm2/project_StreamingDataWidthConverter_Batch_9/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_LabelSelect_Batch_0_oj00bw3k/project_LabelSelect_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_1_StreamingFIFO_9_5e6pvg0e/project_StreamingDataflowPartition_1_StreamingFIFO_9/sol1/impl/verilog'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP StreamingDataflowPartition_1_fifo_3, cache-ID = 527347b5d609681e.
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 14:08:35 2021...

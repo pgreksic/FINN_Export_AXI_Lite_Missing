@@ -1,0 +1,157 @@
+
+
+================================================================
+== Vivado HLS Report for 'StreamingDataflowPartition_0_IODMA_0'
+================================================================
+* Date:           Mon Mar  1 14:00:13 2021
+
+* Version:        2020.1.1 (Build 2951007 on Wed Aug 05 23:24:06 MDT 2020)
+* Project:        project_StreamingDataflowPartition_0_IODMA_0
+* Solution:       sol1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.750 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?| dataflow |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 5, States = { 1 2 3 4 5 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.63>
+ST_1 : Operation 6 [1/1] (1.00ns)   --->   "%numReps_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %numReps)" [/workspace/finn-hlslib/streamtools.h:960->/workspace/finn-hlslib/streamtools.h:960->/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:23]   --->   Operation 6 'read' 'numReps_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 7 [1/1] (1.00ns)   --->   "%in0_V_read = call i64 @_ssdm_op_Read.s_axilite.i64(i64 %in0_V)" [/workspace/finn-hlslib/streamtools.h:960->/workspace/finn-hlslib/streamtools.h:960->/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:23]   --->   Operation 7 'read' 'in0_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%numReps_c = alloca i32, align 4" [/workspace/finn-hlslib/streamtools.h:960->/workspace/finn-hlslib/streamtools.h:960->/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:23]   --->   Operation 8 'alloca' 'numReps_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%dwc_lcm_m_buffer_V_V = alloca i64, align 8" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:23]   --->   Operation 9 'alloca' 'dwc_lcm_m_buffer_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [2/2] (3.63ns)   --->   "call fastcc void @Mem2Stream_Batch(i64* %gmem, i64 %in0_V_read, i64* %dwc_lcm_m_buffer_V_V, i32 %numReps_read, i32* %numReps_c)" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:25]   --->   Operation 10 'call' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 11 [1/2] (0.00ns)   --->   "call fastcc void @Mem2Stream_Batch(i64* %gmem, i64 %in0_V_read, i64* %dwc_lcm_m_buffer_V_V, i32 %numReps_read, i32* %numReps_c)" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:25]   --->   Operation 11 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 12 [2/2] (0.00ns)   --->   "call fastcc void @StreamingDataWidthCo(i64* %dwc_lcm_m_buffer_V_V, i8* %out_V_V, i32* nocapture %numReps_c)" [/workspace/finn-hlslib/streamtools.h:962->/workspace/finn-hlslib/streamtools.h:961->/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:26]   --->   Operation 12 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 13 [1/2] (0.00ns)   --->   "call fastcc void @StreamingDataWidthCo(i64* %dwc_lcm_m_buffer_V_V, i8* %out_V_V, i32* nocapture %numReps_c)" [/workspace/finn-hlslib/streamtools.h:962->/workspace/finn-hlslib/streamtools.h:961->/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:26]   --->   Operation 13 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %gmem), !map !71"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:22]   --->   Operation 15 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %out_V_V), !map !75"   --->   Operation 16 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %numReps), !map !79"   --->   Operation 17 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([37 x i8]* @StreamingDataflowPar) nounwind"   --->   Operation 18 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 19 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([21 x i8]* @dwc_lcm_OC_m_buffer_s, i32 1, [1 x i8]* @p_str34, [1 x i8]* @p_str34, i32 2, i32 2, i64* %dwc_lcm_m_buffer_V_V, i64* %dwc_lcm_m_buffer_V_V)"   --->   Operation 19 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %dwc_lcm_m_buffer_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str35, i32 0, i32 0, [1 x i8]* @p_str36, [1 x i8]* @p_str37, [1 x i8]* @p_str38, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str39, [1 x i8]* @p_str40)"   --->   Operation 20 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %numReps, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:17]   --->   Operation 21 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:18]   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %gmem, [6 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [5 x i8]* @p_str4, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:19]   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64 %in0_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:20]   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %out_V_V, [5 x i8]* @p_str6, i32 1, i32 1, [5 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:21]   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @numReps_c_str, i32 1, [1 x i8]* @p_str47, [1 x i8]* @p_str47, i32 2, i32 0, i32* %numReps_c, i32* %numReps_c)" [/workspace/finn-hlslib/streamtools.h:960->/workspace/finn-hlslib/streamtools.h:960->/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:23]   --->   Operation 26 'specchannel' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %numReps_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str48, i32 0, i32 0, [1 x i8]* @p_str49, [1 x i8]* @p_str50, [1 x i8]* @p_str51, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str52, [1 x i8]* @p_str53)" [/workspace/finn-hlslib/streamtools.h:960->/workspace/finn-hlslib/streamtools.h:960->/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:23]   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 28 [1/1] (0.00ns)   --->   "ret void" [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:26]   --->   Operation 28 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 4.63ns
+The critical path consists of the following:
+	s_axi read on port 'numReps' (/workspace/finn-hlslib/streamtools.h:960->/workspace/finn-hlslib/streamtools.h:960->/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:23) [6]  (1 ns)
+	'call' operation ('call_ln25', /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_0_IODMA_0_kr1fkudf/top_StreamingDataflowPartition_0_IODMA_0.cpp:25) to 'Mem2Stream_Batch' [23]  (3.63 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

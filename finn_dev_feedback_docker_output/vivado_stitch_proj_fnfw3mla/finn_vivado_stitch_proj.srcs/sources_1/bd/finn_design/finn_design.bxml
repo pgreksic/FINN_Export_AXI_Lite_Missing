@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="39">
+  <CompositeFile CompositeFileTopName="finn_design" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1614561094"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1614561094"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1614561094"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1614561094"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_Thresholding_Batch_0_0/finn_design_Thresholding_Batch_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Thresholding_Batch_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_1_0/finn_design_StreamingFIFO_1_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_ConvolutionInputGenerator_0_0/finn_design_ConvolutionInputGenerator_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ConvolutionInputGenerator_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_2_0/finn_design_StreamingFIFO_2_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_0_0/finn_design_StreamingFCLayer_Batch_0_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_0_wstrm_0/finn_design_StreamingFCLayer_Batch_0_wstrm_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_3_0/finn_design_StreamingFIFO_3_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_ConvolutionInputGenerator_1_0/finn_design_ConvolutionInputGenerator_1_0.xci" Type="IP">
+        <Instance HierarchyPath="ConvolutionInputGenerator_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_4_0/finn_design_StreamingFIFO_4_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_1_0/finn_design_StreamingFCLayer_Batch_1_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_1_wstrm_0/finn_design_StreamingFCLayer_Batch_1_wstrm_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_5_0/finn_design_StreamingFIFO_5_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_0_0/finn_design_StreamingDataWidthConverter_Batch_0_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_6_0/finn_design_StreamingFIFO_6_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingMaxPool_Batch_0_0/finn_design_StreamingMaxPool_Batch_0_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingMaxPool_Batch_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_7_0/finn_design_StreamingFIFO_7_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_1_0/finn_design_StreamingDataWidthConverter_Batch_1_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_8_0/finn_design_StreamingFIFO_8_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_ConvolutionInputGenerator_2_0/finn_design_ConvolutionInputGenerator_2_0.xci" Type="IP">
+        <Instance HierarchyPath="ConvolutionInputGenerator_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_9_0/finn_design_StreamingFIFO_9_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_9"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_2_0/finn_design_StreamingFCLayer_Batch_2_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_2_wstrm_0/finn_design_StreamingFCLayer_Batch_2_wstrm_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_10_0/finn_design_StreamingFIFO_10_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_2_0/finn_design_StreamingDataWidthConverter_Batch_2_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_11_0/finn_design_StreamingFIFO_11_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_11"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_ConvolutionInputGenerator_3_0/finn_design_ConvolutionInputGenerator_3_0.xci" Type="IP">
+        <Instance HierarchyPath="ConvolutionInputGenerator_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_12_0/finn_design_StreamingFIFO_12_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_12"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_3_0/finn_design_StreamingFCLayer_Batch_3_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_3_wstrm_0/finn_design_StreamingFCLayer_Batch_3_wstrm_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_13_0/finn_design_StreamingFIFO_13_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_13"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_3_0/finn_design_StreamingDataWidthConverter_Batch_3_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_14_0/finn_design_StreamingFIFO_14_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_14"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingMaxPool_Batch_1_0/finn_design_StreamingMaxPool_Batch_1_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingMaxPool_Batch_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_15_0/finn_design_StreamingFIFO_15_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_15"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_4_0/finn_design_StreamingDataWidthConverter_Batch_4_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_16_0/finn_design_StreamingFIFO_16_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_16"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_ConvolutionInputGenerator_4_0/finn_design_ConvolutionInputGenerator_4_0.xci" Type="IP">
+        <Instance HierarchyPath="ConvolutionInputGenerator_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_17_0/finn_design_StreamingFIFO_17_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_17"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_4_0/finn_design_StreamingFCLayer_Batch_4_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_4/StreamingFCLayer_Batch_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_4_wstrm_0/finn_design_StreamingFCLayer_Batch_4_wstrm_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_4/StreamingFCLayer_Batch_4_wstrm"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_18_0/finn_design_StreamingFIFO_18_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_18"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_5_0/finn_design_StreamingDataWidthConverter_Batch_5_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_19_0/finn_design_StreamingFIFO_19_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_19"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_ConvolutionInputGenerator_5_0/finn_design_ConvolutionInputGenerator_5_0.xci" Type="IP">
+        <Instance HierarchyPath="ConvolutionInputGenerator_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_20_0/finn_design_StreamingFIFO_20_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_20"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_5_0/finn_design_StreamingFCLayer_Batch_5_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_5/StreamingFCLayer_Batch_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_5_wstrm_0/finn_design_StreamingFCLayer_Batch_5_wstrm_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_5/StreamingFCLayer_Batch_5_wstrm"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_21_0/finn_design_StreamingFIFO_21_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_21"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_6_0/finn_design_StreamingDataWidthConverter_Batch_6_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_22_0/finn_design_StreamingFIFO_22_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_22"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_6_0/finn_design_StreamingFCLayer_Batch_6_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_6/StreamingFCLayer_Batch_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_6_wstrm_0/finn_design_StreamingFCLayer_Batch_6_wstrm_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_6/StreamingFCLayer_Batch_6_wstrm"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_23_0/finn_design_StreamingFIFO_23_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_23"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_7_0/finn_design_StreamingDataWidthConverter_Batch_7_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_24_0/finn_design_StreamingFIFO_24_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_24"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_7_0/finn_design_StreamingFCLayer_Batch_7_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_7/StreamingFCLayer_Batch_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_7_wstrm_0/finn_design_StreamingFCLayer_Batch_7_wstrm_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_7/StreamingFCLayer_Batch_7_wstrm"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_25_0/finn_design_StreamingFIFO_25_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_25"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_8_0/finn_design_StreamingDataWidthConverter_Batch_8_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_26_0/finn_design_StreamingFIFO_26_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_26"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_8_0/finn_design_StreamingFCLayer_Batch_8_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_8/StreamingFCLayer_Batch_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFCLayer_Batch_8_wstrm_0/finn_design_StreamingFCLayer_Batch_8_wstrm_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFCLayer_Batch_8/StreamingFCLayer_Batch_8_wstrm"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_27_0/finn_design_StreamingFIFO_27_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_27"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingDataWidthConverter_Batch_9_0/finn_design_StreamingDataWidthConverter_Batch_9_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingDataWidthConverter_Batch_9"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_28_0/finn_design_StreamingFIFO_28_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_28"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_LabelSelect_Batch_0_0/finn_design_LabelSelect_Batch_0_0.xci" Type="IP">
+        <Instance HierarchyPath="LabelSelect_Batch_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/finn_design_StreamingFIFO_29_0/finn_design_StreamingFIFO_29_0.xci" Type="IP">
+        <Instance HierarchyPath="StreamingFIFO_29"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth/finn_design.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim/finn_design.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="finn_design_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff/finn_design.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff/finn_design_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth/finn_design.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim/finn_design.protoinst">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

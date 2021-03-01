@@ -1,0 +1,492 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1.1 (64-bit)
+  **** SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+  **** IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vivado/2020.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'grgov' on host 'finn_dev_grgov' (Linux_x86_64 version 5.8.0-44-generic) on Mon Mar 01 07:35:27 +0000 2021
+INFO: [HLS 200-10] In directory '/workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l'
+Sourcing Tcl script '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l/hls_syn_Thresholding_Batch_0.tcl'
+HLS project: project_Thresholding_Batch_0
+HW source dir: /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l
+INFO: [HLS 200-10] Creating and opening project '/workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l/project_Thresholding_Batch_0'.
+INFO: [HLS 200-10] Adding design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l/top_Thresholding_Batch_0.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l/project_Thresholding_Batch_0/sol1'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+WARNING: [XFORM 203-506] Disable code size check when do loop unroll.
+WARNING: [ANALYSIS 214-1] Skip long-run-time warning caused by lots of load/store instructions.
+WARNING: [HLS 200-483] The 'config_rtl -auto_prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_auto_prefix' as its replacement.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l/top_Thresholding_Batch_0.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5560 ; free virtual = 41941
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5560 ; free virtual = 41941
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/workspace/finn-hlslib/activations.hpp:272) in function 'void Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >(hls::stream<FORWARD_REFERENCE, 0>&, hls::stream<FORWARD_REFERENCE, 0>&, FORWARD_REFERENCE const&, int)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<8>, 8u>::operator()<ap_uint<8> >' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/activations.hpp:271).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<8>, 8u>::operator()<ap_uint<8> >' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/activations.hpp:275).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<8>, 8u>::Container<ap_uint<8> >::operator()' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/activations.hpp:276).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_uint<8>, 8u>::Container<ap_uint<8> >::operator()' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/activations.hpp:276).
+INFO: [XFORM 203-603] Inlining function 'ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > >::activate' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/activations.hpp:276).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<8>, 8u>::Container<ap_uint<8> >::operator ap_uint<8> const&' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/activations.hpp:278).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5486 ; free virtual = 41869
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_uint<8> >::cast<8>' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/activations.hpp:276) automatically.
+INFO: [XFORM 203-602] Inlining function 'comp::less_equal<ap_uint<8> >::operator()' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/activations.hpp:186->/workspace/finn-hlslib/activations.hpp:276) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5482 ; free virtual = 41865
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/workspace/finn-hlslib/activations.hpp:265) in function 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/workspace/finn-hlslib/activations.hpp:184) in function 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' completely with a factor of 255.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 3 completely.
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_uint<8> >::cast<8>' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/activations.hpp:276) automatically.
+INFO: [XFORM 203-602] Inlining function 'comp::less_equal<ap_uint<8> >::operator()' into 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/activations.hpp:186->/workspace/finn-hlslib/activations.hpp:276) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' (/workspace/finn-hlslib/activations.hpp:96:16)...254 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6419 ; free virtual = 42803
+WARNING: [XFORM 203-631] Renaming function 'Thresholding_Batch<32u, 3u, 1u, Slice<ap_uint<8>, 8u>, Slice<ap_int<8>, 8u>, ap_uint<8>, ap_uint<8>, ThresholdsActivation<3u, 1u, 255u, ap_uint<8>, ap_int<8>, -128, comp::less_equal<ap_uint<8> > > >' to 'Thresholding_Batch' (/workspace/finn-hlslib/activations.hpp:96:10)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6377 ; free virtual = 42762
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Thresholding_Batch_0' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Thresholding_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 35.05 seconds; current allocated memory: 195.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.66 seconds; current allocated memory: 202.944 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Thresholding_Batch_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.06 seconds; current allocated memory: 203.792 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.83 seconds; current allocated memory: 204.743 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Thresholding_Batch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_254' to 'Thresholding_Batcbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_253' to 'Thresholding_Batccud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_142' to 'Thresholding_BatcdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_76' to 'Thresholding_BatceOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_65' to 'Thresholding_BatcfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_54' to 'Thresholding_Batcg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_43' to 'Thresholding_Batchbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_32' to 'Thresholding_Batcibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_21' to 'Thresholding_BatcjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_10' to 'Thresholding_BatckbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_252' to 'Thresholding_BatclbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_241' to 'Thresholding_Batcmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_230' to 'Thresholding_Batcncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_219' to 'Thresholding_Batcocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_208' to 'Thresholding_BatcpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_197' to 'Thresholding_BatcqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_186' to 'Thresholding_BatcrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_175' to 'Thresholding_Batcsc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_164' to 'Thresholding_Batctde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_153' to 'Thresholding_Batcudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_141' to 'Thresholding_Batcvdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_130' to 'Thresholding_BatcwdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_119' to 'Thresholding_BatcxdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_108' to 'Thresholding_Batcyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_97' to 'Thresholding_Batczec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_86' to 'Thresholding_BatcAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_80' to 'Thresholding_BatcBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_79' to 'Thresholding_BatcCeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_78' to 'Thresholding_BatcDeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_77' to 'Thresholding_BatcEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_75' to 'Thresholding_BatcFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_74' to 'Thresholding_BatcGfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_73' to 'Thresholding_BatcHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_72' to 'Thresholding_BatcIfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_71' to 'Thresholding_BatcJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_70' to 'Thresholding_BatcKfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_69' to 'Thresholding_BatcLf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_68' to 'Thresholding_BatcMgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_67' to 'Thresholding_BatcNgs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_66' to 'Thresholding_BatcOgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_64' to 'Thresholding_BatcPgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_63' to 'Thresholding_BatcQgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_62' to 'Thresholding_BatcRg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_61' to 'Thresholding_BatcShg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_60' to 'Thresholding_BatcThq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_59' to 'Thresholding_BatcUhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_58' to 'Thresholding_BatcVhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_57' to 'Thresholding_BatcWhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_56' to 'Thresholding_BatcXh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_55' to 'Thresholding_BatcYie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_53' to 'Thresholding_BatcZio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_52' to 'Thresholding_Batc0iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_51' to 'Thresholding_Batc1iI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_50' to 'Thresholding_Batc2iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_49' to 'Thresholding_Batc3i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_48' to 'Thresholding_Batc4jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_47' to 'Thresholding_Batc5jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_46' to 'Thresholding_Batc6jw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_45' to 'Thresholding_Batc7jG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_44' to 'Thresholding_Batc8jQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_42' to 'Thresholding_Batc9j0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_41' to 'Thresholding_Batcbak' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_40' to 'Thresholding_Batcbbk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_39' to 'Thresholding_Batcbck' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_38' to 'Thresholding_Batcbdk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_37' to 'Thresholding_Batcbek' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_36' to 'Thresholding_Batcbfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_35' to 'Thresholding_Batcbgk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_34' to 'Thresholding_Batcbhl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_33' to 'Thresholding_Batcbil' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_31' to 'Thresholding_Batcbjl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_30' to 'Thresholding_Batcbkl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_29' to 'Thresholding_Batcbll' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_28' to 'Thresholding_Batcbml' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_27' to 'Thresholding_Batcbnm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_26' to 'Thresholding_Batcbom' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_25' to 'Thresholding_Batcbpm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_24' to 'Thresholding_Batcbqm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_23' to 'Thresholding_Batcbrm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_22' to 'Thresholding_Batcbsm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_20' to 'Thresholding_Batcbtn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_19' to 'Thresholding_Batcbun' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_18' to 'Thresholding_Batcbvn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_17' to 'Thresholding_Batcbwn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_16' to 'Thresholding_Batcbxn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_15' to 'Thresholding_Batcbyn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_14' to 'Thresholding_Batcbzo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_13' to 'Thresholding_BatcbAo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_12' to 'Thresholding_BatcbBo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_11' to 'Thresholding_BatcbCo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_9' to 'Thresholding_BatcbDo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_8' to 'Thresholding_BatcbEo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_7' to 'Thresholding_BatcbFp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_6' to 'Thresholding_BatcbGp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_5' to 'Thresholding_BatcbHp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_4' to 'Thresholding_BatcbIp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_3' to 'Thresholding_BatcbJp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_2' to 'Thresholding_BatcbKp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_1' to 'Thresholding_BatcbLp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds' to 'Thresholding_BatcbMq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_251' to 'Thresholding_BatcbNq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_250' to 'Thresholding_BatcbOq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_249' to 'Thresholding_BatcbPq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_248' to 'Thresholding_BatcbQq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_247' to 'Thresholding_BatcbRq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_246' to 'Thresholding_BatcbSr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_245' to 'Thresholding_BatcbTr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_244' to 'Thresholding_BatcbUr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_243' to 'Thresholding_BatcbVr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_242' to 'Thresholding_BatcbWr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_240' to 'Thresholding_BatcbXr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_239' to 'Thresholding_BatcbYs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_238' to 'Thresholding_BatcbZs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_237' to 'Thresholding_Batcb0s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_236' to 'Thresholding_Batcb1s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_235' to 'Thresholding_Batcb2s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_234' to 'Thresholding_Batcb3s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_233' to 'Thresholding_Batcb4t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_232' to 'Thresholding_Batcb5t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_231' to 'Thresholding_Batcb6t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_229' to 'Thresholding_Batcb7t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_228' to 'Thresholding_Batcb8t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_227' to 'Thresholding_Batcb9t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_226' to 'Thresholding_Batccau' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_225' to 'Thresholding_Batccbu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_224' to 'Thresholding_Batcccu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_223' to 'Thresholding_Batccdu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_222' to 'Thresholding_Batcceu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_221' to 'Thresholding_Batccfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_220' to 'Thresholding_Batccgu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_218' to 'Thresholding_Batcchv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_217' to 'Thresholding_Batcciv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_216' to 'Thresholding_Batccjv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_215' to 'Thresholding_Batcckv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_214' to 'Thresholding_Batcclv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_213' to 'Thresholding_Batccmv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_212' to 'Thresholding_Batccnw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_211' to 'Thresholding_Batccow' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_210' to 'Thresholding_Batccpw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_209' to 'Thresholding_Batccqw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_207' to 'Thresholding_Batccrw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_206' to 'Thresholding_Batccsw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_205' to 'Thresholding_Batcctx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_204' to 'Thresholding_Batccux' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_203' to 'Thresholding_Batccvx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_202' to 'Thresholding_Batccwx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_201' to 'Thresholding_Batccxx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_200' to 'Thresholding_Batccyx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_199' to 'Thresholding_Batcczy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_198' to 'Thresholding_BatccAy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_196' to 'Thresholding_BatccBy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_195' to 'Thresholding_BatccCy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_194' to 'Thresholding_BatccDy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_193' to 'Thresholding_BatccEy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_192' to 'Thresholding_BatccFz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_191' to 'Thresholding_BatccGz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_190' to 'Thresholding_BatccHz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_189' to 'Thresholding_BatccIz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_188' to 'Thresholding_BatccJz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_187' to 'Thresholding_BatccKz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_185' to 'Thresholding_BatccLz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_184' to 'Thresholding_BatccMA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_183' to 'Thresholding_BatccNA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_182' to 'Thresholding_BatccOA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_181' to 'Thresholding_BatccPA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_180' to 'Thresholding_BatccQA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_179' to 'Thresholding_BatccRA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_178' to 'Thresholding_BatccSB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_177' to 'Thresholding_BatccTB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_176' to 'Thresholding_BatccUB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_174' to 'Thresholding_BatccVB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_173' to 'Thresholding_BatccWB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_172' to 'Thresholding_BatccXB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_171' to 'Thresholding_BatccYC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_170' to 'Thresholding_BatccZC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_169' to 'Thresholding_Batcc0C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_168' to 'Thresholding_Batcc1C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_167' to 'Thresholding_Batcc2C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_166' to 'Thresholding_Batcc3C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_165' to 'Thresholding_Batcc4D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_163' to 'Thresholding_Batcc5D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_162' to 'Thresholding_Batcc6D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_161' to 'Thresholding_Batcc7D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_160' to 'Thresholding_Batcc8D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_159' to 'Thresholding_Batcc9D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_158' to 'Thresholding_BatcdaE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_157' to 'Thresholding_BatcdbE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_156' to 'Thresholding_BatcdcE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_155' to 'Thresholding_BatcddE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_154' to 'Thresholding_BatcdeE' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'Thresholding_BatcdeE' is changed to 'Thresholding_BatcdeE_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_152' to 'Thresholding_BatcdfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_151' to 'Thresholding_BatcdgE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_150' to 'Thresholding_BatcdhF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_149' to 'Thresholding_BatcdiF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_148' to 'Thresholding_BatcdjF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_147' to 'Thresholding_BatcdkF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_146' to 'Thresholding_BatcdlF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_145' to 'Thresholding_BatcdmF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_144' to 'Thresholding_BatcdnG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_143' to 'Thresholding_BatcdoG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_140' to 'Thresholding_BatcdpG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_139' to 'Thresholding_BatcdqG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_138' to 'Thresholding_BatcdrG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_137' to 'Thresholding_BatcdsG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_136' to 'Thresholding_BatcdtH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_135' to 'Thresholding_BatcduH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_134' to 'Thresholding_BatcdvH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_133' to 'Thresholding_BatcdwH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_132' to 'Thresholding_BatcdxH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_131' to 'Thresholding_BatcdyH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_129' to 'Thresholding_BatcdzI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_128' to 'Thresholding_BatcdAI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_127' to 'Thresholding_BatcdBI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_126' to 'Thresholding_BatcdCI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_125' to 'Thresholding_BatcdDI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_124' to 'Thresholding_BatcdEI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_123' to 'Thresholding_BatcdFJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_122' to 'Thresholding_BatcdGJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_121' to 'Thresholding_BatcdHJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_120' to 'Thresholding_BatcdIJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_118' to 'Thresholding_BatcdJJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_117' to 'Thresholding_BatcdKJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_116' to 'Thresholding_BatcdLJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_115' to 'Thresholding_BatcdMK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_114' to 'Thresholding_BatcdNK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_113' to 'Thresholding_BatcdOK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_112' to 'Thresholding_BatcdPK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_111' to 'Thresholding_BatcdQK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_110' to 'Thresholding_BatcdRK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_109' to 'Thresholding_BatcdSL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_107' to 'Thresholding_BatcdTL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_106' to 'Thresholding_BatcdUL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_105' to 'Thresholding_BatcdVL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_104' to 'Thresholding_BatcdWL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_103' to 'Thresholding_BatcdXL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_102' to 'Thresholding_BatcdYM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_101' to 'Thresholding_BatcdZM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_100' to 'Thresholding_Batcd0M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_99' to 'Thresholding_Batcd1M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_98' to 'Thresholding_Batcd2M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_96' to 'Thresholding_Batcd3M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_95' to 'Thresholding_Batcd4N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_94' to 'Thresholding_Batcd5N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_93' to 'Thresholding_Batcd6N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_92' to 'Thresholding_Batcd7N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_91' to 'Thresholding_Batcd8N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_90' to 'Thresholding_Batcd9N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_89' to 'Thresholding_BatceaO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_88' to 'Thresholding_BatcebO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_87' to 'Thresholding_BatcecO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_85' to 'Thresholding_BatcedO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_84' to 'Thresholding_BatceeO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_83' to 'Thresholding_BatcefO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_82' to 'Thresholding_BatcegO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Thresholding_Batch_threshs_m_thresholds_81' to 'Thresholding_BatcehP' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Thresholding_Batch'.
+INFO: [HLS 200-111]  Elapsed time: 9.98 seconds; current allocated memory: 219.083 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Thresholding_Batch_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Thresholding_Batch_0/in0_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'Thresholding_Batch_0/out_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'Thresholding_Batch_0' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Thresholding_Batch_0'.
+INFO: [HLS 200-111]  Elapsed time: 5.76 seconds; current allocated memory: 254.357 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 126.02 MHz
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbkb_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccud_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatceOg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcfYi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcibs_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcjbC_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatckbM_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatclbW_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcqcK_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcrcU_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcsc4_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batctde_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcudo_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcvdy_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcwdI_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcxdS_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcGfk_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcHfu_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcIfE_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcJfO_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcKfY_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcLf8_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcMgi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcNgs_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcOgC_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcPgM_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcQgW_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcRg6_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcShg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcThq_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcUhA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcVhK_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbck_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbdk_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbek_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbfk_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbgk_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbhl_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbil_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbjl_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbkl_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbll_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbml_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbnm_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbom_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbpm_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbqm_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbrm_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbsm_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbtn_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbun_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbvn_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbwn_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbxn_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbyn_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcbzo_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcbAo_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcbBo_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcbCo_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcbDo_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcbEo_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcbFp_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcbGp_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcbHp_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcceu_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccgu_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcchv_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcciv_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccjv_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcckv_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcclv_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccmv_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccnw_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccow_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccpw_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccqw_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccrw_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccsw_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcctx_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccux_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccvx_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccwx_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccxx_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batccyx_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcczy_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccAy_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccBy_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccCy_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccDy_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccEy_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccFz_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccGz_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccHz_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccIz_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccJz_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccKz_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccLz_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccMA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccNA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccOA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccPA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccQA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccRA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccSB_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccTB_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccUB_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccVB_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccWB_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccXB_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccYC_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatccZC_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc0C_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc1C_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc2C_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc3C_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc4D_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc5D_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc6D_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc7D_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc8D_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_Batcc9D_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcdaE_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcdbE_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcdcE_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcddE_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcdeE_x_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcdfE_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Thresholding_Batch_0_Thresholding_BatcdgE_rom' using distributed ROMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6789 ; free virtual = 43216
+INFO: [VHDL 208-304] Generating VHDL RTL for Thresholding_Batch_0 with prefix Thresholding_Batch_0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for Thresholding_Batch_0 with prefix Thresholding_Batch_0_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.1.1 (64-bit)
+  **** SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+  **** IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 07:36:52 2021...
+INFO: [HLS 200-112] Total elapsed time: 87.77 seconds; peak allocated memory: 254.357 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Mon Mar  1 07:36:55 2021...

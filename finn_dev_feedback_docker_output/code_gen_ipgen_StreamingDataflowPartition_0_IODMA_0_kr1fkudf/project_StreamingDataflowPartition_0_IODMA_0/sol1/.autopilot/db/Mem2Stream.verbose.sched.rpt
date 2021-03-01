@@ -1,0 +1,232 @@
+
+
+================================================================
+== Vivado HLS Report for 'Mem2Stream'
+================================================================
+* Date:           Mon Mar  1 14:00:13 2021
+
+* Version:        2020.1.1 (Build 2951007 on Wed Aug 05 23:24:06 MDT 2020)
+* Project:        project_StreamingDataflowPartition_0_IODMA_0
+* Solution:       sol1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.750 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     6154|     6154| 61.540 us | 61.540 us |  6154|  6154|   none  |
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |     6145|     6145|         3|          1|          1|  6144|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 9 10 11 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 12 10 
+10 --> 11 
+11 --> 9 
+12 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.44>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%in_V_offset1_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %in_V_offset1)"   --->   Operation 13 'read' 'in_V_offset1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%in_V_offset_read = call i61 @_ssdm_op_Read.ap_auto.i61(i61 %in_V_offset)"   --->   Operation 14 'read' 'in_V_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln142 = zext i32 %in_V_offset1_read to i62" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 15 'zext' 'zext_ln142' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln142_3 = zext i61 %in_V_offset_read to i62" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 16 'zext' 'zext_ln142_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (3.44ns)   --->   "%add_ln142 = add i62 %zext_ln142_3, %zext_ln142" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 17 'add' 'add_ln142' <Predicate = true> <Delay = 3.44> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.44> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 8.75>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln142_4 = zext i62 %add_ln142 to i64" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 18 'zext' 'zext_ln142_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%in_V_addr = getelementptr i64* %in_V, i64 %zext_ln142_4" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 19 'getelementptr' 'in_V_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [7/7] (8.75ns)   --->   "%in_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %in_V_addr, i32 6144)" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 20 'readreq' 'in_V_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 8.75>
+ST_3 : Operation 21 [6/7] (8.75ns)   --->   "%in_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %in_V_addr, i32 6144)" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 21 'readreq' 'in_V_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 8.75>
+ST_4 : Operation 22 [5/7] (8.75ns)   --->   "%in_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %in_V_addr, i32 6144)" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 22 'readreq' 'in_V_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 8.75>
+ST_5 : Operation 23 [4/7] (8.75ns)   --->   "%in_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %in_V_addr, i32 6144)" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 23 'readreq' 'in_V_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 8.75>
+ST_6 : Operation 24 [3/7] (8.75ns)   --->   "%in_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %in_V_addr, i32 6144)" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 24 'readreq' 'in_V_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 8.75>
+ST_7 : Operation 25 [2/7] (8.75ns)   --->   "%in_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %in_V_addr, i32 6144)" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 25 'readreq' 'in_V_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 8.75>
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str35, i32 0, i32 0, [1 x i8]* @p_str36, [1 x i8]* @p_str37, [1 x i8]* @p_str38, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str39, [1 x i8]* @p_str40)"   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %in_V, [6 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [5 x i8]* @p_str4, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/7] (8.75ns)   --->   "%in_V_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %in_V_addr, i32 6144)" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 28 'readreq' 'in_V_addr_rd_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 29 [1/1] (1.76ns)   --->   "br label %1" [/workspace/finn-hlslib/dma.h:140]   --->   Operation 29 'br' <Predicate = true> <Delay = 1.76>
+
+State 9 <SV = 8> <Delay = 2.09>
+ST_9 : Operation 30 [1/1] (0.00ns)   --->   "%i_0 = phi i13 [ 0, %0 ], [ %i, %hls_label_3 ]"   --->   Operation 30 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 31 [1/1] (2.09ns)   --->   "%icmp_ln140 = icmp eq i13 %i_0, -2048" [/workspace/finn-hlslib/dma.h:140]   --->   Operation 31 'icmp' 'icmp_ln140' <Predicate = true> <Delay = 2.09> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 32 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6144, i64 6144, i64 6144)"   --->   Operation 32 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 33 [1/1] (1.67ns)   --->   "%i = add i13 %i_0, 1" [/workspace/finn-hlslib/dma.h:140]   --->   Operation 33 'add' 'i' <Predicate = true> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.44> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 34 [1/1] (0.00ns)   --->   "br i1 %icmp_ln140, label %2, label %hls_label_3" [/workspace/finn-hlslib/dma.h:140]   --->   Operation 34 'br' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 8.75>
+ST_10 : Operation 35 [1/1] (8.75ns)   --->   "%e_V = call i64 @_ssdm_op_Read.m_axi.i64P(i64* %in_V_addr)" [/workspace/finn-hlslib/dma.h:142]   --->   Operation 35 'read' 'e_V' <Predicate = (!icmp_ln140)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 3.63>
+ST_11 : Operation 36 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str9)" [/workspace/finn-hlslib/dma.h:140]   --->   Operation 36 'specregionbegin' 'tmp' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_11 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [/workspace/finn-hlslib/dma.h:141]   --->   Operation 37 'specpipeline' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_11 : Operation 38 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i64P(i64* %out_V_V, i64 %e_V)" [/workspace/finn-hlslib/dma.h:143]   --->   Operation 38 'write' <Predicate = (!icmp_ln140)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_11 : Operation 39 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str9, i32 %tmp)" [/workspace/finn-hlslib/dma.h:144]   --->   Operation 39 'specregionend' 'empty_11' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_11 : Operation 40 [1/1] (0.00ns)   --->   "br label %1" [/workspace/finn-hlslib/dma.h:140]   --->   Operation 40 'br' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+
+State 12 <SV = 9> <Delay = 0.00>
+ST_12 : Operation 41 [1/1] (0.00ns)   --->   "ret void" [/workspace/finn-hlslib/dma.h:145]   --->   Operation 41 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.44ns
+The critical path consists of the following:
+	wire read on port 'in_V_offset1' [5]  (0 ns)
+	'add' operation ('add_ln142', /workspace/finn-hlslib/dma.h:142) [11]  (3.44 ns)
+
+ <State 2>: 8.75ns
+The critical path consists of the following:
+	'getelementptr' operation ('in_V_addr', /workspace/finn-hlslib/dma.h:142) [13]  (0 ns)
+	bus request on port 'in_V' (/workspace/finn-hlslib/dma.h:142) [14]  (8.75 ns)
+
+ <State 3>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'in_V' (/workspace/finn-hlslib/dma.h:142) [14]  (8.75 ns)
+
+ <State 4>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'in_V' (/workspace/finn-hlslib/dma.h:142) [14]  (8.75 ns)
+
+ <State 5>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'in_V' (/workspace/finn-hlslib/dma.h:142) [14]  (8.75 ns)
+
+ <State 6>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'in_V' (/workspace/finn-hlslib/dma.h:142) [14]  (8.75 ns)
+
+ <State 7>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'in_V' (/workspace/finn-hlslib/dma.h:142) [14]  (8.75 ns)
+
+ <State 8>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'in_V' (/workspace/finn-hlslib/dma.h:142) [14]  (8.75 ns)
+
+ <State 9>: 2.1ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', /workspace/finn-hlslib/dma.h:140) [17]  (0 ns)
+	'icmp' operation ('icmp_ln140', /workspace/finn-hlslib/dma.h:140) [18]  (2.1 ns)
+
+ <State 10>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'in_V' (/workspace/finn-hlslib/dma.h:142) [25]  (8.75 ns)
+
+ <State 11>: 3.63ns
+The critical path consists of the following:
+	fifo write on port 'out_V_V' (/workspace/finn-hlslib/dma.h:143) [26]  (3.63 ns)
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

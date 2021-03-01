@@ -1,0 +1,191 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1.1 (64-bit)
+  **** SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+  **** IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vivado/2020.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'grgov' on host 'finn_dev_grgov' (Linux_x86_64 version 5.8.0-44-generic) on Mon Mar 01 07:33:09 +0000 2021
+INFO: [HLS 200-10] In directory '/workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s'
+Sourcing Tcl script '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s/hls_syn_StreamingFCLayer_Batch_3.tcl'
+HLS project: project_StreamingFCLayer_Batch_3
+HW source dir: /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s
+INFO: [HLS 200-10] Creating and opening project '/workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s/project_StreamingFCLayer_Batch_3'.
+INFO: [HLS 200-10] Adding design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s/top_StreamingFCLayer_Batch_3.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s/project_StreamingFCLayer_Batch_3/sol1'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+WARNING: [XFORM 203-506] Disable code size check when do loop unroll.
+WARNING: [ANALYSIS 214-1] Skip long-run-time warning caused by lots of load/store instructions.
+WARNING: [HLS 200-483] The 'config_rtl -auto_prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_auto_prefix' as its replacement.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s/top_StreamingFCLayer_Batch_3.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5934 ; free virtual = 42039
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5934 ; free virtual = 42039
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >::init' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:274).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::operator()<ap_uint<16> >' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:281).
+INFO: [XFORM 203-603] Inlining function 'std::array<ap_int<4>, 4ul>::operator[].1' into 'Weights_Tile<4u, ap_int<4>, 2u>::operator[]' (/workspace/finn-hlslib/weights.hpp:166).
+INFO: [XFORM 203-603] Inlining function 'Weights_Tile<4u, ap_int<4>, 2u>::operator[]' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:282).
+INFO: [XFORM 203-603] Inlining function 'Identity::operator()<std::array<ap_int<4>, 4ul> >' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:282).
+INFO: [XFORM 203-603] Inlining function 'std::array<ap_int<4>, 4ul>::operator[]' into 'mac<4u, ap_int<17>, std::array<ap_int<4>, 4ul>, Slice<ap_int<4>, 4u>::Container<ap_uint<16> >, ap_resource_lut>' (/workspace/finn-hlslib/mac.hpp:169).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::Container<ap_uint<16> >::operator()' into 'mac<4u, ap_int<17>, std::array<ap_int<4>, 4ul>, Slice<ap_int<4>, 4u>::Container<ap_uint<16> >, ap_resource_lut>' (/workspace/finn-hlslib/mac.hpp:169).
+INFO: [XFORM 203-603] Inlining function 'mul<ap_int<4>, ap_int<4> >' into 'mac<4u, ap_int<17>, std::array<ap_int<4>, 4ul>, Slice<ap_int<4>, 4u>::Container<ap_uint<16> >, ap_resource_lut>' (/workspace/finn-hlslib/mac.hpp:169).
+INFO: [XFORM 203-603] Inlining function 'mac<4u, ap_int<17>, std::array<ap_int<4>, 4ul>, Slice<ap_int<4>, 4u>::Container<ap_uint<16> >, ap_resource_lut>' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:284).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::operator()<ap_uint<8> >' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:291).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::Container<ap_uint<8> >::operator()' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:294).
+INFO: [XFORM 203-603] Inlining function 'ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >::activate' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:294).
+INFO: [XFORM 203-603] Inlining function 'Slice<ap_int<4>, 4u>::Container<ap_uint<8> >::operator ap_uint<8> const&' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:297).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5866 ; free virtual = 41981
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_int<4> >::cast<4>' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/mac.hpp:169->/workspace/finn-hlslib/mvau.hpp:284) automatically.
+INFO: [XFORM 203-602] Inlining function 'comp::less_equal<ap_int<17> >::operator()' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/activations.hpp:186->/workspace/finn-hlslib/mvau.hpp:294) automatically.
+WARNING: [SYNCHK 200-23] /workspace/finn-hlslib/mvau.hpp:267: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5884 ; free virtual = 42001
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (/workspace/finn-hlslib/mvau.hpp:248) in function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (/workspace/finn-hlslib/mvau.hpp:265) in function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (/workspace/finn-hlslib/mvau.hpp:272) in function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3' (/workspace/finn-hlslib/mvau.hpp:279) in function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3.1' (/workspace/finn-hlslib/weights.hpp:161) in function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3.2' (/workspace/finn-hlslib/mac.hpp:167) in function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.4' (/workspace/finn-hlslib/mvau.hpp:292) in function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.4.1' (/workspace/finn-hlslib/activations.hpp:184) in function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' completely with a factor of 14.
+INFO: [XFORM 203-102] Partitioning array 'wgt._M_instance.V' (/workspace/finn-hlslib/mvau.hpp:282) automatically.
+INFO: [XFORM 203-102] Partitioning array 'temp._M_instance.V' (/workspace/finn-hlslib/weights.hpp:160) automatically.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'inputBuf.V' (/workspace/finn-hlslib/mvau.hpp:230) accessed through non-constant indices on dimension 1 (/workspace/finn-hlslib/mvau.hpp:256:7), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'inputBuf.V' (/workspace/finn-hlslib/mvau.hpp:230) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'accu.V' (/workspace/finn-hlslib/mvau.hpp:233) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'w.m_weights.V' (/workspace/finn-hlslib/mvau.hpp:236) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'threshs.m_thresholds.V'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'accu.V' (/workspace/finn-hlslib/mvau.hpp:233) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'Caster<ap_int<4> >::cast<4>' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/interpret.hpp:216->/workspace/finn-hlslib/mac.hpp:169->/workspace/finn-hlslib/mvau.hpp:284) automatically.
+INFO: [XFORM 203-602] Inlining function 'comp::less_equal<ap_int<17> >::operator()' into 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/activations.hpp:186->/workspace/finn-hlslib/mvau.hpp:294) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' (/workspace/finn-hlslib/mvau.hpp:96:46)...40 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5121 ; free virtual = 41246
+WARNING: [XFORM 203-631] Renaming function 'Matrix_Vector_Activate_Stream_Batch<1152u, 128u, 4u, 2u, Slice<ap_int<4>, 4u>, Slice<ap_int<4>, 4u>, Identity, ap_int<4>, ap_uint<16>, ap_uint<8>, ThresholdsActivation<64u, 2u, 14u, ap_int<17>, ap_int<4>, -7, comp::less_equal<ap_int<17> > >, ap_resource_lut>' to 'Matrix_Vector_Activa' (/workspace/finn-hlslib/mvau.hpp:96:46)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 5402 ; free virtual = 41534
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'StreamingFCLayer_Batch_3' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 59.7 seconds; current allocated memory: 231.258 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.62 seconds; current allocated memory: 245.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingFCLayer_Batch_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.73 seconds; current allocated memory: 245.902 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 246.038 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Matrix_Vector_Activa' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_27' to 'Matrix_Vector_Actbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_26' to 'Matrix_Vector_Actcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_21' to 'Matrix_Vector_ActdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_20' to 'Matrix_Vector_ActeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_19' to 'Matrix_Vector_ActfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_18' to 'Matrix_Vector_Actg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_17' to 'Matrix_Vector_Acthbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_16' to 'Matrix_Vector_Actibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_15' to 'Matrix_Vector_ActjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_14' to 'Matrix_Vector_ActkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_25' to 'Matrix_Vector_ActlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_24' to 'Matrix_Vector_Actmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_23' to 'Matrix_Vector_Actncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_22' to 'Matrix_Vector_Actocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_13' to 'Matrix_Vector_ActpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_12' to 'Matrix_Vector_ActqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_7' to 'Matrix_Vector_ActrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_6' to 'Matrix_Vector_Actsc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_5' to 'Matrix_Vector_Acttde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_4' to 'Matrix_Vector_Actudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_3' to 'Matrix_Vector_Actvdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_2' to 'Matrix_Vector_ActwdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_1' to 'Matrix_Vector_ActxdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds' to 'Matrix_Vector_Actyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_11' to 'Matrix_Vector_Actzec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_10' to 'Matrix_Vector_ActAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_9' to 'Matrix_Vector_ActBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Matrix_Vector_Activa_threshs_m_thresholds_8' to 'Matrix_Vector_ActCeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingFCLayer_Batch_3_mux_2889_16_1_1' to 'StreamingFCLayer_DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'StreamingFCLayer_Batch_3_mul_4s_4s_8_1_1' to 'StreamingFCLayer_Ee0' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'StreamingFCLayer_DeQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'StreamingFCLayer_Ee0': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Matrix_Vector_Activa'.
+INFO: [HLS 200-111]  Elapsed time: 1.94 seconds; current allocated memory: 257.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'StreamingFCLayer_Batch_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'StreamingFCLayer_Batch_3/in0_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'StreamingFCLayer_Batch_3/weights_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'StreamingFCLayer_Batch_3/out_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'StreamingFCLayer_Batch_3' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'StreamingFCLayer_Batch_3'.
+INFO: [HLS 200-111]  Elapsed time: 3.57 seconds; current allocated memory: 279.595 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 123.11 MHz
+INFO: [RTMG 210-282] Generating pipelined core: 'StreamingFCLayer_Batch_3_StreamingFCLayer_Ee0_Mul_LUT_0'
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actbkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actcud_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActdEe_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActeOg_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActfYi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actg8j_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Acthbi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actibs_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActjbC_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActkbM_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActlbW_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actmb6_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actncg_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actocq_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActpcA_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActqcK_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActrcU_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actsc4_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Acttde_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actudo_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actvdy_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActwdI_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActxdS_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actyd2_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_Actzec_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActAem_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActBew_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'StreamingFCLayer_Batch_3_Matrix_Vector_ActCeG_rom' using auto ROMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 1661.020 ; gain = 1227.777 ; free physical = 6160 ; free virtual = 42354
+INFO: [VHDL 208-304] Generating VHDL RTL for StreamingFCLayer_Batch_3 with prefix StreamingFCLayer_Batch_3_.
+INFO: [VLOG 209-307] Generating Verilog RTL for StreamingFCLayer_Batch_3 with prefix StreamingFCLayer_Batch_3_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.1.1 (64-bit)
+  **** SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+  **** IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 07:34:48 2021...
+INFO: [HLS 200-112] Total elapsed time: 102.72 seconds; peak allocated memory: 279.595 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Mon Mar  1 07:34:51 2021...

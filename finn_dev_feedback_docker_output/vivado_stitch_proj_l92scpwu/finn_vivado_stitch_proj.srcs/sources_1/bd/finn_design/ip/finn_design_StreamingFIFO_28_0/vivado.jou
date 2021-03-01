@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Mon Mar  1 07:36:57 2021
+# Process ID: 126347
+# Current directory: /workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_28_rg5b3kre/project_StreamingFIFO_28/sol1/impl/verilog
+# Command line: vivado -mode batch -source package_ip.tcl
+# Log file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_28_rg5b3kre/project_StreamingFIFO_28/sol1/impl/verilog/vivado.log
+# Journal file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_28_rg5b3kre/project_StreamingFIFO_28/sol1/impl/verilog/vivado.jou
+#-----------------------------------------------------------
+source package_ip.tcl

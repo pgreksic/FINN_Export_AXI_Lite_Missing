@@ -1,0 +1,369 @@
+
+*** Running vivado
+    with args -log StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0.tcl
+
+
+****** Vivado v2020.1.1 (64-bit)
+  **** SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+  **** IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_1_StreamingFIFO_0_l4ym_9_8/project_StreamingDataflowPartition_1_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l/project_Thresholding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_0_6_q6vi1l/project_ConvolutionInputGenerator_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_2_ntydo62u/project_StreamingFIFO_2/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_xhr36c17/project_StreamingFCLayer_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_3_ell2234z/project_StreamingFIFO_3/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_1_adgu7igh/project_ConvolutionInputGenerator_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_4_d1hhjmyu/project_StreamingFIFO_4/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_1_zime8ynw/project_StreamingFCLayer_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_0_m8evnhbv/project_StreamingDataWidthConverter_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_0_2mua8oeo/project_StreamingMaxPool_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_7_dwzm2obq/project_StreamingFIFO_7/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_1_fqls_jx6/project_StreamingDataWidthConverter_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_8_4n56s9pc/project_StreamingFIFO_8/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_2ypl2foj/project_ConvolutionInputGenerator_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_9_9lytyivo/project_StreamingFIFO_9/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_sa05cpbz/project_StreamingFCLayer_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_2_0sfp1vf5/project_StreamingDataWidthConverter_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_3_cf2t2sy9/project_ConvolutionInputGenerator_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_12_pnrsmp15/project_StreamingFIFO_12/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s/project_StreamingFCLayer_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_3_lq8nxzkz/project_StreamingDataWidthConverter_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_1_hssgkqph/project_StreamingMaxPool_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_4_nrbged9g/project_StreamingDataWidthConverter_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_4_e9ds8j3w/project_ConvolutionInputGenerator_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_17_6l6kfvzz/project_StreamingFIFO_17/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_4_x1xz72eu/project_StreamingFCLayer_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_5_yezbpo0i/project_StreamingDataWidthConverter_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_5_q2ola4w4/project_ConvolutionInputGenerator_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_5_ou4xx96e/project_StreamingFCLayer_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_6_ys1q5ebr/project_StreamingDataWidthConverter_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_6_rbv8qzhw/project_StreamingFCLayer_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_7_am9l07ix/project_StreamingDataWidthConverter_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_7_mpax47i8/project_StreamingFCLayer_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_8_6h19e7wo/project_StreamingDataWidthConverter_Batch_8/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_8_y6xa8r5s/project_StreamingFCLayer_Batch_8/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_9_dobn1jm2/project_StreamingDataWidthConverter_Batch_9/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_LabelSelect_Batch_0_oj00bw3k/project_LabelSelect_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_1_StreamingFIFO_9_5e6pvg0e/project_StreamingDataflowPartition_1_StreamingFIFO_9/sol1/impl/verilog'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 132626
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2151.434 ; gain = 5.914 ; free physical = 1260 ; free virtual = 36884
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0/synth/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGenerator_2' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGenerator_2.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGene_1' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state4 bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGbkb' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGbkb.v:46]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 448 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGbkb.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 448 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram' (1#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGbkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGbkb' (2#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGbkb.v:46]
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGfYi' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGfYi.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 8 - type: integer 
+	Parameter din4_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGfYi' (3#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGfYi.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:971]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:973]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:975]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:977]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:979]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:981]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:983]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:985]
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGene_1' (4#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGene_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (5#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (6#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (7#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_2_ConvolutionInputGenerator_2' (8#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/e321/hdl/verilog/ConvolutionInputGenerator_2_ConvolutionInputGenerator_2.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0' (9#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0/synth/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2199.340 ; gain = 53.820 ; free physical = 1216 ; free virtual = 36840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2216.184 ; gain = 70.664 ; free physical = 1169 ; free virtual = 36793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2216.184 ; gain = 70.664 ; free physical = 1168 ; free virtual = 36793
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2216.184 ; gain = 0.000 ; free physical = 1168 ; free virtual = 36792
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0/constraints/ConvolutionInputGenerator_2_ConvolutionInputGenerator_2_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0/constraints/ConvolutionInputGenerator_2_ConvolutionInputGenerator_2_ooc.xdc] for cell 'inst'
+Parsing XDC File [/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2383.965 ; gain = 0.000 ; free physical = 935 ; free virtual = 36560
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2383.965 ; gain = 0.000 ; free physical = 946 ; free virtual = 36570
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 1151 ; free virtual = 36781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 1149 ; free virtual = 36779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 1145 ; free virtual = 36775
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 1091 ; free virtual = 36723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 9     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   3 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 7     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 2971 ; free virtual = 38600
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+----------------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------------------+
+|Module Name | RTL Object                                                                                                     | Inference      | Size (Depth x Width) | Primitives                 | 
++------------+----------------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------------------+
+|inst        | grp_ConvolutionInputGene_1_fu_26/inputBuf_3_V_U/ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram_U/ram_reg | User Attribute | 512 x 8              | RAM64X1D x 14	RAM64M x 14	 | 
+|inst        | grp_ConvolutionInputGene_1_fu_26/inputBuf_2_V_U/ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram_U/ram_reg | User Attribute | 512 x 8              | RAM64X1D x 14	RAM64M x 14	 | 
+|inst        | grp_ConvolutionInputGene_1_fu_26/inputBuf_1_V_U/ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram_U/ram_reg | User Attribute | 512 x 8              | RAM64X1D x 14	RAM64M x 14	 | 
+|inst        | grp_ConvolutionInputGene_1_fu_26/inputBuf_0_V_U/ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram_U/ram_reg | User Attribute | 512 x 8              | RAM64X1D x 14	RAM64M x 14	 | 
++------------+----------------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 4119 ; free virtual = 39741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3662 ; free virtual = 39284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+----------------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------------------+
+|Module Name | RTL Object                                                                                                     | Inference      | Size (Depth x Width) | Primitives                 | 
++------------+----------------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------------------+
+|inst        | grp_ConvolutionInputGene_1_fu_26/inputBuf_3_V_U/ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram_U/ram_reg | User Attribute | 512 x 8              | RAM64X1D x 14	RAM64M x 14	 | 
+|inst        | grp_ConvolutionInputGene_1_fu_26/inputBuf_2_V_U/ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram_U/ram_reg | User Attribute | 512 x 8              | RAM64X1D x 14	RAM64M x 14	 | 
+|inst        | grp_ConvolutionInputGene_1_fu_26/inputBuf_1_V_U/ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram_U/ram_reg | User Attribute | 512 x 8              | RAM64X1D x 14	RAM64M x 14	 | 
+|inst        | grp_ConvolutionInputGene_1_fu_26/inputBuf_0_V_U/ConvolutionInputGenerator_2_ConvolutionInputGbkb_ram_U/ram_reg | User Attribute | 512 x 8              | RAM64X1D x 14	RAM64M x 14	 | 
++------------+----------------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3140 ; free virtual = 38762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3242 ; free virtual = 38861
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3236 ; free virtual = 38855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3126 ; free virtual = 38745
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3125 ; free virtual = 38745
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3124 ; free virtual = 38743
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3123 ; free virtual = 38742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   134|
+|2     |LUT1     |    11|
+|3     |LUT2     |    41|
+|4     |LUT3     |    27|
+|5     |LUT4     |    81|
+|6     |LUT5     |    81|
+|7     |LUT6     |    98|
+|8     |MUXF7    |    32|
+|9     |RAM64M   |    56|
+|10    |RAM64X1D |    56|
+|11    |FDRE     |   392|
+|12    |FDSE     |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3123 ; free virtual = 38742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 2383.965 ; gain = 70.664 ; free physical = 3165 ; free virtual = 38785
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2383.965 ; gain = 238.445 ; free physical = 3164 ; free virtual = 38784
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2383.965 ; gain = 0.000 ; free physical = 3196 ; free virtual = 38816
+INFO: [Netlist 29-17] Analyzing 278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2407.980 ; gain = 0.000 ; free physical = 3696 ; free virtual = 39316
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 112 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 56 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 56 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+76 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 2407.980 ; gain = 262.484 ; free physical = 3839 ; free virtual = 39459
+INFO: [Common 17-1381] The checkpoint '/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0_synth_1/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0, cache-ID = 8931cc82dd66a29c
+INFO: [Coretcl 2-1174] Renamed 16 cell refs.
+INFO: [Common 17-1381] The checkpoint '/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0_synth_1/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0_utilization_synth.rpt -pb StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_2_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 14:08:46 2021...

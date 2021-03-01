@@ -1,0 +1,135 @@
+{
+  "Thresholding_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "3467",
+    "LUT": "6750",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_0": {
+    "BRAM_18K": "0",
+    "FF": "450",
+    "LUT": "1410",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "925",
+    "LUT": "1650",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_1": {
+    "BRAM_18K": "0",
+    "FF": "416",
+    "LUT": "1875",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_1": {
+    "BRAM_18K": "0",
+    "FF": "3018",
+    "LUT": "3103",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingMaxPool_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "835",
+    "LUT": "3691",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_2": {
+    "BRAM_18K": "0",
+    "FF": "414",
+    "LUT": "1609",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_2": {
+    "BRAM_18K": "19",
+    "FF": "2704",
+    "LUT": "3013",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_3": {
+    "BRAM_18K": "0",
+    "FF": "477",
+    "LUT": "1767",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_3": {
+    "BRAM_18K": "28",
+    "FF": "4916",
+    "LUT": "3095",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingMaxPool_Batch_1": {
+    "BRAM_18K": "0",
+    "FF": "1465",
+    "LUT": "7012",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_4": {
+    "BRAM_18K": "0",
+    "FF": "474",
+    "LUT": "1532",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_4": {
+    "BRAM_18K": "28",
+    "FF": "4914",
+    "LUT": "3093",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator_5": {
+    "BRAM_18K": "0",
+    "FF": "473",
+    "LUT": "1561",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_5": {
+    "BRAM_18K": "14",
+    "FF": "9458",
+    "LUT": "3635",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_6": {
+    "BRAM_18K": "14",
+    "FF": "1238",
+    "LUT": "1540",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_7": {
+    "BRAM_18K": "28",
+    "FF": "2308",
+    "LUT": "2662",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_8": {
+    "BRAM_18K": "0",
+    "FF": "2278",
+    "LUT": "3491",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "LabelSelect_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "35",
+    "LUT": "155",
+    "DSP48E": "0",
+    "URAM": "0"
+  }
+}

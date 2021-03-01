@@ -1,0 +1,4 @@
+#!/bin/bash 
+cd /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_8qzrfvhn
+vivado_hls /home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_8qzrfvhn/hls_syn_StreamingDataflowPartition_2_IODMA_0.tcl
+cd /workspace/finn

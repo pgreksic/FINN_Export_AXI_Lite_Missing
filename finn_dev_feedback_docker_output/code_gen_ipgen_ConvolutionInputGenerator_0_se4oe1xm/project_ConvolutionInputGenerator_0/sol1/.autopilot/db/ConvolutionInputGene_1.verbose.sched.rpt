@@ -1,0 +1,361 @@
+
+
+================================================================
+== Vivado HLS Report for 'ConvolutionInputGene_1'
+================================================================
+* Date:           Mon Mar  1 01:06:22 2021
+
+* Version:        2020.1.1 (Build 2951007 on Wed Aug 05 23:24:06 MDT 2020)
+* Project:        project_ConvolutionInputGenerator_0
+* Solution:       sol1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.028 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    24591|    24591| 0.246 ms | 0.246 ms |  24591|  24591|   none  |
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+-------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- Loop 1  |    24589|    24589|         3|          1|          1|  24588|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 5 3 
+3 --> 4 
+4 --> 2 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.81>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%ofm_y_1_0 = alloca i32"   --->   Operation 6 'alloca' 'ofm_y_1_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ofm_x_1_0 = alloca i32"   --->   Operation 7 'alloca' 'ofm_x_1_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%k_y_1_0 = alloca i32"   --->   Operation 8 'alloca' 'k_y_1_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%inp_15_0 = alloca i32"   --->   Operation 9 'alloca' 'inp_15_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%k_x_1_0 = alloca i32"   --->   Operation 10 'alloca' 'k_x_1_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%count_simd_1_0 = alloca i32"   --->   Operation 11 'alloca' 'count_simd_1_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%read_block_1_0 = alloca i32"   --->   Operation 12 'alloca' 'read_block_1_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%current_block_write_s = alloca i32"   --->   Operation 13 'alloca' 'current_block_write_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%current_line_1_0 = alloca i32"   --->   Operation 14 'alloca' 'current_line_1_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%counter_internal_blo = alloca i32"   --->   Operation 15 'alloca' 'counter_internal_blo' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %out_V_V, [5 x i8]* @p_str, i32 0, i32 0, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind"   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %in_V_V, [5 x i8]* @p_str, i32 0, i32 0, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind"   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%inputBuf_0_V = alloca [96 x i8], align 1" [/workspace/finn-hlslib/slidingwindow.h:180]   --->   Operation 18 'alloca' 'inputBuf_0_V' <Predicate = true> <Delay = 0.00> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%inputBuf_1_V = alloca [96 x i8], align 1" [/workspace/finn-hlslib/slidingwindow.h:180]   --->   Operation 19 'alloca' 'inputBuf_1_V' <Predicate = true> <Delay = 0.00> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%inputBuf_2_V = alloca [96 x i8], align 1" [/workspace/finn-hlslib/slidingwindow.h:180]   --->   Operation 20 'alloca' 'inputBuf_2_V' <Predicate = true> <Delay = 0.00> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%inputBuf_3_V = alloca [96 x i8], align 1" [/workspace/finn-hlslib/slidingwindow.h:180]   --->   Operation 21 'alloca' 'inputBuf_3_V' <Predicate = true> <Delay = 0.00> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([96 x i8]* %inputBuf_0_V, [96 x i8]* %inputBuf_1_V, [96 x i8]* %inputBuf_2_V, [96 x i8]* %inputBuf_3_V, [1 x i8]* @p_str2, [15 x i8]* @p_str8, [1 x i8]* @p_str2, i32 -1, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2)" [/workspace/finn-hlslib/slidingwindow.h:141->/workspace/finn-hlslib/slidingwindow.h:182]   --->   Operation 22 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (1.76ns)   --->   "store i32 0, i32* %counter_internal_blo" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 23 'store' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 24 [1/1] (1.81ns)   --->   "store i32 0, i32* %current_line_1_0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 24 'store' <Predicate = true> <Delay = 1.81>
+ST_1 : Operation 25 [1/1] (1.81ns)   --->   "store i32 0, i32* %current_block_write_s" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 25 'store' <Predicate = true> <Delay = 1.81>
+ST_1 : Operation 26 [1/1] (1.81ns)   --->   "store i32 0, i32* %read_block_1_0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 26 'store' <Predicate = true> <Delay = 1.81>
+ST_1 : Operation 27 [1/1] (1.76ns)   --->   "store i32 0, i32* %count_simd_1_0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 27 'store' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 28 [1/1] (1.76ns)   --->   "store i32 0, i32* %k_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 28 'store' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 29 [1/1] (1.81ns)   --->   "store i32 0, i32* %inp_15_0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 29 'store' <Predicate = true> <Delay = 1.81>
+ST_1 : Operation 30 [1/1] (1.76ns)   --->   "store i32 0, i32* %k_y_1_0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 30 'store' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 31 [1/1] (1.76ns)   --->   "store i32 0, i32* %ofm_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 31 'store' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 32 [1/1] (1.76ns)   --->   "store i32 0, i32* %ofm_y_1_0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 32 'store' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 33 [1/1] (1.76ns)   --->   "br label %.preheader.0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 33 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 8.02>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%i_0_0 = phi i15 [ %add_ln196, %hls_label_0_end ], [ 0, %.preheader.preheader.0 ]" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 34 'phi' 'i_0_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (2.31ns)   --->   "%icmp_ln196 = icmp eq i15 %i_0_0, -8180" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 35 'icmp' 'icmp_ln196' <Predicate = true> <Delay = 2.31> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24588, i64 24588, i64 24588)"   --->   Operation 36 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (1.94ns)   --->   "%add_ln196 = add i15 %i_0_0, 1" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 37 'add' 'add_ln196' <Predicate = true> <Delay = 1.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "br i1 %icmp_ln196, label %9, label %hls_label_0_begin" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 38 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%inp_15_0_load_1 = load i32* %inp_15_0" [/workspace/finn-hlslib/slidingwindow.h:198]   --->   Operation 39 'load' 'inp_15_0_load_1' <Predicate = (!icmp_ln196)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%read_block_1_0_load_1 = load i32* %read_block_1_0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 40 'load' 'read_block_1_0_load_1' <Predicate = (!icmp_ln196)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%trunc_ln196 = trunc i32 %read_block_1_0_load_1 to i6" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 41 'trunc' 'trunc_ln196' <Predicate = (!icmp_ln196)> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str5)" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 42 'specregionbegin' 'tmp' <Predicate = (!icmp_ln196)> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [/workspace/finn-hlslib/slidingwindow.h:197]   --->   Operation 43 'specpipeline' <Predicate = (!icmp_ln196)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (2.47ns)   --->   "%icmp_ln198 = icmp ult i32 %inp_15_0_load_1, 288" [/workspace/finn-hlslib/slidingwindow.h:198]   --->   Operation 44 'icmp' 'icmp_ln198' <Predicate = (!icmp_ln196)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "br i1 %icmp_ln198, label %0, label %3" [/workspace/finn-hlslib/slidingwindow.h:198]   --->   Operation 45 'br' <Predicate = (!icmp_ln196)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%counter_internal_blo_3 = load i32* %counter_internal_blo" [/workspace/finn-hlslib/slidingwindow.h:214]   --->   Operation 46 'load' 'counter_internal_blo_3' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (2.47ns)   --->   "%icmp_ln214 = icmp ult i32 %counter_internal_blo_3, 809" [/workspace/finn-hlslib/slidingwindow.h:214]   --->   Operation 47 'icmp' 'icmp_ln214' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "br i1 %icmp_ln214, label %4, label %._crit_edge1.0" [/workspace/finn-hlslib/slidingwindow.h:214]   --->   Operation 48 'br' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%ofm_x_1_0_load_1 = load i32* %ofm_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:219]   --->   Operation 49 'load' 'ofm_x_1_0_load_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%k_y_1_0_load = load i32* %k_y_1_0" [/workspace/finn-hlslib/slidingwindow.h:215]   --->   Operation 50 'load' 'k_y_1_0_load' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%k_x_1_0_load = load i32* %k_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:219]   --->   Operation 51 'load' 'k_x_1_0_load' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%count_simd_1_0_load = load i32* %count_simd_1_0" [/workspace/finn-hlslib/slidingwindow.h:222]   --->   Operation 52 'load' 'count_simd_1_0_load' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%current_block_write_3 = load i32* %current_block_write_s" [/workspace/finn-hlslib/slidingwindow.h:215]   --->   Operation 53 'load' 'current_block_write_3' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%trunc_ln215 = trunc i32 %k_y_1_0_load to i2" [/workspace/finn-hlslib/slidingwindow.h:215]   --->   Operation 54 'trunc' 'trunc_ln215' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (2.55ns)   --->   "%add_ln215 = add i32 1, %k_y_1_0_load" [/workspace/finn-hlslib/slidingwindow.h:215]   --->   Operation 55 'add' 'add_ln215' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%trunc_ln215_1 = trunc i32 %current_block_write_3 to i2" [/workspace/finn-hlslib/slidingwindow.h:215]   --->   Operation 56 'trunc' 'trunc_ln215_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (2.55ns)   --->   "%add_ln219 = add i32 %ofm_x_1_0_load_1, %k_x_1_0_load" [/workspace/finn-hlslib/slidingwindow.h:219]   --->   Operation 57 'add' 'add_ln219' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%shl_ln219 = shl i32 %add_ln219, 2" [/workspace/finn-hlslib/slidingwindow.h:219]   --->   Operation 58 'shl' 'shl_ln219' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln219 = sub i32 %shl_ln219, %add_ln219" [/workspace/finn-hlslib/slidingwindow.h:219]   --->   Operation 59 'sub' 'sub_ln219' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.03> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 60 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln219_1 = add i32 %count_simd_1_0_load, %sub_ln219" [/workspace/finn-hlslib/slidingwindow.h:219]   --->   Operation 60 'add' 'add_ln219_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.03> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 61 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln220_1 = add i2 1, %trunc_ln215_1" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 61 'add' 'add_ln220_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.03> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 62 [1/1] (2.07ns) (root node of TernaryAdder)   --->   "%add_ln220 = add i2 %add_ln220_1, %trunc_ln215" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 62 'add' 'add_ln220' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 2.07> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.03> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 63 [1/1] (2.55ns)   --->   "%add_ln222 = add i32 1, %count_simd_1_0_load" [/workspace/finn-hlslib/slidingwindow.h:222]   --->   Operation 63 'add' 'add_ln222' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 64 [1/1] (2.47ns)   --->   "%icmp_ln223 = icmp eq i32 %add_ln222, 3" [/workspace/finn-hlslib/slidingwindow.h:223]   --->   Operation 64 'icmp' 'icmp_ln223' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "br i1 %icmp_ln223, label %5, label %.._crit_edge1.0_crit_edge150" [/workspace/finn-hlslib/slidingwindow.h:223]   --->   Operation 65 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (1.76ns)   --->   "store i32 %add_ln222, i32* %count_simd_1_0" [/workspace/finn-hlslib/slidingwindow.h:223]   --->   Operation 66 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & !icmp_ln223)> <Delay = 1.76>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "br label %._crit_edge1.0" [/workspace/finn-hlslib/slidingwindow.h:223]   --->   Operation 67 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & !icmp_ln223)> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (2.55ns)   --->   "%add_ln225 = add i32 %k_x_1_0_load, 1" [/workspace/finn-hlslib/slidingwindow.h:225]   --->   Operation 68 'add' 'add_ln225' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 69 [1/1] (2.47ns)   --->   "%icmp_ln226 = icmp eq i32 %add_ln225, 3" [/workspace/finn-hlslib/slidingwindow.h:226]   --->   Operation 69 'icmp' 'icmp_ln226' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "br i1 %icmp_ln226, label %6, label %.._crit_edge1.0_crit_edge149" [/workspace/finn-hlslib/slidingwindow.h:226]   --->   Operation 70 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (1.76ns)   --->   "store i32 0, i32* %count_simd_1_0" [/workspace/finn-hlslib/slidingwindow.h:226]   --->   Operation 71 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & !icmp_ln226)> <Delay = 1.76>
+ST_2 : Operation 72 [1/1] (1.76ns)   --->   "store i32 %add_ln225, i32* %k_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:226]   --->   Operation 72 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & !icmp_ln226)> <Delay = 1.76>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "br label %._crit_edge1.0" [/workspace/finn-hlslib/slidingwindow.h:226]   --->   Operation 73 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & !icmp_ln226)> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (2.47ns)   --->   "%icmp_ln229 = icmp eq i32 %add_ln215, 3" [/workspace/finn-hlslib/slidingwindow.h:229]   --->   Operation 74 'icmp' 'icmp_ln229' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "br i1 %icmp_ln229, label %7, label %.._crit_edge1.0_crit_edge148" [/workspace/finn-hlslib/slidingwindow.h:229]   --->   Operation 75 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226)> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (1.76ns)   --->   "store i32 0, i32* %count_simd_1_0" [/workspace/finn-hlslib/slidingwindow.h:229]   --->   Operation 76 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & !icmp_ln229)> <Delay = 1.76>
+ST_2 : Operation 77 [1/1] (1.76ns)   --->   "store i32 0, i32* %k_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:229]   --->   Operation 77 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & !icmp_ln229)> <Delay = 1.76>
+ST_2 : Operation 78 [1/1] (1.76ns)   --->   "store i32 %add_ln215, i32* %k_y_1_0" [/workspace/finn-hlslib/slidingwindow.h:229]   --->   Operation 78 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & !icmp_ln229)> <Delay = 1.76>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "br label %._crit_edge1.0" [/workspace/finn-hlslib/slidingwindow.h:229]   --->   Operation 79 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & !icmp_ln229)> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%ofm_x_1_0_load = load i32* %ofm_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:231]   --->   Operation 80 'load' 'ofm_x_1_0_load' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229)> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (2.55ns)   --->   "%add_ln231 = add i32 %ofm_x_1_0_load, 1" [/workspace/finn-hlslib/slidingwindow.h:231]   --->   Operation 81 'add' 'add_ln231' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 82 [1/1] (2.47ns)   --->   "%icmp_ln232 = icmp eq i32 %add_ln231, 30" [/workspace/finn-hlslib/slidingwindow.h:232]   --->   Operation 82 'icmp' 'icmp_ln232' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 83 [1/1] (1.76ns)   --->   "store i32 0, i32* %k_y_1_0" [/workspace/finn-hlslib/slidingwindow.h:232]   --->   Operation 83 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229)> <Delay = 1.76>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "br i1 %icmp_ln232, label %8, label %.._crit_edge1.0_crit_edge" [/workspace/finn-hlslib/slidingwindow.h:232]   --->   Operation 84 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229)> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (1.76ns)   --->   "store i32 0, i32* %count_simd_1_0" [/workspace/finn-hlslib/slidingwindow.h:232]   --->   Operation 85 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & !icmp_ln232)> <Delay = 1.76>
+ST_2 : Operation 86 [1/1] (1.76ns)   --->   "store i32 0, i32* %k_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:232]   --->   Operation 86 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & !icmp_ln232)> <Delay = 1.76>
+ST_2 : Operation 87 [1/1] (1.76ns)   --->   "store i32 %add_ln231, i32* %ofm_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:232]   --->   Operation 87 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & !icmp_ln232)> <Delay = 1.76>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "br label %._crit_edge1.0" [/workspace/finn-hlslib/slidingwindow.h:232]   --->   Operation 88 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & !icmp_ln232)> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%ofm_y_1_0_load = load i32* %ofm_y_1_0" [/workspace/finn-hlslib/slidingwindow.h:234]   --->   Operation 89 'load' 'ofm_y_1_0_load' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%inp_15_0_load_2 = load i32* %inp_15_0" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 90 'load' 'inp_15_0_load_2' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (2.55ns)   --->   "%add_ln234 = add i32 %ofm_y_1_0_load, 1" [/workspace/finn-hlslib/slidingwindow.h:234]   --->   Operation 91 'add' 'add_ln234' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 92 [1/1] (2.47ns)   --->   "%icmp_ln235 = icmp eq i32 %add_ln234, 30" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 92 'icmp' 'icmp_ln235' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 93 [1/1] (0.69ns)   --->   "%select_ln235 = select i1 %icmp_ln235, i32 0, i32 %inp_15_0_load_2" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 93 'select' 'select_ln235' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 94 [1/1] (0.69ns)   --->   "%select_ln235_1 = select i1 %icmp_ln235, i32 0, i32 %add_ln234" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 94 'select' 'select_ln235_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 95 [1/1] (1.76ns)   --->   "store i32 0, i32* %count_simd_1_0" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 95 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 1.76>
+ST_2 : Operation 96 [1/1] (1.76ns)   --->   "store i32 0, i32* %k_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 96 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 1.76>
+ST_2 : Operation 97 [1/1] (1.81ns)   --->   "store i32 %select_ln235, i32* %inp_15_0" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 97 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 1.81>
+ST_2 : Operation 98 [1/1] (1.76ns)   --->   "store i32 0, i32* %ofm_x_1_0" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 98 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 1.76>
+ST_2 : Operation 99 [1/1] (1.76ns)   --->   "store i32 %select_ln235_1, i32* %ofm_y_1_0" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 99 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 1.76>
+ST_2 : Operation 100 [1/1] (0.00ns)   --->   "br label %._crit_edge1.0" [/workspace/finn-hlslib/slidingwindow.h:235]   --->   Operation 100 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & icmp_ln214 & icmp_ln223 & icmp_ln226 & icmp_ln229 & icmp_ln232)> <Delay = 0.00>
+ST_2 : Operation 101 [1/1] (0.00ns)   --->   "%read_block_1_0_load_2 = load i32* %read_block_1_0" [/workspace/finn-hlslib/slidingwindow.h:244]   --->   Operation 101 'load' 'read_block_1_0_load_2' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 102 [1/1] (0.00ns)   --->   "%counter_internal_blo_2 = load i32* %counter_internal_blo" [/workspace/finn-hlslib/slidingwindow.h:244]   --->   Operation 102 'load' 'counter_internal_blo_2' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 103 [1/1] (2.47ns)   --->   "%icmp_ln244 = icmp ult i32 %counter_internal_blo_2, 95" [/workspace/finn-hlslib/slidingwindow.h:244]   --->   Operation 103 'icmp' 'icmp_ln244' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_1 = call i27 @_ssdm_op_PartSelect.i27.i32.i32.i32(i32 %read_block_1_0_load_2, i32 5, i32 31)" [/workspace/finn-hlslib/slidingwindow.h:244]   --->   Operation 104 'partselect' 'tmp_1' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 105 [1/1] (2.45ns)   --->   "%icmp_ln244_1 = icmp eq i27 %tmp_1, 0" [/workspace/finn-hlslib/slidingwindow.h:244]   --->   Operation 105 'icmp' 'icmp_ln244_1' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 2.45> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 106 [1/1] (0.97ns)   --->   "%and_ln244 = and i1 %icmp_ln244, %icmp_ln244_1" [/workspace/finn-hlslib/slidingwindow.h:244]   --->   Operation 106 'and' 'and_ln244' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 107 [1/1] (0.00ns)   --->   "br i1 %and_ln244, label %hls_label_1_begin, label %._crit_edge7.0" [/workspace/finn-hlslib/slidingwindow.h:244]   --->   Operation 107 'br' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 108 [1/1] (0.00ns)   --->   "%current_block_write_4 = load i32* %current_block_write_s" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 108 'load' 'current_block_write_4' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 109 [1/1] (0.00ns)   --->   "%current_line_1_0_loa_2 = load i32* %current_line_1_0" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 109 'load' 'current_line_1_0_loa_2' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 110 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str6)" [/workspace/finn-hlslib/slidingwindow.h:244]   --->   Operation 110 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 111 [1/1] (0.00ns)   --->   "%tmp_V_2 = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %in_V_V)" [/workspace/finn-hlslib/slidingwindow.h:246]   --->   Operation 111 'read' 'tmp_V_2' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 112 [1/1] (0.00ns)   --->   "%zext_ln247 = zext i32 %current_line_1_0_loa_2 to i64" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 112 'zext' 'zext_ln247' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 113 [1/1] (0.00ns)   --->   "%trunc_ln321_1 = trunc i32 %current_block_write_4 to i2" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 113 'trunc' 'trunc_ln321_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 114 [1/1] (0.00ns)   --->   "%inputBuf_0_V_addr_1 = getelementptr [96 x i8]* %inputBuf_0_V, i64 0, i64 %zext_ln247" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 114 'getelementptr' 'inputBuf_0_V_addr_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 115 [1/1] (0.00ns)   --->   "%inputBuf_1_V_addr_1 = getelementptr [96 x i8]* %inputBuf_1_V, i64 0, i64 %zext_ln247" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 115 'getelementptr' 'inputBuf_1_V_addr_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 116 [1/1] (0.00ns)   --->   "%inputBuf_2_V_addr_1 = getelementptr [96 x i8]* %inputBuf_2_V, i64 0, i64 %zext_ln247" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 116 'getelementptr' 'inputBuf_2_V_addr_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 117 [1/1] (0.00ns)   --->   "%inputBuf_3_V_addr_1 = getelementptr [96 x i8]* %inputBuf_3_V, i64 0, i64 %zext_ln247" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 117 'getelementptr' 'inputBuf_3_V_addr_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 118 [1/1] (1.30ns)   --->   "switch i2 %trunc_ln321_1, label %branch3 [
+    i2 0, label %branch0
+    i2 1, label %branch1
+    i2 -2, label %branch2
+  ]" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 118 'switch' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 1.30>
+ST_2 : Operation 119 [1/1] (2.30ns)   --->   "store i8 %tmp_V_2, i8* %inputBuf_2_V_addr_1, align 1" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 119 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244 & trunc_ln321_1 == 2)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_2 : Operation 120 [1/1] (0.00ns)   --->   "br label %hls_label_2" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 120 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244 & trunc_ln321_1 == 2)> <Delay = 0.00>
+ST_2 : Operation 121 [1/1] (2.30ns)   --->   "store i8 %tmp_V_2, i8* %inputBuf_1_V_addr_1, align 1" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 121 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244 & trunc_ln321_1 == 1)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_2 : Operation 122 [1/1] (0.00ns)   --->   "br label %hls_label_2" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 122 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244 & trunc_ln321_1 == 1)> <Delay = 0.00>
+ST_2 : Operation 123 [1/1] (2.30ns)   --->   "store i8 %tmp_V_2, i8* %inputBuf_0_V_addr_1, align 1" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 123 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244 & trunc_ln321_1 == 0)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_2 : Operation 124 [1/1] (0.00ns)   --->   "br label %hls_label_2" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 124 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244 & trunc_ln321_1 == 0)> <Delay = 0.00>
+ST_2 : Operation 125 [1/1] (2.30ns)   --->   "store i8 %tmp_V_2, i8* %inputBuf_3_V_addr_1, align 1" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 125 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244 & trunc_ln321_1 == 3)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_2 : Operation 126 [1/1] (0.00ns)   --->   "br label %hls_label_2" [/workspace/finn-hlslib/slidingwindow.h:247]   --->   Operation 126 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244 & trunc_ln321_1 == 3)> <Delay = 0.00>
+ST_2 : Operation 127 [1/1] (0.00ns)   --->   "%current_block_write_5 = load i32* %current_block_write_s" [/workspace/finn-hlslib/slidingwindow.h:255]   --->   Operation 127 'load' 'current_block_write_5' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 128 [1/1] (0.00ns)   --->   "%current_line_1_0_loa_3 = load i32* %current_line_1_0" [/workspace/finn-hlslib/slidingwindow.h:250]   --->   Operation 128 'load' 'current_line_1_0_loa_3' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 129 [1/1] (2.55ns)   --->   "%add_ln250 = add i32 %current_line_1_0_loa_3, 1" [/workspace/finn-hlslib/slidingwindow.h:250]   --->   Operation 129 'add' 'add_ln250' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 130 [1/1] (2.47ns)   --->   "%icmp_ln251 = icmp eq i32 %add_ln250, 96" [/workspace/finn-hlslib/slidingwindow.h:251]   --->   Operation 130 'icmp' 'icmp_ln251' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 131 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str7)" [/workspace/finn-hlslib/slidingwindow.h:251]   --->   Operation 131 'specregionbegin' 'tmp_3' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 132 [1/1] (1.82ns)   --->   "%add_ln255_1 = add i6 %trunc_ln196, 1" [/workspace/finn-hlslib/slidingwindow.h:255]   --->   Operation 132 'add' 'add_ln255_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 133 [1/1] (2.55ns)   --->   "%add_ln255 = add i32 %current_block_write_5, 1" [/workspace/finn-hlslib/slidingwindow.h:255]   --->   Operation 133 'add' 'add_ln255' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 134 [1/1] (2.47ns)   --->   "%icmp_ln256 = icmp eq i32 %add_ln255, 4" [/workspace/finn-hlslib/slidingwindow.h:256]   --->   Operation 134 'icmp' 'icmp_ln256' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 135 [1/1] (0.00ns) (grouped into LUT with out node select_ln251)   --->   "%select_ln256 = select i1 %icmp_ln256, i32 0, i32 %add_ln255" [/workspace/finn-hlslib/slidingwindow.h:256]   --->   Operation 135 'select' 'select_ln256' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 136 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str7, i32 %tmp_3)" [/workspace/finn-hlslib/slidingwindow.h:260]   --->   Operation 136 'specregionend' 'empty_7' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 137 [1/1] (0.69ns) (out node of the LUT)   --->   "%select_ln251 = select i1 %icmp_ln251, i32 %select_ln256, i32 %current_block_write_5" [/workspace/finn-hlslib/slidingwindow.h:251]   --->   Operation 137 'select' 'select_ln251' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 138 [1/1] (0.69ns)   --->   "%select_ln251_1 = select i1 %icmp_ln251, i32 0, i32 %add_ln250" [/workspace/finn-hlslib/slidingwindow.h:251]   --->   Operation 138 'select' 'select_ln251_1' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 139 [1/1] (1.18ns)   --->   "%select_ln251_2 = select i1 %icmp_ln251, i6 %add_ln255_1, i6 %trunc_ln196" [/workspace/finn-hlslib/slidingwindow.h:251]   --->   Operation 139 'select' 'select_ln251_2' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 1.18> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 140 [1/1] (0.00ns)   --->   "%zext_ln251 = zext i6 %select_ln251_2 to i32" [/workspace/finn-hlslib/slidingwindow.h:251]   --->   Operation 140 'zext' 'zext_ln251' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 141 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str6, i32 %tmp_2)" [/workspace/finn-hlslib/slidingwindow.h:261]   --->   Operation 141 'specregionend' 'empty_8' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 142 [1/1] (1.81ns)   --->   "store i32 %select_ln251_1, i32* %current_line_1_0" [/workspace/finn-hlslib/slidingwindow.h:261]   --->   Operation 142 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 1.81>
+ST_2 : Operation 143 [1/1] (1.81ns)   --->   "store i32 %select_ln251, i32* %current_block_write_s" [/workspace/finn-hlslib/slidingwindow.h:261]   --->   Operation 143 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 1.81>
+ST_2 : Operation 144 [1/1] (1.81ns)   --->   "store i32 %zext_ln251, i32* %read_block_1_0" [/workspace/finn-hlslib/slidingwindow.h:261]   --->   Operation 144 'store' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 1.81>
+ST_2 : Operation 145 [1/1] (0.00ns)   --->   "br label %._crit_edge7.0" [/workspace/finn-hlslib/slidingwindow.h:261]   --->   Operation 145 'br' <Predicate = (!icmp_ln196 & !icmp_ln198 & and_ln244)> <Delay = 0.00>
+ST_2 : Operation 146 [1/1] (0.00ns)   --->   "%counter_internal_blo_1 = load i32* %counter_internal_blo" [/workspace/finn-hlslib/slidingwindow.h:262]   --->   Operation 146 'load' 'counter_internal_blo_1' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 147 [1/1] (2.55ns)   --->   "%add_ln262 = add i32 %counter_internal_blo_1, 1" [/workspace/finn-hlslib/slidingwindow.h:262]   --->   Operation 147 'add' 'add_ln262' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 148 [1/1] (2.47ns)   --->   "%icmp_ln263 = icmp eq i32 %add_ln262, 809" [/workspace/finn-hlslib/slidingwindow.h:263]   --->   Operation 148 'icmp' 'icmp_ln263' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 149 [1/1] (0.69ns)   --->   "%select_ln263 = select i1 %icmp_ln263, i32 0, i32 %add_ln262" [/workspace/finn-hlslib/slidingwindow.h:263]   --->   Operation 149 'select' 'select_ln263' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 150 [1/1] (1.76ns)   --->   "store i32 %select_ln263, i32* %counter_internal_blo" [/workspace/finn-hlslib/slidingwindow.h:263]   --->   Operation 150 'store' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 1.76>
+ST_2 : Operation 151 [1/1] (0.00ns)   --->   "br label %hls_label_0_end"   --->   Operation 151 'br' <Predicate = (!icmp_ln196 & !icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 152 [1/1] (0.00ns)   --->   "%current_block_write_1 = load i32* %current_block_write_s" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 152 'load' 'current_block_write_1' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 153 [1/1] (0.00ns)   --->   "%current_line_1_0_loa = load i32* %current_line_1_0" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 153 'load' 'current_line_1_0_loa' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 154 [1/1] (0.00ns)   --->   "%tmp_V = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %in_V_V)" [/workspace/finn-hlslib/slidingwindow.h:200]   --->   Operation 154 'read' 'tmp_V' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 155 [1/1] (0.00ns)   --->   "%zext_ln201 = zext i32 %current_line_1_0_loa to i64" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 155 'zext' 'zext_ln201' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 156 [1/1] (0.00ns)   --->   "%trunc_ln321 = trunc i32 %current_block_write_1 to i2" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 156 'trunc' 'trunc_ln321' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 157 [1/1] (0.00ns)   --->   "%inputBuf_0_V_addr = getelementptr [96 x i8]* %inputBuf_0_V, i64 0, i64 %zext_ln201" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 157 'getelementptr' 'inputBuf_0_V_addr' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 158 [1/1] (0.00ns)   --->   "%inputBuf_1_V_addr = getelementptr [96 x i8]* %inputBuf_1_V, i64 0, i64 %zext_ln201" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 158 'getelementptr' 'inputBuf_1_V_addr' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 159 [1/1] (0.00ns)   --->   "%inputBuf_2_V_addr = getelementptr [96 x i8]* %inputBuf_2_V, i64 0, i64 %zext_ln201" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 159 'getelementptr' 'inputBuf_2_V_addr' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 160 [1/1] (0.00ns)   --->   "%inputBuf_3_V_addr = getelementptr [96 x i8]* %inputBuf_3_V, i64 0, i64 %zext_ln201" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 160 'getelementptr' 'inputBuf_3_V_addr' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 161 [1/1] (1.30ns)   --->   "switch i2 %trunc_ln321, label %branch7 [
+    i2 0, label %branch4
+    i2 1, label %branch5
+    i2 -2, label %branch6
+  ]" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 161 'switch' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 1.30>
+ST_2 : Operation 162 [1/1] (2.30ns)   --->   "store i8 %tmp_V, i8* %inputBuf_2_V_addr, align 1" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 162 'store' <Predicate = (!icmp_ln196 & icmp_ln198 & trunc_ln321 == 2)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_2 : Operation 163 [1/1] (0.00ns)   --->   "br label %1" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 163 'br' <Predicate = (!icmp_ln196 & icmp_ln198 & trunc_ln321 == 2)> <Delay = 0.00>
+ST_2 : Operation 164 [1/1] (2.30ns)   --->   "store i8 %tmp_V, i8* %inputBuf_1_V_addr, align 1" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 164 'store' <Predicate = (!icmp_ln196 & icmp_ln198 & trunc_ln321 == 1)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_2 : Operation 165 [1/1] (0.00ns)   --->   "br label %1" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 165 'br' <Predicate = (!icmp_ln196 & icmp_ln198 & trunc_ln321 == 1)> <Delay = 0.00>
+ST_2 : Operation 166 [1/1] (2.30ns)   --->   "store i8 %tmp_V, i8* %inputBuf_0_V_addr, align 1" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 166 'store' <Predicate = (!icmp_ln196 & icmp_ln198 & trunc_ln321 == 0)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_2 : Operation 167 [1/1] (0.00ns)   --->   "br label %1" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 167 'br' <Predicate = (!icmp_ln196 & icmp_ln198 & trunc_ln321 == 0)> <Delay = 0.00>
+ST_2 : Operation 168 [1/1] (2.30ns)   --->   "store i8 %tmp_V, i8* %inputBuf_3_V_addr, align 1" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 168 'store' <Predicate = (!icmp_ln196 & icmp_ln198 & trunc_ln321 == 3)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_2 : Operation 169 [1/1] (0.00ns)   --->   "br label %1" [/workspace/finn-hlslib/slidingwindow.h:201]   --->   Operation 169 'br' <Predicate = (!icmp_ln196 & icmp_ln198 & trunc_ln321 == 3)> <Delay = 0.00>
+ST_2 : Operation 170 [1/1] (0.00ns)   --->   "%inp_15_0_load = load i32* %inp_15_0" [/workspace/finn-hlslib/slidingwindow.h:203]   --->   Operation 170 'load' 'inp_15_0_load' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 171 [1/1] (0.00ns)   --->   "%current_line_1_0_loa_1 = load i32* %current_line_1_0" [/workspace/finn-hlslib/slidingwindow.h:202]   --->   Operation 171 'load' 'current_line_1_0_loa_1' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 172 [1/1] (2.55ns)   --->   "%add_ln202 = add i32 %current_line_1_0_loa_1, 1" [/workspace/finn-hlslib/slidingwindow.h:202]   --->   Operation 172 'add' 'add_ln202' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 173 [1/1] (2.55ns)   --->   "%add_ln203 = add i32 %inp_15_0_load, 1" [/workspace/finn-hlslib/slidingwindow.h:203]   --->   Operation 173 'add' 'add_ln203' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 174 [1/1] (2.47ns)   --->   "%icmp_ln204 = icmp eq i32 %add_ln202, 96" [/workspace/finn-hlslib/slidingwindow.h:204]   --->   Operation 174 'icmp' 'icmp_ln204' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 175 [1/1] (1.81ns)   --->   "store i32 %add_ln203, i32* %inp_15_0" [/workspace/finn-hlslib/slidingwindow.h:204]   --->   Operation 175 'store' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 1.81>
+ST_2 : Operation 176 [1/1] (0.00ns)   --->   "br i1 %icmp_ln204, label %2, label %.hls_label_0_end_crit_edge" [/workspace/finn-hlslib/slidingwindow.h:204]   --->   Operation 176 'br' <Predicate = (!icmp_ln196 & icmp_ln198)> <Delay = 0.00>
+ST_2 : Operation 177 [1/1] (1.81ns)   --->   "store i32 %add_ln202, i32* %current_line_1_0" [/workspace/finn-hlslib/slidingwindow.h:204]   --->   Operation 177 'store' <Predicate = (!icmp_ln196 & icmp_ln198 & !icmp_ln204)> <Delay = 1.81>
+ST_2 : Operation 178 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [/workspace/finn-hlslib/slidingwindow.h:204]   --->   Operation 178 'br' <Predicate = (!icmp_ln196 & icmp_ln198 & !icmp_ln204)> <Delay = 0.00>
+ST_2 : Operation 179 [1/1] (0.00ns)   --->   "%read_block_1_0_load = load i32* %read_block_1_0" [/workspace/finn-hlslib/slidingwindow.h:210]   --->   Operation 179 'load' 'read_block_1_0_load' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 0.00>
+ST_2 : Operation 180 [1/1] (0.00ns)   --->   "%current_block_write_2 = load i32* %current_block_write_s" [/workspace/finn-hlslib/slidingwindow.h:206]   --->   Operation 180 'load' 'current_block_write_2' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 0.00>
+ST_2 : Operation 181 [1/1] (2.55ns)   --->   "%add_ln206 = add i32 %current_block_write_2, 1" [/workspace/finn-hlslib/slidingwindow.h:206]   --->   Operation 181 'add' 'add_ln206' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 182 [1/1] (2.47ns)   --->   "%icmp_ln207 = icmp eq i32 %add_ln206, 4" [/workspace/finn-hlslib/slidingwindow.h:207]   --->   Operation 182 'icmp' 'icmp_ln207' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 183 [1/1] (0.69ns)   --->   "%select_ln207 = select i1 %icmp_ln207, i32 0, i32 %add_ln206" [/workspace/finn-hlslib/slidingwindow.h:207]   --->   Operation 183 'select' 'select_ln207' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 184 [1/1] (2.55ns)   --->   "%add_ln210 = add i32 %read_block_1_0_load, 1" [/workspace/finn-hlslib/slidingwindow.h:210]   --->   Operation 184 'add' 'add_ln210' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 185 [1/1] (1.76ns)   --->   "store i32 0, i32* %counter_internal_blo" [/workspace/finn-hlslib/slidingwindow.h:212]   --->   Operation 185 'store' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 1.76>
+ST_2 : Operation 186 [1/1] (1.81ns)   --->   "store i32 0, i32* %current_line_1_0" [/workspace/finn-hlslib/slidingwindow.h:212]   --->   Operation 186 'store' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 1.81>
+ST_2 : Operation 187 [1/1] (1.81ns)   --->   "store i32 %select_ln207, i32* %current_block_write_s" [/workspace/finn-hlslib/slidingwindow.h:212]   --->   Operation 187 'store' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 1.81>
+ST_2 : Operation 188 [1/1] (1.81ns)   --->   "store i32 %add_ln210, i32* %read_block_1_0" [/workspace/finn-hlslib/slidingwindow.h:212]   --->   Operation 188 'store' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 1.81>
+ST_2 : Operation 189 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [/workspace/finn-hlslib/slidingwindow.h:212]   --->   Operation 189 'br' <Predicate = (!icmp_ln196 & icmp_ln198 & icmp_ln204)> <Delay = 0.00>
+ST_2 : Operation 190 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str5, i32 %tmp)" [/workspace/finn-hlslib/slidingwindow.h:267]   --->   Operation 190 'specregionend' 'empty_6' <Predicate = (!icmp_ln196)> <Delay = 0.00>
+ST_2 : Operation 191 [1/1] (0.00ns)   --->   "br label %.preheader.0" [/workspace/finn-hlslib/slidingwindow.h:196]   --->   Operation 191 'br' <Predicate = (!icmp_ln196)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.30>
+ST_3 : Operation 192 [1/1] (0.00ns)   --->   "%zext_ln220 = zext i32 %add_ln219_1 to i64" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 192 'zext' 'zext_ln220' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_3 : Operation 193 [1/1] (0.00ns)   --->   "%inputBuf_0_V_addr_2 = getelementptr [96 x i8]* %inputBuf_0_V, i64 0, i64 %zext_ln220" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 193 'getelementptr' 'inputBuf_0_V_addr_2' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_3 : Operation 194 [2/2] (2.30ns)   --->   "%inputBuf_0_V_load = load i8* %inputBuf_0_V_addr_2, align 1" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 194 'load' 'inputBuf_0_V_load' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_3 : Operation 195 [1/1] (0.00ns)   --->   "%inputBuf_1_V_addr_2 = getelementptr [96 x i8]* %inputBuf_1_V, i64 0, i64 %zext_ln220" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 195 'getelementptr' 'inputBuf_1_V_addr_2' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_3 : Operation 196 [2/2] (2.30ns)   --->   "%inputBuf_1_V_load = load i8* %inputBuf_1_V_addr_2, align 1" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 196 'load' 'inputBuf_1_V_load' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_3 : Operation 197 [1/1] (0.00ns)   --->   "%inputBuf_2_V_addr_2 = getelementptr [96 x i8]* %inputBuf_2_V, i64 0, i64 %zext_ln220" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 197 'getelementptr' 'inputBuf_2_V_addr_2' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_3 : Operation 198 [2/2] (2.30ns)   --->   "%inputBuf_2_V_load = load i8* %inputBuf_2_V_addr_2, align 1" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 198 'load' 'inputBuf_2_V_load' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_3 : Operation 199 [1/1] (0.00ns)   --->   "%inputBuf_3_V_addr_2 = getelementptr [96 x i8]* %inputBuf_3_V, i64 0, i64 %zext_ln220" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 199 'getelementptr' 'inputBuf_3_V_addr_2' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 0.00>
+ST_3 : Operation 200 [2/2] (2.30ns)   --->   "%inputBuf_3_V_load = load i8* %inputBuf_3_V_addr_2, align 1" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 200 'load' 'inputBuf_3_V_load' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+
+State 4 <SV = 3> <Delay = 4.26>
+ST_4 : Operation 201 [1/2] (2.30ns)   --->   "%inputBuf_0_V_load = load i8* %inputBuf_0_V_addr_2, align 1" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 201 'load' 'inputBuf_0_V_load' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_4 : Operation 202 [1/2] (2.30ns)   --->   "%inputBuf_1_V_load = load i8* %inputBuf_1_V_addr_2, align 1" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 202 'load' 'inputBuf_1_V_load' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_4 : Operation 203 [1/2] (2.30ns)   --->   "%inputBuf_2_V_load = load i8* %inputBuf_2_V_addr_2, align 1" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 203 'load' 'inputBuf_2_V_load' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_4 : Operation 204 [1/2] (2.30ns)   --->   "%inputBuf_3_V_load = load i8* %inputBuf_3_V_addr_2, align 1" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 204 'load' 'inputBuf_3_V_load' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 2.30> <Core = "RAM_S2P_LUTRAM">   --->   Core 50 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.30> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 96> <RAM>
+ST_4 : Operation 205 [1/1] (1.95ns)   --->   "%tmp_V_1 = call i8 @_ssdm_op_Mux.ap_auto.4i8.i2(i8 %inputBuf_0_V_load, i8 %inputBuf_1_V_load, i8 %inputBuf_2_V_load, i8 %inputBuf_3_V_load, i2 %add_ln220)" [/workspace/finn-hlslib/slidingwindow.h:220]   --->   Operation 205 'mux' 'tmp_V_1' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 206 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %out_V_V, i8 %tmp_V_1)" [/workspace/finn-hlslib/slidingwindow.h:221]   --->   Operation 206 'write' <Predicate = (!icmp_ln198 & icmp_ln214)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 5 <SV = 2> <Delay = 0.00>
+ST_5 : Operation 207 [1/1] (0.00ns)   --->   "ret void" [/workspace/finn-hlslib/slidingwindow.h:270]   --->   Operation 207 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.81ns
+The critical path consists of the following:
+	'alloca' operation ('inp_15_0') [6]  (0 ns)
+	'store' operation ('store_ln196', /workspace/finn-hlslib/slidingwindow.h:196) of constant 0 on local variable 'inp_15_0' [26]  (1.81 ns)
+
+ <State 2>: 8.03ns
+The critical path consists of the following:
+	'load' operation ('current_line_1_0_loa_3', /workspace/finn-hlslib/slidingwindow.h:250) on local variable 'current_line_1_0' [155]  (0 ns)
+	'add' operation ('add_ln250', /workspace/finn-hlslib/slidingwindow.h:250) [156]  (2.55 ns)
+	'icmp' operation ('icmp_ln251', /workspace/finn-hlslib/slidingwindow.h:251) [157]  (2.47 ns)
+	'select' operation ('select_ln251_2', /workspace/finn-hlslib/slidingwindow.h:251) [166]  (1.19 ns)
+	'store' operation ('store_ln261', /workspace/finn-hlslib/slidingwindow.h:261) of variable 'zext_ln251', /workspace/finn-hlslib/slidingwindow.h:251 on local variable 'read_block_1_0' [171]  (1.81 ns)
+
+ <State 3>: 2.3ns
+The critical path consists of the following:
+	'getelementptr' operation ('inputBuf_0_V_addr_2', /workspace/finn-hlslib/slidingwindow.h:220) [65]  (0 ns)
+	'load' operation ('inputBuf_0_V_load', /workspace/finn-hlslib/slidingwindow.h:220) on array 'inputBuf[0].V', /workspace/finn-hlslib/slidingwindow.h:180 [66]  (2.3 ns)
+
+ <State 4>: 4.26ns
+The critical path consists of the following:
+	'load' operation ('inputBuf_0_V_load', /workspace/finn-hlslib/slidingwindow.h:220) on array 'inputBuf[0].V', /workspace/finn-hlslib/slidingwindow.h:180 [66]  (2.3 ns)
+	'mux' operation ('tmp.V', /workspace/finn-hlslib/slidingwindow.h:220) [73]  (1.96 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

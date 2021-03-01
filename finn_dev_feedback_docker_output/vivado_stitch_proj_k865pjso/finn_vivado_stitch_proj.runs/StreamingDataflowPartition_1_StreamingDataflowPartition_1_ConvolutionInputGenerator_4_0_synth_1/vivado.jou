@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Mon Mar  1 14:10:32 2021
+# Process ID: 133992
+# Current directory: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_4_0_synth_1
+# Command line: vivado -log StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_4_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_4_0.tcl
+# Log file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_4_0_synth_1/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_4_0.vds
+# Journal file: /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_4_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source StreamingDataflowPartition_1_StreamingDataflowPartition_1_ConvolutionInputGenerator_4_0.tcl -notrace

@@ -1,0 +1,604 @@
+
+*** Running vivado
+    with args -log StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0.tcl
+
+
+****** Vivado v2020.1.1 (64-bit)
+  **** SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+  **** IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_1_StreamingFIFO_0_l4ym_9_8/project_StreamingDataflowPartition_1_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_Thresholding_Batch_0_vjkgt09l/project_Thresholding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_0_6_q6vi1l/project_ConvolutionInputGenerator_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_2_ntydo62u/project_StreamingFIFO_2/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_0_xhr36c17/project_StreamingFCLayer_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_3_ell2234z/project_StreamingFIFO_3/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_1_adgu7igh/project_ConvolutionInputGenerator_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_4_d1hhjmyu/project_StreamingFIFO_4/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_1_zime8ynw/project_StreamingFCLayer_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_0_m8evnhbv/project_StreamingDataWidthConverter_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_0_2mua8oeo/project_StreamingMaxPool_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_7_dwzm2obq/project_StreamingFIFO_7/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_1_fqls_jx6/project_StreamingDataWidthConverter_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_8_4n56s9pc/project_StreamingFIFO_8/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_2_2ypl2foj/project_ConvolutionInputGenerator_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_9_9lytyivo/project_StreamingFIFO_9/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_2_sa05cpbz/project_StreamingFCLayer_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_2_0sfp1vf5/project_StreamingDataWidthConverter_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_3_cf2t2sy9/project_ConvolutionInputGenerator_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_12_pnrsmp15/project_StreamingFIFO_12/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_3_6w_3jl5s/project_StreamingFCLayer_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_3_lq8nxzkz/project_StreamingDataWidthConverter_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingMaxPool_Batch_1_hssgkqph/project_StreamingMaxPool_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_4_nrbged9g/project_StreamingDataWidthConverter_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_4_e9ds8j3w/project_ConvolutionInputGenerator_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFIFO_17_6l6kfvzz/project_StreamingFIFO_17/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_4_x1xz72eu/project_StreamingFCLayer_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_5_yezbpo0i/project_StreamingDataWidthConverter_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_ConvolutionInputGenerator_5_q2ola4w4/project_ConvolutionInputGenerator_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_5_ou4xx96e/project_StreamingFCLayer_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_6_ys1q5ebr/project_StreamingDataWidthConverter_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_6_rbv8qzhw/project_StreamingFCLayer_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_7_am9l07ix/project_StreamingDataWidthConverter_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_7_mpax47i8/project_StreamingFCLayer_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_8_6h19e7wo/project_StreamingDataWidthConverter_Batch_8/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingFCLayer_Batch_8_y6xa8r5s/project_StreamingFCLayer_Batch_8/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataWidthConverter_Batch_9_dobn1jm2/project_StreamingDataWidthConverter_Batch_9/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_LabelSelect_Batch_0_oj00bw3k/project_LabelSelect_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/code_gen_ipgen_StreamingDataflowPartition_1_StreamingFIFO_9_5e6pvg0e/project_StreamingDataflowPartition_1_StreamingFIFO_9/sol1/impl/verilog'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 134054
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2151.461 ; gain = 11.883 ; free physical = 1999 ; free virtual = 37658
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0/synth/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_Batch_1_StreamingMaxPool_Batch_1' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_Batch_1.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_Batch_1_StreamingMaxPool_Pre' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_Pre.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_state5 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state6 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_Batch_1_StreamingMaxPool_bkb' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb.v:37]
+	Parameter DataWidth bound to: 4 - type: integer 
+	Parameter AddressRange bound to: 5 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb.v:6]
+	Parameter DWIDTH bound to: 4 - type: integer 
+	Parameter AWIDTH bound to: 3 - type: integer 
+	Parameter MEM_SIZE bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram' (1#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_Batch_1_StreamingMaxPool_bkb' (2#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb.v:37]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_Pre.v:8671]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_Pre.v:8933]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_Pre.v:8935]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_Pre.v:8937]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_Batch_1_StreamingMaxPool_Pre' (3#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_Pre.v:10]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 512 - type: integer 
+	Parameter W bound to: 513 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 513 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (4#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 513 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (5#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (6#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_Batch_1_StreamingMaxPool_Batch_1' (7#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ipshared/3eb3/hdl/verilog/StreamingMaxPool_Batch_1_StreamingMaxPool_Batch_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0' (8#1) [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0/synth/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2218.336 ; gain = 78.758 ; free physical = 1090 ; free virtual = 36747
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2233.180 ; gain = 93.602 ; free physical = 1611 ; free virtual = 37267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2233.180 ; gain = 93.602 ; free physical = 1611 ; free virtual = 37267
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2233.180 ; gain = 0.000 ; free physical = 1551 ; free virtual = 37208
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0/constraints/StreamingMaxPool_Batch_1_StreamingMaxPool_Batch_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/grgov/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.srcs/sources_1/bd/StreamingDataflowPartition_1/ip/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0/constraints/StreamingMaxPool_Batch_1_StreamingMaxPool_Batch_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2393.992 ; gain = 0.000 ; free physical = 1454 ; free virtual = 37115
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2399.930 ; gain = 5.938 ; free physical = 1508 ; free virtual = 37170
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 736 ; free virtual = 36400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 733 ; free virtual = 36397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 724 ; free virtual = 36388
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 1358 ; free virtual = 37021
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              513 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 129   
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input  513 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 131   
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 2888 ; free virtual = 38559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------------------------------+-------------------------------------------------------------------------+----------------+----------------------+---------------+
+|Module Name                         | RTL Object                                                              | Inference      | Size (Depth x Width) | Primitives    | 
++------------------------------------+-------------------------------------------------------------------------+----------------+----------------------+---------------+
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_0_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_1_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_2_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_3_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_4_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_5_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_6_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_7_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_8_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_9_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_10_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_11_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_12_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_13_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_14_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_15_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_16_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_17_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_18_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_19_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_20_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_21_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_22_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_23_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_24_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_25_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_26_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_27_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_28_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_29_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_30_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_31_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_32_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_33_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_34_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_35_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_36_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_37_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_38_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_39_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_40_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_41_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_42_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_43_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_44_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_45_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_46_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_47_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_48_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_49_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_50_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_51_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_52_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_53_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_54_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_55_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_56_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_57_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_58_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_59_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_60_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_61_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_62_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_63_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_64_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_65_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_66_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_67_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_68_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_69_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_70_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_71_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_72_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_73_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_74_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_75_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_76_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_77_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_78_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_79_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_80_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_81_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_82_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_83_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_84_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_85_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_86_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_87_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_88_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_89_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_90_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_91_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_92_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_93_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_94_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_95_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_96_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_97_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_98_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_99_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_100_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_101_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_102_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_103_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_104_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_105_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_106_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_107_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_108_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_109_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_110_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_111_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_112_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_113_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_114_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_115_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_116_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_117_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_118_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_119_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_120_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_121_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_122_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_123_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_124_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_125_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_126_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_127_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
++------------------------------------+-------------------------------------------------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 3079 ; free virtual = 38755
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 2623 ; free virtual = 38296
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------------------------------+-------------------------------------------------------------------------+----------------+----------------------+---------------+
+|Module Name                         | RTL Object                                                              | Inference      | Size (Depth x Width) | Primitives    | 
++------------------------------------+-------------------------------------------------------------------------+----------------+----------------------+---------------+
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_0_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_1_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_2_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_3_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_4_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_5_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_6_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_7_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_8_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_9_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg   | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_10_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_11_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_12_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_13_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_14_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_15_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_16_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_17_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_18_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_19_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_20_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_21_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_22_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_23_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_24_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_25_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_26_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_27_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_28_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_29_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_30_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_31_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_32_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_33_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_34_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_35_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_36_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_37_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_38_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_39_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_40_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_41_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_42_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_43_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_44_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_45_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_46_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_47_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_48_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_49_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_50_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_51_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_52_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_53_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_54_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_55_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_56_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_57_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_58_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_59_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_60_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_61_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_62_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_63_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_64_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_65_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_66_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_67_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_68_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_69_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_70_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_71_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_72_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_73_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_74_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_75_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_76_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_77_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_78_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_79_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_80_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_81_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_82_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_83_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_84_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_85_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_86_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_87_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_88_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_89_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_90_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_91_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_92_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_93_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_94_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_95_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_96_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_97_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_98_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_99_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg  | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_100_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_101_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_102_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_103_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_104_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_105_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_106_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_107_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_108_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_109_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_110_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_111_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_112_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_113_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_114_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_115_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_116_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_117_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_118_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_119_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_120_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_121_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_122_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_123_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_124_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_125_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_126_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
+|inst/grp_StreamingMaxPool_Pre_fu_47 | buf_127_V_U/StreamingMaxPool_Batch_1_StreamingMaxPool_bkb_ram_U/ram_reg | User Attribute | 8 x 4                | RAM16X1S x 4	 | 
++------------------------------------+-------------------------------------------------------------------------+----------------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 2450 ; free virtual = 38123
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 1368 ; free virtual = 37042
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 1364 ; free virtual = 37038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 1867 ; free virtual = 37541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 1912 ; free virtual = 37586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 1841 ; free virtual = 37515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 1851 ; free virtual = 37525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     2|
+|2     |LUT2     |   518|
+|3     |LUT3     |   524|
+|4     |LUT4     |   537|
+|5     |LUT5     |   157|
+|6     |LUT6     |   147|
+|7     |RAM16X1S |   512|
+|8     |FDRE     |  2621|
+|9     |FDSE     |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 1849 ; free virtual = 37523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:04 . Memory (MB): peak = 2399.930 ; gain = 93.602 ; free physical = 1793 ; free virtual = 37467
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 2399.930 ; gain = 260.352 ; free physical = 1788 ; free virtual = 37462
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2399.930 ; gain = 0.000 ; free physical = 1215 ; free virtual = 36888
+INFO: [Netlist 29-17] Analyzing 512 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2423.945 ; gain = 0.000 ; free physical = 1292 ; free virtual = 36965
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 512 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 2423.945 ; gain = 284.391 ; free physical = 1263 ; free virtual = 36937
+INFO: [Common 17-1381] The checkpoint '/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0_synth_1/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0, cache-ID = f05cb267b196c826
+INFO: [Coretcl 2-1174] Renamed 264 cell refs.
+INFO: [Common 17-1381] The checkpoint '/workspace/Diplomski_rad/finn_modified_docker_output_dir/vivado_stitch_proj_k865pjso/finn_vivado_stitch_proj.runs/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0_synth_1/StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0_utilization_synth.rpt -pb StreamingDataflowPartition_1_StreamingDataflowPartition_1_StreamingMaxPool_Batch_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 14:11:56 2021...
